@@ -32,10 +32,11 @@ app.get('/scrape', function(req, res){
     url = 'https://courselist.wm.edu/courselist/courseinfo/searchresults';
 
     var term = 201620;
+    var subject = "CSCI";
 
     var form = {
         term_code:term,
-        term_subj:"CSCI",
+        term_subj:subject,
         attr:0,
         attr2:0,
         levl:0,

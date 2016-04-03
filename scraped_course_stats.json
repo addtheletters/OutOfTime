@@ -1,0 +1,1146 @@
+[
+    {
+        "crn": "24950",
+        "id": "AFST 100 03",
+        "subject": "AFST",
+        "snumber": "100",
+        "section": 3,
+        "attributes": [
+            "C100"
+        ],
+        "title": "How Rastafari Moved World",
+        "instructor": {
+            "fullname": "Osiapem, Iyabo",
+            "surname": "Osiapem",
+            "givenname": "Iyabo",
+            "nameparts": [
+                "Osiapem",
+                "Iyabo"
+            ]
+        },
+        "hours": 4,
+        "time": {
+            "has_time": true,
+            "start": "1530",
+            "end": "1650",
+            "days": [
+                "M",
+                "W"
+            ]
+        },
+        "space": {
+            "capacity": 25,
+            "enrolled": 6,
+            "crosslisted": false,
+            "available": 19,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "24977",
+        "id": "AFST 150 01",
+        "subject": "AFST",
+        "snumber": "150",
+        "section": 1,
+        "attributes": [
+            "C150,",
+            "FRSM"
+        ],
+        "title": "Intro to Africana Studies",
+        "instructor": {
+            "fullname": "Lott, Patricia",
+            "surname": "Lott",
+            "givenname": "Patricia",
+            "nameparts": [
+                "Lott",
+                "Patricia"
+            ]
+        },
+        "hours": 4,
+        "time": {
+            "has_time": true,
+            "start": "1530",
+            "end": "1650",
+            "days": [
+                "M",
+                "W"
+            ]
+        },
+        "space": {
+            "capacity": 15,
+            "enrolled": 5,
+            "crosslisted": false,
+            "available": 10,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "24194",
+        "id": "AFST 205 03",
+        "subject": "AFST",
+        "snumber": "205",
+        "section": 3,
+        "attributes": [
+            "C200,",
+            "CSI,",
+            "GE4C,",
+            "GE5"
+        ],
+        "title": "Intro to Africana Studies",
+        "instructor": {
+            "fullname": "Vinson, Robert",
+            "surname": "Vinson",
+            "givenname": "Robert",
+            "nameparts": [
+                "Vinson",
+                "Robert"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": true,
+            "start": "1230",
+            "end": "1350",
+            "days": [
+                "T",
+                "R"
+            ]
+        },
+        "space": {
+            "capacity": 16,
+            "enrolled": 36,
+            "crosslisted": false,
+            "available": -20,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "25009",
+        "id": "AFST 210 01",
+        "subject": "AFST",
+        "snumber": "210",
+        "section": 1,
+        "attributes": [
+            "ALV,",
+            "C200"
+        ],
+        "title": "Medicine,  Arts,  Social Justice",
+        "instructor": {
+            "fullname": "Braxton, Joanne",
+            "surname": "Braxton",
+            "givenname": "Joanne",
+            "nameparts": [
+                "Braxton",
+                "Joanne"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": true,
+            "start": "1530",
+            "end": "1820",
+            "days": [
+                "W"
+            ]
+        },
+        "space": {
+            "capacity": 16,
+            "enrolled": 8,
+            "crosslisted": true,
+            "available": 2,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "25073",
+        "id": "AFST 251 01",
+        "subject": "AFST",
+        "snumber": "251",
+        "section": 1,
+        "attributes": [],
+        "title": "Caribbean Lang  &  Identity",
+        "instructor": {
+            "fullname": "Osiapem, Iyabo",
+            "surname": "Osiapem",
+            "givenname": "Iyabo",
+            "nameparts": [
+                "Osiapem",
+                "Iyabo"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": true,
+            "start": "1400",
+            "end": "1520",
+            "days": [
+                "M",
+                "W"
+            ]
+        },
+        "space": {
+            "capacity": 30,
+            "enrolled": 7,
+            "crosslisted": false,
+            "available": 9,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "22986",
+        "id": "AFST 301 01",
+        "subject": "AFST",
+        "snumber": "301",
+        "section": 1,
+        "attributes": [],
+        "title": "African American Family",
+        "instructor": {
+            "fullname": "Allen, Jody",
+            "surname": "Allen",
+            "givenname": "Jody",
+            "nameparts": [
+                "Allen",
+                "Jody"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": true,
+            "start": "0930",
+            "end": "1050",
+            "days": [
+                "T",
+                "R"
+            ]
+        },
+        "space": {
+            "capacity": 15,
+            "enrolled": 21,
+            "crosslisted": true,
+            "available": -5,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "23922",
+        "id": "AFST 301 02",
+        "subject": "AFST",
+        "snumber": "301",
+        "section": 2,
+        "attributes": [
+            "IN"
+        ],
+        "title": "Race  &  Ethnocommunications",
+        "instructor": {
+            "fullname": "Tanglao-Aguas, Francis",
+            "surname": "Tanglao-Aguas",
+            "givenname": "Francis",
+            "nameparts": [
+                "Tanglao-Aguas",
+                "Francis"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": false
+        },
+        "space": {
+            "capacity": 12,
+            "enrolled": 3,
+            "crosslisted": false,
+            "available": 9,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "22982",
+        "id": "AFST 304 01",
+        "subject": "AFST",
+        "snumber": "304",
+        "section": 1,
+        "attributes": [
+            "GE4C"
+        ],
+        "title": "African Diaspora before 1492",
+        "instructor": {
+            "fullname": "Pope, Jeremy",
+            "surname": "Pope",
+            "givenname": "Jeremy",
+            "nameparts": [
+                "Pope",
+                "Jeremy"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": true,
+            "start": "1230",
+            "end": "1350",
+            "days": [
+                "T",
+                "R"
+            ]
+        },
+        "space": {
+            "capacity": 5,
+            "enrolled": 6,
+            "crosslisted": true,
+            "available": 0,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "21832",
+        "id": "AFST 306 06",
+        "subject": "AFST",
+        "snumber": "306",
+        "section": 6,
+        "attributes": [
+            "IN"
+        ],
+        "title": "Meth Comm Based Research",
+        "instructor": {
+            "fullname": "Charity Hudley, Anne",
+            "surname": "Charity Hudley",
+            "givenname": "Anne",
+            "nameparts": [
+                "Charity Hudley",
+                "Anne"
+            ]
+        },
+        "hours": 4,
+        "time": {
+            "has_time": true,
+            "start": "1530",
+            "end": "1820",
+            "days": [
+                "T"
+            ]
+        },
+        "space": {
+            "capacity": 5,
+            "enrolled": 5,
+            "crosslisted": true,
+            "available": 10,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "23888",
+        "id": "AFST 314 01",
+        "subject": "AFST",
+        "snumber": "314",
+        "section": 1,
+        "attributes": [],
+        "title": "Labor Market  &  Entrepreneurshp",
+        "instructor": {
+            "fullname": "Shiferaw Seyoum, Admasu",
+            "surname": "Shiferaw Seyoum",
+            "givenname": "Admasu",
+            "nameparts": [
+                "Shiferaw Seyoum",
+                "Admasu"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": true,
+            "start": "1530",
+            "end": "1650",
+            "days": [
+                "T",
+                "R"
+            ]
+        },
+        "space": {
+            "capacity": 25,
+            "enrolled": 2,
+            "crosslisted": true,
+            "available": 16,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "22630",
+        "id": "AFST 316 01",
+        "subject": "AFST",
+        "snumber": "316",
+        "section": 1,
+        "attributes": [
+            "CSI,",
+            "GE4B"
+        ],
+        "title": "African History to 1800",
+        "instructor": {
+            "fullname": "Chouin, Gerard",
+            "surname": "Chouin",
+            "givenname": "Gerard",
+            "nameparts": [
+                "Chouin",
+                "Gerard"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": true,
+            "start": "1000",
+            "end": "1050",
+            "days": [
+                "M",
+                "W",
+                "F"
+            ]
+        },
+        "space": {
+            "capacity": 5,
+            "enrolled": 9,
+            "crosslisted": true,
+            "available": -4,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "24197",
+        "id": "AFST 320 01",
+        "subject": "AFST",
+        "snumber": "320",
+        "section": 1,
+        "attributes": [
+            "GE4B"
+        ],
+        "title": "African Relgns,  African Lives",
+        "instructor": {
+            "fullname": "Sanford, Mei Mei",
+            "surname": "Sanford",
+            "givenname": "Mei Mei",
+            "nameparts": [
+                "Sanford",
+                "Mei Mei"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": true,
+            "start": "1530",
+            "end": "1820",
+            "days": [
+                "W"
+            ]
+        },
+        "space": {
+            "capacity": 16,
+            "enrolled": 16,
+            "crosslisted": false,
+            "available": 0,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "23924",
+        "id": "AFST 331 01",
+        "subject": "AFST",
+        "snumber": "331",
+        "section": 1,
+        "attributes": [
+            "ALV,",
+            "GE4A,",
+            "GE5"
+        ],
+        "title": "History of Jazz",
+        "instructor": {
+            "fullname": "Harding, Kevin",
+            "surname": "Harding",
+            "givenname": "Kevin",
+            "nameparts": [
+                "Harding",
+                "Kevin"
+            ]
+        },
+        "hours": 4,
+        "time": {
+            "has_time": true,
+            "start": "1400",
+            "end": "1520",
+            "days": [
+                "T",
+                "R"
+            ]
+        },
+        "space": {
+            "capacity": 5,
+            "enrolled": 4,
+            "crosslisted": true,
+            "available": -1,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "23924",
+        "id": "AFST 331 01",
+        "subject": "AFST",
+        "snumber": "331",
+        "section": 1,
+        "attributes": [
+            "ALV,",
+            "GE4A,",
+            "GE5"
+        ],
+        "title": "History of Jazz",
+        "instructor": {
+            "fullname": "Harding, Kevin",
+            "surname": "Harding",
+            "givenname": "Kevin",
+            "nameparts": [
+                "Harding",
+                "Kevin"
+            ]
+        },
+        "hours": 4,
+        "time": {
+            "has_time": true,
+            "start": "1200",
+            "end": "1250",
+            "days": [
+                "W"
+            ]
+        },
+        "space": {
+            "capacity": 5,
+            "enrolled": 4,
+            "crosslisted": true,
+            "available": -1,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "24514",
+        "id": "AFST 340 01",
+        "subject": "AFST",
+        "snumber": "340",
+        "section": 1,
+        "attributes": [
+            "GE3,",
+            "GE4B"
+        ],
+        "title": "Peoples  &  Cultures of Africa",
+        "instructor": {
+            "fullname": "Weiss, Brad",
+            "surname": "Weiss",
+            "givenname": "Brad",
+            "nameparts": [
+                "Weiss",
+                "Brad"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": true,
+            "start": "0900",
+            "end": "0950",
+            "days": [
+                "M",
+                "W",
+                "F"
+            ]
+        },
+        "space": {
+            "capacity": 5,
+            "enrolled": 5,
+            "crosslisted": true,
+            "available": 2,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "23294",
+        "id": "AFST 348 01",
+        "subject": "AFST",
+        "snumber": "348",
+        "section": 1,
+        "attributes": [
+            "GE4C"
+        ],
+        "title": "African American Religions",
+        "instructor": {
+            "fullname": "Fitzgerald, Maureen",
+            "surname": "Fitzgerald",
+            "givenname": "Maureen",
+            "nameparts": [
+                "Fitzgerald",
+                "Maureen"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": true,
+            "start": "1230",
+            "end": "1350",
+            "days": [
+                "T",
+                "R"
+            ]
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 10,
+            "crosslisted": true,
+            "available": 6,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "24081",
+        "id": "AFST 366 01",
+        "subject": "AFST",
+        "snumber": "366",
+        "section": 1,
+        "attributes": [],
+        "title": "Modern Black American Lit",
+        "instructor": {
+            "fullname": "Pinson, Hermine",
+            "surname": "Pinson",
+            "givenname": "Hermine",
+            "nameparts": [
+                "Pinson",
+                "Hermine"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": true,
+            "start": "1000",
+            "end": "1050",
+            "days": [
+                "M",
+                "W",
+                "F"
+            ]
+        },
+        "space": {
+            "capacity": 18,
+            "enrolled": 5,
+            "crosslisted": true,
+            "available": -2,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "23735",
+        "id": "AFST 399 01",
+        "subject": "AFST",
+        "snumber": "399",
+        "section": 1,
+        "attributes": [],
+        "title": "Africana Studies Methodologies",
+        "instructor": {
+            "fullname": "Lott, Patricia",
+            "surname": "Lott",
+            "givenname": "Patricia",
+            "nameparts": [
+                "Lott",
+                "Patricia"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": true,
+            "start": "1400",
+            "end": "1520",
+            "days": [
+                "M",
+                "W"
+            ]
+        },
+        "space": {
+            "capacity": 15,
+            "enrolled": 2,
+            "crosslisted": false,
+            "available": 13,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "22524",
+        "id": "AFST 406 01",
+        "subject": "AFST",
+        "snumber": "406",
+        "section": 1,
+        "attributes": [
+            "CSI,",
+            "GE4B,",
+            "LASA"
+        ],
+        "title": "Caribbean Archaeology",
+        "instructor": {
+            "fullname": "Smith, Frederick",
+            "surname": "Smith",
+            "givenname": "Frederick",
+            "nameparts": [
+                "Smith",
+                "Frederick"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": true,
+            "start": "1100",
+            "end": "1220",
+            "days": [
+                "T",
+                "R"
+            ]
+        },
+        "space": {
+            "capacity": 4,
+            "enrolled": 5,
+            "crosslisted": true,
+            "available": 1,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "22525",
+        "id": "AFST 406 02",
+        "subject": "AFST",
+        "snumber": "406",
+        "section": 2,
+        "attributes": [
+            "IN"
+        ],
+        "title": "SRSM Jews  &  Muslims in N. Afri",
+        "instructor": {
+            "fullname": "Glasser, Jonathan",
+            "surname": "Glasser",
+            "givenname": "Jonathan",
+            "nameparts": [
+                "Glasser",
+                "Jonathan"
+            ]
+        },
+        "hours": 4,
+        "time": {
+            "has_time": true,
+            "start": "1100",
+            "end": "1220",
+            "days": [
+                "T",
+                "R"
+            ]
+        },
+        "space": {
+            "capacity": 1,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 1,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "24053",
+        "id": "AFST 406 03",
+        "subject": "AFST",
+        "snumber": "406",
+        "section": 3,
+        "attributes": [
+            "RESC"
+        ],
+        "title": "Performing Across the Diaspora",
+        "instructor": {
+            "fullname": "Padilioni, James",
+            "surname": "Padilioni",
+            "givenname": "James",
+            "nameparts": [
+                "Padilioni",
+                "James"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": true,
+            "start": "1400",
+            "end": "1520",
+            "days": [
+                "M",
+                "W"
+            ]
+        },
+        "space": {
+            "capacity": 7,
+            "enrolled": 7,
+            "crosslisted": true,
+            "available": 6,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "24198",
+        "id": "AFST 406 05",
+        "subject": "AFST",
+        "snumber": "406",
+        "section": 5,
+        "attributes": [
+            "IN"
+        ],
+        "title": "Stereotypes  &  Prejudice",
+        "instructor": {
+            "fullname": "Dickter, Cheryl",
+            "surname": "Dickter",
+            "givenname": "Cheryl",
+            "nameparts": [
+                "Dickter",
+                "Cheryl"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": true,
+            "start": "1530",
+            "end": "1650",
+            "days": [
+                "T",
+                "R"
+            ]
+        },
+        "space": {
+            "capacity": 5,
+            "enrolled": 5,
+            "crosslisted": true,
+            "available": 2,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "23359",
+        "id": "AFST 480 01",
+        "subject": "AFST",
+        "snumber": "480",
+        "section": 1,
+        "attributes": [
+            "IN"
+        ],
+        "title": "Independent Study",
+        "instructor": {
+            "fullname": "Braxton, Joanne",
+            "surname": "Braxton",
+            "givenname": "Joanne",
+            "nameparts": [
+                "Braxton",
+                "Joanne"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": false
+        },
+        "space": {
+            "capacity": 1,
+            "enrolled": 1,
+            "crosslisted": false,
+            "available": 0,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "23738",
+        "id": "AFST 480 02",
+        "subject": "AFST",
+        "snumber": "480",
+        "section": 2,
+        "attributes": [
+            "IN"
+        ],
+        "title": "Independent Study",
+        "instructor": {
+            "fullname": "Charity Hudley, Anne",
+            "surname": "Charity Hudley",
+            "givenname": "Anne",
+            "nameparts": [
+                "Charity Hudley",
+                "Anne"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_time": false
+        },
+        "space": {
+            "capacity": 1,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 1,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "23739",
+        "id": "AFST 480 03",
+        "subject": "AFST",
+        "snumber": "480",
+        "section": 3,
+        "attributes": [
+            "IN"
+        ],
+        "title": "Independent Study",
+        "instructor": {
+            "fullname": "Green, Artisia",
+            "surname": "Green",
+            "givenname": "Artisia",
+            "nameparts": [
+                "Green",
+                "Artisia"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_time": false
+        },
+        "space": {
+            "capacity": 1,
+            "enrolled": 1,
+            "crosslisted": false,
+            "available": 0,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "25240",
+        "id": "AFST 480 04",
+        "subject": "AFST",
+        "snumber": "480",
+        "section": 4,
+        "attributes": [
+            "RESC"
+        ],
+        "title": "Independent Study",
+        "instructor": {
+            "fullname": "Osiapem, Iyabo",
+            "surname": "Osiapem",
+            "givenname": "Iyabo",
+            "nameparts": [
+                "Osiapem",
+                "Iyabo"
+            ]
+        },
+        "hours": 2,
+        "time": {
+            "has_time": false
+        },
+        "space": {
+            "capacity": 1,
+            "enrolled": 1,
+            "crosslisted": false,
+            "available": 0,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "25256",
+        "id": "AFST 480 05",
+        "subject": "AFST",
+        "snumber": "480",
+        "section": 5,
+        "attributes": [
+            "RESC"
+        ],
+        "title": "Independent Study",
+        "instructor": {
+            "fullname": "Sanford, Mei Mei",
+            "surname": "Sanford",
+            "givenname": "Mei Mei",
+            "nameparts": [
+                "Sanford",
+                "Mei Mei"
+            ]
+        },
+        "hours": 2,
+        "time": {
+            "has_time": false
+        },
+        "space": {
+            "capacity": 1,
+            "enrolled": 1,
+            "crosslisted": false,
+            "available": 0,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "24104",
+        "id": "AFST 496 01",
+        "subject": "AFST",
+        "snumber": "496",
+        "section": 1,
+        "attributes": [
+            "IN,",
+            "X"
+        ],
+        "title": "Honors",
+        "instructor": {
+            "fullname": "Green, Artisia",
+            "surname": "Green",
+            "givenname": "Artisia",
+            "nameparts": [
+                "Green",
+                "Artisia"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": false
+        },
+        "space": {
+            "capacity": 1,
+            "enrolled": 1,
+            "crosslisted": false,
+            "available": 0,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "24505",
+        "id": "AFST 498 01",
+        "subject": "AFST",
+        "snumber": "498",
+        "section": 1,
+        "attributes": [
+            "IN"
+        ],
+        "title": "Internship",
+        "instructor": {
+            "fullname": "STAFF",
+            "surname": "STAFF",
+            "nameparts": [
+                "STAFF"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": false
+        },
+        "space": {
+            "capacity": 1,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 1,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "24199",
+        "id": "AFST 499 01",
+        "subject": "AFST",
+        "snumber": "499",
+        "section": 1,
+        "attributes": [
+            "IN"
+        ],
+        "title": "Sr Project in Africana Studies",
+        "instructor": {
+            "fullname": "Tanglao-Aguas, Francis",
+            "surname": "Tanglao-Aguas",
+            "givenname": "Francis",
+            "nameparts": [
+                "Tanglao-Aguas",
+                "Francis"
+            ]
+        },
+        "hours": 2,
+        "time": {
+            "has_time": false
+        },
+        "space": {
+            "capacity": 1,
+            "enrolled": 5,
+            "crosslisted": false,
+            "available": -4,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "25079",
+        "id": "AFST 499 02",
+        "subject": "AFST",
+        "snumber": "499",
+        "section": 2,
+        "attributes": [],
+        "title": "Sr Project in Africana Studies",
+        "instructor": {
+            "fullname": "Pinson, Hermine",
+            "surname": "Pinson",
+            "givenname": "Hermine",
+            "nameparts": [
+                "Pinson",
+                "Hermine"
+            ]
+        },
+        "hours": 2,
+        "time": {
+            "has_time": false
+        },
+        "space": {
+            "capacity": 1,
+            "enrolled": 1,
+            "crosslisted": false,
+            "available": 0,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "25089",
+        "id": "AFST 499 03",
+        "subject": "AFST",
+        "snumber": "499",
+        "section": 3,
+        "attributes": [],
+        "title": "Sr Project in Africana Studies",
+        "instructor": {
+            "fullname": "Green, Artisia",
+            "surname": "Green",
+            "givenname": "Artisia",
+            "nameparts": [
+                "Green",
+                "Artisia"
+            ]
+        },
+        "hours": 2,
+        "time": {
+            "has_time": false
+        },
+        "space": {
+            "capacity": 1,
+            "enrolled": 1,
+            "crosslisted": false,
+            "available": 0,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "25269",
+        "id": "AFST 499 04",
+        "subject": "AFST",
+        "snumber": "499",
+        "section": 4,
+        "attributes": [],
+        "title": "Sr Project in Africana Studies",
+        "instructor": {
+            "fullname": "Shiferaw Seyoum, Admasu",
+            "surname": "Shiferaw Seyoum",
+            "givenname": "Admasu",
+            "nameparts": [
+                "Shiferaw Seyoum",
+                "Admasu"
+            ]
+        },
+        "hours": 2,
+        "time": {
+            "has_time": false
+        },
+        "space": {
+            "capacity": 5,
+            "enrolled": 1,
+            "crosslisted": false,
+            "available": 4,
+            "status_ok": true
+        }
+    }
+]

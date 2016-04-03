@@ -5,6 +5,8 @@ var cheerio = require('cheerio');
 var course = require('./course.js');
 var app     = express();
 
+var outfile = "scraped_course_stats.json"
+
 app.get('/scrape', function(req, res){
 
     url = 'https://courselist.wm.edu/courselist/courseinfo/searchresults';
@@ -47,17 +49,25 @@ app.get('/scrape', function(req, res){
                 //return $(this).html();
             });
 
-            console.log(data);
+            //console.log(data);
 
             var parsed = [];
 
             for(var i = 0; i < data.length; i++){
                 console.log("Confirmed course: " + data[i]["COURSE ID"]);
                 parsed.push(course.parse(data[i]));
-                console.log(parsed[i]);
+                //console.log(parsed[i]);
             }
 
-            res.send("Let's go. We're getting somewhere, eventually. <hr>"+JSON.stringify(parsed));
+            fs.writeFile(outfile, JSON.stringify(parsed, null, 4), function(err){
+                if(err){
+                    console.log("failed to write data to file. " + err);
+                }
+                else{
+                    console.log("successfully wrote to file " + outfile);
+                }
+            });
+            res.send("Let's go. We're getting somewhere, eventually. <hr>"+JSON.stringify(parsed, null, 4));
         }
         else{
             res.send("Something went wrong. "  + error);

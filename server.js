@@ -2,14 +2,12 @@ var express = require('express');
 var fs = require('fs');
 var request = require('request');
 var cheerio = require('cheerio');
+var course = require('./course.js');
 var app     = express();
 
 app.get('/scrape', function(req, res){
 
     url = 'https://courselist.wm.edu/courselist/courseinfo/searchresults';
-    // The structure of our request call
-    // The first parameter is our URL
-    // The callback function takes 3 parameters, an error, response status code and the html
 
     var term = 201620;
 
@@ -24,14 +22,14 @@ app.get('/scrape', function(req, res){
         search:"Search"
     };
 
-    var coursekeys = ["crn", "courseID", "title", "instructor", "crdtHrs", "meetDays", "meetTimes", "projEnr", "currEnr", "seatsAvail", "status"];
+    //var coursekeys = ["crn", "courseID", "title", "instructor", "crdtHrs", "meetDays", "meetTimes", "projEnr", "currEnr", "seatsAvail", "status"];
 
     request.post({url:url, form:form}, function(error, response, html){
         if(!error){
             var $ = cheerio.load(html);
             var table = $("#results table"); // gets all the rows!
             
-            console.log(table.html());
+            //console.log(table.html());
 
             var columns = table.find("thead th").map(function(){
                 return $(this).text().trim();
@@ -51,15 +49,23 @@ app.get('/scrape', function(req, res){
 
             console.log(data);
 
-            res.send("Let's go. We're getting somewhere, eventually. <hr>"+data);
+            var parsed = [];
+
+            for(var i = 0; i < data.length; i++){
+                console.log("Confirmed course: " + data[i]["COURSE ID"]);
+                parsed.push(course.parse(data[i]));
+                console.log(parsed[i]);
+            }
+
+            res.send("Let's go. We're getting somewhere, eventually. <hr>"+JSON.stringify(parsed));
         }
         else{
-            res.send("Something went wrong.");
+            res.send("Something went wrong. "  + error);
         }
     });
     console.log("Made a request to somewhere.");
 })
 
 app.listen('8081')
-console.log('Magic happens on port 8081');
+console.log('scrape active on port 8081');
 exports = module.exports = app;

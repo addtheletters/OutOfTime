@@ -53,6 +53,19 @@ var course = {};
 		return obj;
 	};
 
+	lib.getMinutes = function(rawtime){
+		// arg is a time in the format HHMM
+		var bhrs = parseInt(rawtime.slice(0, -2));
+		var bmin = parseInt(rawtime.slice(-2));
+		return bhrs * 60 + bmin;
+	};
+
+	lib.adjustedHours = function(rt1, rt2){
+		var minutes = Math.abs(lib.getMinutes(rt1) - lib.getMinutes(rt2));
+		return (minutes + 10) / 60; // adjusts into a multiple of 0.5 number of 30 minute 'time slots'
+	};								// though a class always ends 10 minutes before its final time slot ends 
+	
+
 	lib.parseTime = function(rawtimes, obj){
 		obj = obj || {};
 		if(!rawtimes.raw_days && !rawtimes.raw_timeofday){
@@ -65,6 +78,7 @@ var course = {};
 			has_time:true,
 			start:todtkns[0],
 			end:todtkns[1],
+			duration:lib.adjustedHours(todtkns[1], todtkns[0]),
 			days:daytkns,
 		};
 		return obj;

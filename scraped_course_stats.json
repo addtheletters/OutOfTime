@@ -21,6 +21,7 @@
             "has_time": true,
             "start": "1300",
             "end": "1350",
+            "duration": 1,
             "days": [
                 "M",
                 "W"
@@ -56,6 +57,7 @@
             "has_time": true,
             "start": "0800",
             "end": "0950",
+            "duration": 2,
             "days": [
                 "T"
             ]
@@ -90,6 +92,7 @@
             "has_time": true,
             "start": "1000",
             "end": "1150",
+            "duration": 2,
             "days": [
                 "T"
             ]
@@ -124,6 +127,7 @@
             "has_time": true,
             "start": "1200",
             "end": "1350",
+            "duration": 2,
             "days": [
                 "T"
             ]
@@ -158,6 +162,7 @@
             "has_time": true,
             "start": "0800",
             "end": "0950",
+            "duration": 2,
             "days": [
                 "W"
             ]
@@ -192,6 +197,7 @@
             "has_time": true,
             "start": "1530",
             "end": "1720",
+            "duration": 2,
             "days": [
                 "W"
             ]
@@ -226,6 +232,7 @@
             "has_time": true,
             "start": "1200",
             "end": "1350",
+            "duration": 2,
             "days": [
                 "R"
             ]
@@ -260,6 +267,7 @@
             "has_time": true,
             "start": "1300",
             "end": "1450",
+            "duration": 2,
             "days": [
                 "F"
             ]
@@ -294,6 +302,7 @@
             "has_time": true,
             "start": "1230",
             "end": "1350",
+            "duration": 1.5,
             "days": [
                 "T",
                 "R"
@@ -329,6 +338,7 @@
             "has_time": true,
             "start": "1530",
             "end": "1650",
+            "duration": 1.5,
             "days": [
                 "T",
                 "R"
@@ -364,6 +374,7 @@
             "has_time": true,
             "start": "0800",
             "end": "0950",
+            "duration": 2,
             "days": [
                 "W"
             ]
@@ -398,6 +409,7 @@
             "has_time": true,
             "start": "1200",
             "end": "1350",
+            "duration": 2,
             "days": [
                 "W"
             ]
@@ -432,6 +444,7 @@
             "has_time": true,
             "start": "0800",
             "end": "0950",
+            "duration": 2,
             "days": [
                 "R"
             ]
@@ -466,6 +479,7 @@
             "has_time": true,
             "start": "1000",
             "end": "1150",
+            "duration": 2,
             "days": [
                 "R"
             ]
@@ -500,6 +514,7 @@
             "has_time": true,
             "start": "1200",
             "end": "1350",
+            "duration": 2,
             "days": [
                 "R"
             ]
@@ -534,6 +549,7 @@
             "has_time": true,
             "start": "0900",
             "end": "1050",
+            "duration": 2,
             "days": [
                 "F"
             ]
@@ -568,6 +584,7 @@
             "has_time": true,
             "start": "1100",
             "end": "1250",
+            "duration": 2,
             "days": [
                 "F"
             ]
@@ -602,6 +619,7 @@
             "has_time": true,
             "start": "1300",
             "end": "1450",
+            "duration": 2,
             "days": [
                 "F"
             ]
@@ -636,6 +654,7 @@
             "has_time": true,
             "start": "1400",
             "end": "1520",
+            "duration": 1.5,
             "days": [
                 "M",
                 "W"
@@ -671,6 +690,7 @@
             "has_time": true,
             "start": "1100",
             "end": "1220",
+            "duration": 1.5,
             "days": [
                 "T",
                 "R"
@@ -708,6 +728,7 @@
             "has_time": true,
             "start": "0800",
             "end": "0920",
+            "duration": 1.5,
             "days": [
                 "T",
                 "R"
@@ -743,6 +764,7 @@
             "has_time": true,
             "start": "1000",
             "end": "1050",
+            "duration": 1,
             "days": [
                 "M",
                 "W",
@@ -779,6 +801,7 @@
             "has_time": true,
             "start": "1400",
             "end": "1520",
+            "duration": 1.5,
             "days": [
                 "T",
                 "R"
@@ -814,6 +837,7 @@
             "has_time": true,
             "start": "0800",
             "end": "0920",
+            "duration": 1.5,
             "days": [
                 "T",
                 "R"
@@ -851,6 +875,7 @@
             "has_time": true,
             "start": "1100",
             "end": "1220",
+            "duration": 1.5,
             "days": [
                 "T",
                 "R"
@@ -886,6 +911,7 @@
             "has_time": true,
             "start": "1530",
             "end": "1650",
+            "duration": 1.5,
             "days": [
                 "T",
                 "R"
@@ -921,6 +947,7 @@
             "has_time": true,
             "start": "1300",
             "end": "1350",
+            "duration": 1,
             "days": [
                 "M",
                 "W",
@@ -959,6 +986,7 @@
             "has_time": true,
             "start": "0900",
             "end": "0950",
+            "duration": 1,
             "days": [
                 "M",
                 "W",
@@ -995,6 +1023,7 @@
             "has_time": true,
             "start": "1000",
             "end": "1050",
+            "duration": 1,
             "days": [
                 "M",
                 "W",
@@ -1033,6 +1062,7 @@
             "has_time": true,
             "start": "0930",
             "end": "1050",
+            "duration": 1.5,
             "days": [
                 "T",
                 "R"
@@ -1068,6 +1098,7 @@
             "has_time": true,
             "start": "1400",
             "end": "1520",
+            "duration": 1.5,
             "days": [
                 "M",
                 "W"
@@ -1103,6 +1134,7 @@
             "has_time": true,
             "start": "1400",
             "end": "1520",
+            "duration": 1.5,
             "days": [
                 "T",
                 "R"
@@ -1138,6 +1170,7 @@
             "has_time": true,
             "start": "0800",
             "end": "0920",
+            "duration": 1.5,
             "days": [
                 "T",
                 "R"
@@ -1204,6 +1237,7 @@
             "has_time": true,
             "start": "1230",
             "end": "1350",
+            "duration": 1.5,
             "days": [
                 "T",
                 "R"
@@ -1239,6 +1273,7 @@
             "has_time": true,
             "start": "1530",
             "end": "1650",
+            "duration": 1.5,
             "days": [
                 "M",
                 "W"
@@ -1274,6 +1309,7 @@
             "has_time": true,
             "start": "1100",
             "end": "1150",
+            "duration": 1,
             "days": [
                 "M",
                 "W",
@@ -1310,6 +1346,7 @@
             "has_time": true,
             "start": "1100",
             "end": "1220",
+            "duration": 1.5,
             "days": [
                 "T",
                 "R"
@@ -1347,6 +1384,7 @@
             "has_time": true,
             "start": "0800",
             "end": "0920",
+            "duration": 1.5,
             "days": [
                 "T",
                 "R"
@@ -1384,6 +1422,7 @@
             "has_time": true,
             "start": "1100",
             "end": "1220",
+            "duration": 1.5,
             "days": [
                 "T",
                 "R"
@@ -1421,6 +1460,7 @@
             "has_time": true,
             "start": "1530",
             "end": "1650",
+            "duration": 1.5,
             "days": [
                 "T",
                 "R"
@@ -1458,6 +1498,7 @@
             "has_time": true,
             "start": "0930",
             "end": "1050",
+            "duration": 1.5,
             "days": [
                 "T",
                 "R"
@@ -1495,6 +1536,7 @@
             "has_time": true,
             "start": "0800",
             "end": "0920",
+            "duration": 1.5,
             "days": [
                 "T",
                 "R"
@@ -1532,6 +1574,7 @@
             "has_time": true,
             "start": "1530",
             "end": "1650",
+            "duration": 1.5,
             "days": [
                 "M",
                 "W"
@@ -1569,6 +1612,7 @@
             "has_time": true,
             "start": "1100",
             "end": "1150",
+            "duration": 1,
             "days": [
                 "M",
                 "W",
@@ -1607,6 +1651,7 @@
             "has_time": true,
             "start": "1100",
             "end": "1220",
+            "duration": 1.5,
             "days": [
                 "T",
                 "R"
@@ -1642,6 +1687,7 @@
             "has_time": true,
             "start": "1100",
             "end": "1150",
+            "duration": 1,
             "days": [
                 "M",
                 "W",
@@ -1678,6 +1724,7 @@
             "has_time": true,
             "start": "1400",
             "end": "1520",
+            "duration": 1.5,
             "days": [
                 "M",
                 "W"
@@ -1713,6 +1760,7 @@
             "has_time": true,
             "start": "1230",
             "end": "1350",
+            "duration": 1.5,
             "days": [
                 "T",
                 "R"
@@ -1748,6 +1796,7 @@
             "has_time": true,
             "start": "0930",
             "end": "1050",
+            "duration": 1.5,
             "days": [
                 "T",
                 "R"
@@ -1783,6 +1832,7 @@
             "has_time": true,
             "start": "1100",
             "end": "1150",
+            "duration": 1,
             "days": [
                 "M",
                 "W",
@@ -1819,6 +1869,7 @@
             "has_time": true,
             "start": "0800",
             "end": "0850",
+            "duration": 1,
             "days": [
                 "M",
                 "F"
@@ -1854,6 +1905,7 @@
             "has_time": true,
             "start": "0800",
             "end": "0850",
+            "duration": 1,
             "days": [
                 "M",
                 "F"
@@ -1891,6 +1943,7 @@
             "has_time": true,
             "start": "1530",
             "end": "1650",
+            "duration": 1.5,
             "days": [
                 "T",
                 "R"
@@ -1926,6 +1979,7 @@
             "has_time": true,
             "start": "1000",
             "end": "1050",
+            "duration": 1,
             "days": [
                 "M",
                 "W",
@@ -1962,6 +2016,7 @@
             "has_time": true,
             "start": "1500",
             "end": "1650",
+            "duration": 2,
             "days": [
                 "F"
             ]
@@ -1996,6 +2051,7 @@
             "has_time": true,
             "start": "1500",
             "end": "1650",
+            "duration": 2,
             "days": [
                 "F"
             ]
@@ -2030,6 +2086,7 @@
             "has_time": true,
             "start": "1400",
             "end": "1520",
+            "duration": 1.5,
             "days": [
                 "T",
                 "R"
@@ -2065,6 +2122,7 @@
             "has_time": true,
             "start": "0930",
             "end": "1050",
+            "duration": 1.5,
             "days": [
                 "T",
                 "R"
@@ -2100,6 +2158,7 @@
             "has_time": true,
             "start": "1530",
             "end": "1650",
+            "duration": 1.5,
             "days": [
                 "M",
                 "W"
@@ -2137,6 +2196,7 @@
             "has_time": true,
             "start": "1800",
             "end": "1850",
+            "duration": 1,
             "days": [
                 "M",
                 "W",
@@ -2175,6 +2235,7 @@
             "has_time": true,
             "start": "1800",
             "end": "1850",
+            "duration": 1,
             "days": [
                 "M",
                 "W",
@@ -2213,6 +2274,7 @@
             "has_time": true,
             "start": "1900",
             "end": "1950",
+            "duration": 1,
             "days": [
                 "M",
                 "W",
@@ -2252,6 +2314,7 @@
             "has_time": true,
             "start": "1800",
             "end": "1850",
+            "duration": 1,
             "days": [
                 "M",
                 "W",
@@ -2288,6 +2351,7 @@
             "has_time": true,
             "start": "1800",
             "end": "1850",
+            "duration": 1,
             "days": [
                 "M",
                 "W",
@@ -2324,6 +2388,7 @@
             "has_time": true,
             "start": "1800",
             "end": "1850",
+            "duration": 1,
             "days": [
                 "M",
                 "W",
@@ -2362,6 +2427,7 @@
             "has_time": true,
             "start": "1700",
             "end": "1750",
+            "duration": 1,
             "days": [
                 "M",
                 "W",
@@ -2400,6 +2466,7 @@
             "has_time": true,
             "start": "1700",
             "end": "1750",
+            "duration": 1,
             "days": [
                 "M",
                 "W",
@@ -2438,6 +2505,7 @@
             "has_time": true,
             "start": "1700",
             "end": "1750",
+            "duration": 1,
             "days": [
                 "M",
                 "W"
@@ -2475,6 +2543,7 @@
             "has_time": true,
             "start": "1800",
             "end": "1850",
+            "duration": 1,
             "days": [
                 "M",
                 "W"
@@ -2512,6 +2581,7 @@
             "has_time": true,
             "start": "1700",
             "end": "1750",
+            "duration": 1,
             "days": [
                 "M",
                 "W",
@@ -2550,6 +2620,7 @@
             "has_time": true,
             "start": "1700",
             "end": "1750",
+            "duration": 1,
             "days": [
                 "M",
                 "T",
@@ -2588,6 +2659,7 @@
             "has_time": true,
             "start": "1700",
             "end": "1750",
+            "duration": 1,
             "days": [
                 "M",
                 "W"
@@ -2625,6 +2697,7 @@
             "has_time": true,
             "start": "1700",
             "end": "1750",
+            "duration": 1,
             "days": [
                 "M",
                 "W"
@@ -2660,6 +2733,7 @@
             "has_time": true,
             "start": "1400",
             "end": "1520",
+            "duration": 1.5,
             "days": [
                 "T",
                 "R"
@@ -2695,6 +2769,7 @@
             "has_time": true,
             "start": "1530",
             "end": "1650",
+            "duration": 1.5,
             "days": [
                 "T",
                 "R"
@@ -2733,6 +2808,7 @@
             "has_time": true,
             "start": "1900",
             "end": "1950",
+            "duration": 1,
             "days": [
                 "M",
                 "W",
@@ -2772,6 +2848,7 @@
             "has_time": true,
             "start": "1900",
             "end": "1950",
+            "duration": 1,
             "days": [
                 "M",
                 "W",
@@ -2811,6 +2888,7 @@
             "has_time": true,
             "start": "0800",
             "end": "0850",
+            "duration": 1,
             "days": [
                 "W"
             ]
@@ -2847,6 +2925,7 @@
             "has_time": true,
             "start": "0800",
             "end": "0850",
+            "duration": 1,
             "days": [
                 "W"
             ]
@@ -2883,6 +2962,7 @@
             "has_time": true,
             "start": "0800",
             "end": "0850",
+            "duration": 1,
             "days": [
                 "W"
             ]
@@ -2919,6 +2999,7 @@
             "has_time": true,
             "start": "0800",
             "end": "0850",
+            "duration": 1,
             "days": [
                 "W"
             ]
@@ -2955,6 +3036,7 @@
             "has_time": true,
             "start": "0800",
             "end": "0850",
+            "duration": 1,
             "days": [
                 "W"
             ]
@@ -2991,6 +3073,7 @@
             "has_time": true,
             "start": "0800",
             "end": "0850",
+            "duration": 1,
             "days": [
                 "W"
             ]
@@ -3027,6 +3110,7 @@
             "has_time": true,
             "start": "0800",
             "end": "0850",
+            "duration": 1,
             "days": [
                 "W"
             ]
@@ -3063,6 +3147,7 @@
             "has_time": true,
             "start": "0800",
             "end": "0850",
+            "duration": 1,
             "days": [
                 "W"
             ]
@@ -3099,6 +3184,7 @@
             "has_time": true,
             "start": "0800",
             "end": "0850",
+            "duration": 1,
             "days": [
                 "W"
             ]
@@ -3135,6 +3221,7 @@
             "has_time": true,
             "start": "0800",
             "end": "0850",
+            "duration": 1,
             "days": [
                 "W"
             ]

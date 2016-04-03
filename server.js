@@ -5,7 +5,27 @@ var cheerio = require('cheerio');
 var course = require('./course.js');
 var app     = express();
 
-var outfile = "scraped_course_stats.json"
+var db = require('mongoskin').db('mongodb://localhost:27017/courses');
+var outfile = "scraped_course_stats.json";
+
+function saveToDB( parsed ){
+    console.log("trying to save " + JSON.stringify(parsed));
+    db.collection('test1').findOne({crn:parsed.crn}, function(err, result){
+        if(err){console.log("Error finding existing course CRN." + err)};
+        if(result){
+            console.log("found " + JSON.stringify( result ) );
+            parsed._id = result._id;
+        }
+        db.collection('test1').save(parsed, function(err, result){
+            if(err){
+                console.log("Failed to save to db. " + err);
+            }
+            if(result){
+                console.log("Saved to db.");
+            }
+        });
+    });
+}
 
 app.get('/scrape', function(req, res){
 
@@ -15,7 +35,7 @@ app.get('/scrape', function(req, res){
 
     var form = {
         term_code:term,
-        term_subj:"AFST",
+        term_subj:"CSCI",
         attr:0,
         attr2:0,
         levl:0,
@@ -56,8 +76,11 @@ app.get('/scrape', function(req, res){
             for(var i = 0; i < data.length; i++){
                 console.log("Confirmed course: " + data[i]["COURSE ID"]);
                 parsed.push(course.parse(data[i]));
+                saveToDB(parsed[i]);
                 //console.log(parsed[i]);
             }
+
+            console.log("Done parsing and saving to db.");
 
             fs.writeFile(outfile, JSON.stringify(parsed, null, 4), function(err){
                 if(err){
@@ -74,7 +97,7 @@ app.get('/scrape', function(req, res){
         }
     });
     console.log("Made a request to somewhere.");
-})
+});
 
 app.listen('8081')
 console.log('scrape active on port 8081');

@@ -1,11 +1,11 @@
 var express = require('express');
-var fs = require('fs');
+var fs      = require('fs');
 var request = require('request');
 var cheerio = require('cheerio');
-var course = require('./course.js');
+var course  = require('./course.js');
 var app     = express();
 
-var db = require('mongoskin').db('mongodb://localhost:27017/courses');
+var db      = require('mongoskin').db('mongodb://localhost:27017/courses');
 var outfile = "scraped_course_stats.json";
 
 function saveToDB( parsed ){
@@ -91,7 +91,7 @@ app.get('/scrape', function(req, res){
                     console.log("successfully wrote to file " + outfile);
                 }
             });
-            res.send("Let's go. We're getting somewhere, eventually. <hr>"+JSON.stringify(parsed, null, 4));
+            res.send("Let's go. We're getting somewhere, eventually. <hr><textarea rows='40' cols='100'>"+JSON.stringify(parsed, null, 4)+"</textarea>");
         }
         else{
             res.send("Something went wrong. "  + error);

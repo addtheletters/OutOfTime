@@ -25,8 +25,7 @@ var course = {};
 	};
 
 	lib.parseID = function(id, obj){
-		var tkns = id.split(/\s+/);
-		console.log(tkns);
+		var tkns = id.split(/\s+/).filter((tkn)=>(tkn.length > 0));
 		obj = obj || {};
 		obj.id = id;
 		obj.subject = tkns[0];
@@ -36,10 +35,9 @@ var course = {};
 	};
 
 	lib.parseAttributes = function(attrs, obj){
-		var tkns = attrs.split(/\s+/);
-		var valids = tkns.filter((tkn)=>(tkn.length > 0));
+		var tkns = attrs.split(/\s+/).filter((tkn)=>(tkn.length > 0));
 		obj = obj || {};
-		obj.attributes = valids;
+		obj.attributes = tkns;
 		return obj;
 	};
 
@@ -73,7 +71,19 @@ var course = {};
 	};
 
 	lib.parseSpace = function(rawspace, obj){
-		console.log("unimplemented");
+		obj = obj || {};
+		var specialAvailable = rawspace.raw_avail.search(/\*/);
+		var sliced = rawspace.raw_avail;
+		if(specialAvailable >= 0){
+			sliced = sliced.replace(/\*/, "");
+		}
+		obj.space = {
+			capacity: parseInt(rawspace.raw_seats),
+			enrolled: parseInt(rawspace.raw_enrolled),
+			crosslisted: (specialAvailable >= 0),
+			available: parseInt(sliced),
+			status_ok: rawspace.raw_status == "OPEN" ? true: false,
+		};
 		return obj;
 	};
 

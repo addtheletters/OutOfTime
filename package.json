@@ -1,0 +1,24 @@
+{
+  "name": "out-of-time",
+  "version": "1.0.0",
+  "description": "We're out of time.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/addtheletters/OutOfTime.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/addtheletters/OutOfTime/issues"
+  },
+  "homepage": "https://github.com/addtheletters/OutOfTime#readme",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "express": "^4.13.4",
+    "request": "^2.69.0"
+  }
+}

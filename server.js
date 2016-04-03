@@ -9,11 +9,11 @@ var db = require('mongoskin').db('mongodb://localhost:27017/courses');
 var outfile = "scraped_course_stats.json";
 
 function saveToDB( parsed ){
-    console.log("trying to save " + JSON.stringify(parsed));
+    //console.log("trying to save " + JSON.stringify(parsed));
     db.collection('test1').findOne({crn:parsed.crn}, function(err, result){
-        if(err){console.log("Error finding existing course CRN." + err)};
+        if(err){console.log("Error finding existing course CRN. " + err)};
         if(result){
-            console.log("found " + JSON.stringify( result ) );
+            //console.log("found " + JSON.stringify( result ) );
             parsed._id = result._id;
         }
         db.collection('test1').save(parsed, function(err, result){
@@ -21,7 +21,7 @@ function saveToDB( parsed ){
                 console.log("Failed to save to db. " + err);
             }
             if(result){
-                console.log("Saved to db.");
+                //console.log("Saved to db.");
             }
         });
     });

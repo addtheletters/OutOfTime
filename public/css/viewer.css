@@ -1,0 +1,61 @@
+body {
+    font-family: monospace;
+    font-size: 25px;
+}
+.centered {
+    position: relative;
+    max-width: 1400px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+.faded{
+    transition: visibility 0s 2s, opacity 5s ease;
+    opacity:0;
+    visibility: hidden;
+}
+.enabled{
+    background-color: rgba(0, 210, 0, .6);
+}
+.disabled{
+    background-color: rgba(210, 0, 0, .6);
+}
+.aside{
+    margin-left: 20px;
+    margin-right:20px;
+}
+.pbutton{
+    box-shadow: 3px 5px 10px 1px gray;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.pbutton:hover{
+    background-color: black;
+    color: white;
+}
+label{
+    transition: 1s ease;
+}
+input{
+    font-family: monospace;
+    font-size: 16px;
+    min-width: 500px;
+}
+#search{
+    
+}
+#loaded{
+    position: fixed;
+    z-index: 100;
+    font-size:20px;
+    color: white;
+    transition: 1s ease;
+}
+#version{
+    float: right;
+    position: relative;
+    font-size: 15px;
+}

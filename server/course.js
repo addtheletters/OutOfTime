@@ -35,7 +35,7 @@ var course = {};
 	};
 
 	lib.parseAttributes = function(attrs, obj){
-		var tkns = attrs.split(/\s+/).filter((tkn)=>(tkn.length > 0));
+		var tkns = attrs.split(/,?\s+/).filter((tkn)=>(tkn.length > 0));
 		obj = obj || {};
 		obj.attributes = tkns;
 		return obj;

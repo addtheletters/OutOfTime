@@ -11,6 +11,7 @@ app.use(bodyparser.json());
 var db      = require('mongoskin').db('mongodb://localhost:27017/courses');
 var colle   = "test1";
 var outfile = "scraped_course_stats.json";
+var port    = "8081";
 
 var static = function(pth){ 
     return function(req, res){
@@ -33,16 +34,16 @@ app.get('/view', function(req, res){
 
 // respond to searches from viewer
 app.post('/search/all', function(req, res){
-    console.log("req.body", req.body);
+    //console.log("req.body", req.body);
     console.log("searching for ", req.body.searchterms);
     var terms = req.body.searchterms.split(/\s+/).filter((tkn)=>(tkn.length > 0));
     var possible = [];
     var howmany = terms.length;
-    console.log("howmany", howmany);
+    //console.log("howmany", howmany);
     for(var i = 0; i < terms.length; i++){
-        console.log("term is", terms[i]);
+        //console.log("term is", terms[i]);
         db.collection(colle).find({$text:{$search:terms[i]}}, function(err, result){
-            console.log("howmany is " + howmany);
+            //console.log("howmany is " + howmany);
             if(err){
                 console.log("error in search ", err);
             }
@@ -53,13 +54,13 @@ app.post('/search/all', function(req, res){
                     if(err) console.log("error in toArray", err);
                     if(result) console.log("arraylen is " +  result.length);
                     for(var k = 0; k < result.length; k++){
-                        console.log(result[k]);
+                        //console.log(result[k]);
                         possible.push(result[k]);
-                        console.log("possible contains ", possible.length)
+                        //console.log("possible contains ", possible.length)
                     }
                     if(howmany == 0){
-                        console.log("sending it");
-                        console.log(possible);
+                        console.log("sending search results");
+                        //console.log(possible);
                         res.status(200).send({ok:true, courses:possible});                        
                     }
                 });
@@ -79,12 +80,12 @@ app.post('/search/all', function(req, res){
 });
 
 // web scraper
-app.get('/scrape', function(req, res){
+app.get('/scrape/:subj', function(req, res){
 
     url = 'https://courselist.wm.edu/courselist/courseinfo/searchresults';
 
     var term = 201620;
-    var subject = "CSCI";
+    var subject = req.params.subj || "CSCI";
 
     var form = {
         term_code:term,
@@ -143,12 +144,13 @@ app.get('/scrape', function(req, res){
                     "instructor.fullname":"text",
                 }, {name:"CourseTextIndex"}, function(err){
                     if(err){
-                        console.log("failed to create index, ", err);
+                        console.log("Failed to create index, ", err);
+                    }
+                    else{
+                        console.log("Index completed.");
                     }
                 }
             );
-
-            console.log("Index completed / failed.");
 
             fs.writeFile(outfile, JSON.stringify(parsed, null, 4), function(err){
                 if(err){
@@ -186,6 +188,6 @@ function saveToDB( parsed ){
     });
 }
 
-app.listen('8081')
-console.log('scrape active on port 8081');
+app.listen(port)
+console.log('scrape active on port ' + port);
 exports = module.exports = app;

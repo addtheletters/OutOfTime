@@ -3,6 +3,14 @@
 <head>
 	<title>Time is racing towards us.</title>
 	<link rel="stylesheet" type="text/css" href="css/viewer.css">
+	<script type="text/javascript" src="js/lib/handlebars-v4.0.5.js"></script>
+	<script id="result-template" type="text/x-handlebars-template">
+		{{#each courses}}
+		<div id="result-{{crn}}", class="course-li">
+		<span>{{id}}</span> <span>{{title}}</span> <span>{{instructor.fullname}}</span>
+		</div>
+		{{/each}}
+	</script>
 	<script type="text/javascript" src="js/viewer.js"></script>
 </head>
 <body class='centered'>
@@ -10,12 +18,10 @@
 	<hr>
 	<div class='centered buffer'>
 		<input class='centered aside' id="search" type="text" placeholder="What course are you looking for?"></input>
-		<label id="search_button" class='aside pbutton'> ~ ? ~ </label>
+		<label id="search-button" class='aside pbutton'> ~ ? ~ </label>
 	</div>
 	<hr>
 	<div id='results' class="centered">
-
-
 	</div>
 </body>
 </html>

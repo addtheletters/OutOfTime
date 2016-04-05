@@ -1,21 +1,21 @@
 [
     {
-        "crn": "24950",
-        "id": "AFST 100 03",
-        "subject": "AFST",
+        "crn": "24454",
+        "id": "PHIL 100 01",
+        "subject": "PHIL",
         "snumber": "100",
-        "section": 3,
+        "section": 1,
         "attributes": [
             "C100"
         ],
-        "title": "How Rastafari Moved World",
+        "title": "Knowledge and Reality",
         "instructor": {
-            "fullname": "Osiapem, Iyabo",
-            "surname": "Osiapem",
-            "givenname": "Iyabo",
+            "fullname": "Gert, Joshua",
+            "surname": "Gert",
+            "givenname": "Joshua",
             "nameparts": [
-                "Osiapem",
-                "Iyabo"
+                "Gert",
+                "Joshua"
             ]
         },
         "hours": 4,
@@ -25,80 +25,38 @@
             "end": "1650",
             "duration": 1.5,
             "days": [
-                "M",
-                "W"
+                "T",
+                "R"
             ]
         },
         "space": {
-            "capacity": 25,
-            "enrolled": 6,
+            "capacity": 35,
+            "enrolled": 35,
             "crosslisted": false,
-            "available": 19,
-            "status_ok": true
+            "available": 0,
+            "status_ok": false
         }
     },
     {
-        "crn": "24977",
-        "id": "AFST 150 01",
-        "subject": "AFST",
-        "snumber": "150",
-        "section": 1,
+        "crn": "24455",
+        "id": "PHIL 100 02",
+        "subject": "PHIL",
+        "snumber": "100",
+        "section": 2,
         "attributes": [
-            "C150",
-            "FRSM"
+            "C100"
         ],
-        "title": "Intro to Africana Studies",
+        "title": "Freedom",
         "instructor": {
-            "fullname": "Lott, Patricia",
-            "surname": "Lott",
-            "givenname": "Patricia",
+            "fullname": "Goldwater, Jonah",
+            "surname": "Goldwater",
+            "givenname": "Jonah",
             "nameparts": [
-                "Lott",
-                "Patricia"
+                "Goldwater",
+                "Jonah"
             ]
         },
         "hours": 4,
-        "time": {
-            "has_time": true,
-            "start": "1530",
-            "end": "1650",
-            "duration": 1.5,
-            "days": [
-                "M",
-                "W"
-            ]
-        },
-        "space": {
-            "capacity": 15,
-            "enrolled": 5,
-            "crosslisted": false,
-            "available": 10,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "24194",
-        "id": "AFST 205 03",
-        "subject": "AFST",
-        "snumber": "205",
-        "section": 3,
-        "attributes": [
-            "C200",
-            "CSI",
-            "GE4C",
-            "GE5"
-        ],
-        "title": "Intro to Africana Studies",
-        "instructor": {
-            "fullname": "Vinson, Robert",
-            "surname": "Vinson",
-            "givenname": "Robert",
-            "nameparts": [
-                "Vinson",
-                "Robert"
-            ]
-        },
-        "hours": 3,
         "time": {
             "has_time": true,
             "start": "1230",
@@ -110,73 +68,75 @@
             ]
         },
         "space": {
-            "capacity": 16,
+            "capacity": 35,
             "enrolled": 36,
             "crosslisted": false,
-            "available": -20,
+            "available": -1,
             "status_ok": false
         }
     },
     {
-        "crn": "25009",
-        "id": "AFST 210 01",
-        "subject": "AFST",
-        "snumber": "210",
-        "section": 1,
+        "crn": "24456",
+        "id": "PHIL 100 03",
+        "subject": "PHIL",
+        "snumber": "100",
+        "section": 3,
         "attributes": [
-            "ALV",
-            "C200"
+            "C100"
         ],
-        "title": "Medicine,  Arts,  Social Justice",
+        "title": "Freedom",
         "instructor": {
-            "fullname": "Braxton, Joanne",
-            "surname": "Braxton",
-            "givenname": "Joanne",
+            "fullname": "Goldwater, Jonah",
+            "surname": "Goldwater",
+            "givenname": "Jonah",
             "nameparts": [
-                "Braxton",
-                "Joanne"
+                "Goldwater",
+                "Jonah"
             ]
         },
-        "hours": 3,
-        "time": {
-            "has_time": true,
-            "start": "1530",
-            "end": "1820",
-            "duration": 3,
-            "days": [
-                "W"
-            ]
-        },
-        "space": {
-            "capacity": 16,
-            "enrolled": 8,
-            "crosslisted": true,
-            "available": 2,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "25073",
-        "id": "AFST 251 01",
-        "subject": "AFST",
-        "snumber": "251",
-        "section": 1,
-        "attributes": [],
-        "title": "Caribbean Lang  &  Identity",
-        "instructor": {
-            "fullname": "Osiapem, Iyabo",
-            "surname": "Osiapem",
-            "givenname": "Iyabo",
-            "nameparts": [
-                "Osiapem",
-                "Iyabo"
-            ]
-        },
-        "hours": 3,
+        "hours": 4,
         "time": {
             "has_time": true,
             "start": "1400",
             "end": "1520",
+            "duration": 1.5,
+            "days": [
+                "T",
+                "R"
+            ]
+        },
+        "space": {
+            "capacity": 35,
+            "enrolled": 34,
+            "crosslisted": false,
+            "available": 1,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "24457",
+        "id": "PHIL 100 04",
+        "subject": "PHIL",
+        "snumber": "100",
+        "section": 4,
+        "attributes": [
+            "C100"
+        ],
+        "title": "What Are We? The Human Self",
+        "instructor": {
+            "fullname": "Haug, Matthew",
+            "surname": "Haug",
+            "givenname": "Matthew",
+            "nameparts": [
+                "Haug",
+                "Matthew"
+            ]
+        },
+        "hours": 4,
+        "time": {
+            "has_time": true,
+            "start": "1530",
+            "end": "1650",
             "duration": 1.5,
             "days": [
                 "M",
@@ -184,28 +144,555 @@
             ]
         },
         "space": {
-            "capacity": 30,
-            "enrolled": 7,
+            "capacity": 35,
+            "enrolled": 33,
             "crosslisted": false,
-            "available": 9,
+            "available": 2,
             "status_ok": true
         }
     },
     {
-        "crn": "22986",
-        "id": "AFST 301 01",
-        "subject": "AFST",
-        "snumber": "301",
-        "section": 1,
-        "attributes": [],
-        "title": "African American Family",
+        "crn": "24458",
+        "id": "PHIL 100 05",
+        "subject": "PHIL",
+        "snumber": "100",
+        "section": 5,
+        "attributes": [
+            "C100"
+        ],
+        "title": "What Are We? The Human Self",
         "instructor": {
-            "fullname": "Allen, Jody",
-            "surname": "Allen",
-            "givenname": "Jody",
+            "fullname": "McKinney, Tucker",
+            "surname": "McKinney",
+            "givenname": "Tucker",
             "nameparts": [
-                "Allen",
-                "Jody"
+                "McKinney",
+                "Tucker"
+            ]
+        },
+        "hours": 4,
+        "time": {
+            "has_time": true,
+            "start": "1000",
+            "end": "1050",
+            "duration": 1,
+            "days": [
+                "M",
+                "W",
+                "F"
+            ]
+        },
+        "space": {
+            "capacity": 35,
+            "enrolled": 25,
+            "crosslisted": false,
+            "available": 0,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "24459",
+        "id": "PHIL 100 06",
+        "subject": "PHIL",
+        "snumber": "100",
+        "section": 6,
+        "attributes": [
+            "C100"
+        ],
+        "title": "Knowledge and Reality",
+        "instructor": {
+            "fullname": "Griffith, Aaron",
+            "surname": "Griffith",
+            "givenname": "Aaron",
+            "nameparts": [
+                "Griffith",
+                "Aaron"
+            ]
+        },
+        "hours": 4,
+        "time": {
+            "has_time": true,
+            "start": "1100",
+            "end": "1150",
+            "duration": 1,
+            "days": [
+                "M",
+                "W",
+                "F"
+            ]
+        },
+        "space": {
+            "capacity": 35,
+            "enrolled": 36,
+            "crosslisted": false,
+            "available": -1,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "24460",
+        "id": "PHIL 150 01",
+        "subject": "PHIL",
+        "snumber": "150",
+        "section": 1,
+        "attributes": [
+            "C150",
+            "FRSM",
+            "LDWR"
+        ],
+        "title": "Life  &  Death",
+        "instructor": {
+            "fullname": "Vance, Chad",
+            "surname": "Vance",
+            "givenname": "Chad",
+            "nameparts": [
+                "Vance",
+                "Chad"
+            ]
+        },
+        "hours": 4,
+        "time": {
+            "has_time": true,
+            "start": "1000",
+            "end": "1050",
+            "duration": 1,
+            "days": [
+                "M",
+                "W",
+                "F"
+            ]
+        },
+        "space": {
+            "capacity": 15,
+            "enrolled": 15,
+            "crosslisted": false,
+            "available": 0,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "24461",
+        "id": "PHIL 150 02",
+        "subject": "PHIL",
+        "snumber": "150",
+        "section": 2,
+        "attributes": [
+            "C150",
+            "FRSM",
+            "LDWR"
+        ],
+        "title": "Emotion,  Reason  &  Value",
+        "instructor": {
+            "fullname": "Radcliffe, Elizabeth",
+            "surname": "Radcliffe",
+            "givenname": "Elizabeth",
+            "nameparts": [
+                "Radcliffe",
+                "Elizabeth"
+            ]
+        },
+        "hours": 4,
+        "time": {
+            "has_time": true,
+            "start": "1400",
+            "end": "1520",
+            "duration": 1.5,
+            "days": [
+                "T",
+                "R"
+            ]
+        },
+        "space": {
+            "capacity": 15,
+            "enrolled": 15,
+            "crosslisted": false,
+            "available": 0,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "24462",
+        "id": "PHIL 150 03",
+        "subject": "PHIL",
+        "snumber": "150",
+        "section": 3,
+        "attributes": [
+            "C150",
+            "FRSM",
+            "LDWR"
+        ],
+        "title": "The Good Life",
+        "instructor": {
+            "fullname": "Lemos, Noah",
+            "surname": "Lemos",
+            "givenname": "Noah",
+            "nameparts": [
+                "Lemos",
+                "Noah"
+            ]
+        },
+        "hours": 4,
+        "time": {
+            "has_time": true,
+            "start": "1100",
+            "end": "1150",
+            "duration": 1,
+            "days": [
+                "M",
+                "W",
+                "F"
+            ]
+        },
+        "space": {
+            "capacity": 15,
+            "enrolled": 13,
+            "crosslisted": false,
+            "available": 2,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "24863",
+        "id": "PHIL 150 04",
+        "subject": "PHIL",
+        "snumber": "150",
+        "section": 4,
+        "attributes": [
+            "C150",
+            "FRSM"
+        ],
+        "title": "Music,  Beauty  &  Meaning",
+        "instructor": {
+            "fullname": "Philbrick-DeBrava, Valerie",
+            "surname": "Philbrick-DeBrava",
+            "givenname": "Valerie",
+            "nameparts": [
+                "Philbrick-DeBrava",
+                "Valerie"
+            ]
+        },
+        "hours": 4,
+        "time": {
+            "has_time": true,
+            "start": "0930",
+            "end": "1050",
+            "duration": 1.5,
+            "days": [
+                "T",
+                "R"
+            ]
+        },
+        "space": {
+            "capacity": 15,
+            "enrolled": 18,
+            "crosslisted": false,
+            "available": -3,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "24463",
+        "id": "PHIL 205 01",
+        "subject": "PHIL",
+        "snumber": "205",
+        "section": 1,
+        "attributes": [
+            "ALV",
+            "C200",
+            "GE7"
+        ],
+        "title": "Meaning in Life",
+        "instructor": {
+            "fullname": "McKinney, Tucker",
+            "surname": "McKinney",
+            "givenname": "Tucker",
+            "nameparts": [
+                "McKinney",
+                "Tucker"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": true,
+            "start": "1100",
+            "end": "1150",
+            "duration": 1,
+            "days": [
+                "M",
+                "W",
+                "F"
+            ]
+        },
+        "space": {
+            "capacity": 35,
+            "enrolled": 36,
+            "crosslisted": false,
+            "available": -1,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "22741",
+        "id": "PHIL 210 01",
+        "subject": "PHIL",
+        "snumber": "210",
+        "section": 1,
+        "attributes": [
+            "ALV",
+            "C200",
+            "GE7"
+        ],
+        "title": "Critical Thinking",
+        "instructor": {
+            "fullname": "Tucker, Christophe",
+            "surname": "Tucker",
+            "givenname": "Christophe",
+            "nameparts": [
+                "Tucker",
+                "Christophe"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": true,
+            "start": "1100",
+            "end": "1150",
+            "duration": 1,
+            "days": [
+                "M",
+                "W",
+                "F"
+            ]
+        },
+        "space": {
+            "capacity": 60,
+            "enrolled": 58,
+            "crosslisted": false,
+            "available": 2,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "22520",
+        "id": "PHIL 215 01",
+        "subject": "PHIL",
+        "snumber": "215",
+        "section": 1,
+        "attributes": [
+            "ALV",
+            "C200",
+            "GE7"
+        ],
+        "title": "Right  &  Wrong in Contemp Wrld",
+        "instructor": {
+            "fullname": "Vance, Chad",
+            "surname": "Vance",
+            "givenname": "Chad",
+            "nameparts": [
+                "Vance",
+                "Chad"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": true,
+            "start": "1400",
+            "end": "1450",
+            "duration": 1,
+            "days": [
+                "M",
+                "W",
+                "F"
+            ]
+        },
+        "space": {
+            "capacity": 35,
+            "enrolled": 36,
+            "crosslisted": false,
+            "available": -1,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "20251",
+        "id": "PHIL 215 02",
+        "subject": "PHIL",
+        "snumber": "215",
+        "section": 2,
+        "attributes": [
+            "ALV",
+            "C200",
+            "GE7"
+        ],
+        "title": "Right  &  Wrong in Contemp Wrld",
+        "instructor": {
+            "fullname": "Vance, Chad",
+            "surname": "Vance",
+            "givenname": "Chad",
+            "nameparts": [
+                "Vance",
+                "Chad"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": true,
+            "start": "1300",
+            "end": "1350",
+            "duration": 1,
+            "days": [
+                "M",
+                "W",
+                "F"
+            ]
+        },
+        "space": {
+            "capacity": 35,
+            "enrolled": 34,
+            "crosslisted": false,
+            "available": 1,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "21727",
+        "id": "PHIL 232 01",
+        "subject": "PHIL",
+        "snumber": "232",
+        "section": 1,
+        "attributes": [
+            "ALV",
+            "GE4A"
+        ],
+        "title": "Medieval Philosophy",
+        "instructor": {
+            "fullname": "Lemos, Noah",
+            "surname": "Lemos",
+            "givenname": "Noah",
+            "nameparts": [
+                "Lemos",
+                "Noah"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": true,
+            "start": "1000",
+            "end": "1050",
+            "duration": 1,
+            "days": [
+                "M",
+                "W",
+                "F"
+            ]
+        },
+        "space": {
+            "capacity": 35,
+            "enrolled": 34,
+            "crosslisted": false,
+            "available": 1,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "21728",
+        "id": "PHIL 253 01",
+        "subject": "PHIL",
+        "snumber": "253",
+        "section": 1,
+        "attributes": [
+            "CSI",
+            "GE4A"
+        ],
+        "title": "Kant and his Successors",
+        "instructor": {
+            "fullname": "Griffith, Aaron",
+            "surname": "Griffith",
+            "givenname": "Aaron",
+            "nameparts": [
+                "Griffith",
+                "Aaron"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": true,
+            "start": "1300",
+            "end": "1350",
+            "duration": 1,
+            "days": [
+                "M",
+                "W",
+                "F"
+            ]
+        },
+        "space": {
+            "capacity": 35,
+            "enrolled": 31,
+            "crosslisted": false,
+            "available": 4,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "20252",
+        "id": "PHIL 303 01",
+        "subject": "PHIL",
+        "snumber": "303",
+        "section": 1,
+        "attributes": [
+            "ALV",
+            "C200",
+            "GE7"
+        ],
+        "title": "Ethics",
+        "instructor": {
+            "fullname": "Costa, Maria",
+            "surname": "Costa",
+            "givenname": "Maria",
+            "nameparts": [
+                "Costa",
+                "Maria"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": true,
+            "start": "1530",
+            "end": "1650",
+            "duration": 1.5,
+            "days": [
+                "T",
+                "R"
+            ]
+        },
+        "space": {
+            "capacity": 35,
+            "enrolled": 33,
+            "crosslisted": false,
+            "available": 2,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "20253",
+        "id": "PHIL 303 02",
+        "subject": "PHIL",
+        "snumber": "303",
+        "section": 2,
+        "attributes": [
+            "ALV",
+            "C200",
+            "GE7"
+        ],
+        "title": "Ethics",
+        "instructor": {
+            "fullname": "Goldwater, Jonah",
+            "surname": "Goldwater",
+            "givenname": "Jonah",
+            "nameparts": [
+                "Goldwater",
+                "Jonah"
             ]
         },
         "hours": 3,
@@ -220,61 +707,70 @@
             ]
         },
         "space": {
-            "capacity": 15,
-            "enrolled": 21,
-            "crosslisted": true,
-            "available": -5,
-            "status_ok": false
+            "capacity": 35,
+            "enrolled": 33,
+            "crosslisted": false,
+            "available": 2,
+            "status_ok": true
         }
     },
     {
-        "crn": "23922",
-        "id": "AFST 301 02",
-        "subject": "AFST",
-        "snumber": "301",
-        "section": 2,
+        "crn": "21962",
+        "id": "PHIL 306 01",
+        "subject": "PHIL",
+        "snumber": "306",
+        "section": 1,
         "attributes": [
-            "IN"
+            "ALV",
+            "GE7"
         ],
-        "title": "Race  &  Ethnocommunications",
+        "title": "Philosophical Problems",
         "instructor": {
-            "fullname": "Tanglao-Aguas, Francis",
-            "surname": "Tanglao-Aguas",
-            "givenname": "Francis",
+            "fullname": "McKinney, Tucker",
+            "surname": "McKinney",
+            "givenname": "Tucker",
             "nameparts": [
-                "Tanglao-Aguas",
-                "Francis"
+                "McKinney",
+                "Tucker"
             ]
         },
         "hours": 3,
         "time": {
-            "has_time": false
+            "has_time": true,
+            "start": "1530",
+            "end": "1650",
+            "duration": 1.5,
+            "days": [
+                "M",
+                "W"
+            ]
         },
         "space": {
-            "capacity": 12,
-            "enrolled": 3,
+            "capacity": 35,
+            "enrolled": 26,
             "crosslisted": false,
             "available": 9,
             "status_ok": true
         }
     },
     {
-        "crn": "22982",
-        "id": "AFST 304 01",
-        "subject": "AFST",
-        "snumber": "304",
+        "crn": "21864",
+        "id": "PHIL 310 01",
+        "subject": "PHIL",
+        "snumber": "310",
         "section": 1,
         "attributes": [
-            "GE4C"
+            "CSI",
+            "GE7"
         ],
-        "title": "African Diaspora before 1492",
+        "title": "Philosophy of Law",
         "instructor": {
-            "fullname": "Pope, Jeremy",
-            "surname": "Pope",
-            "givenname": "Jeremy",
+            "fullname": "Freiman, Christophe",
+            "surname": "Freiman",
+            "givenname": "Christophe",
             "nameparts": [
-                "Pope",
-                "Jeremy"
+                "Freiman",
+                "Christophe"
             ]
         },
         "hours": 3,
@@ -289,72 +785,250 @@
             ]
         },
         "space": {
-            "capacity": 5,
-            "enrolled": 6,
-            "crosslisted": true,
-            "available": 0,
+            "capacity": 35,
+            "enrolled": 36,
+            "crosslisted": false,
+            "available": -1,
             "status_ok": false
         }
     },
     {
-        "crn": "21832",
-        "id": "AFST 306 06",
-        "subject": "AFST",
-        "snumber": "306",
-        "section": 6,
+        "crn": "24885",
+        "id": "PHIL 325 01",
+        "subject": "PHIL",
+        "snumber": "325",
+        "section": 1,
         "attributes": [
-            "IN"
+            "ALV",
+            "C200",
+            "GE7",
+            "NQR"
         ],
-        "title": "Meth Comm Based Research",
+        "title": "Neuroscience and Ethics",
         "instructor": {
-            "fullname": "Charity Hudley, Anne",
-            "surname": "Charity Hudley",
-            "givenname": "Anne",
+            "fullname": "Haug, Matthew",
+            "surname": "Haug",
+            "givenname": "Matthew",
             "nameparts": [
-                "Charity Hudley",
-                "Anne"
+                "Haug",
+                "Matthew"
             ]
         },
-        "hours": 4,
+        "hours": 3,
         "time": {
             "has_time": true,
-            "start": "1530",
-            "end": "1820",
-            "duration": 3,
+            "start": "1400",
+            "end": "1520",
+            "duration": 1.5,
             "days": [
-                "T"
+                "T",
+                "R"
             ]
         },
         "space": {
-            "capacity": 5,
-            "enrolled": 5,
-            "crosslisted": true,
-            "available": 10,
-            "status_ok": false
+            "capacity": 35,
+            "enrolled": 34,
+            "crosslisted": false,
+            "available": 1,
+            "status_ok": true
         }
     },
     {
-        "crn": "23888",
-        "id": "AFST 314 01",
-        "subject": "AFST",
-        "snumber": "314",
+        "crn": "21490",
+        "id": "PHIL 403 01",
+        "subject": "PHIL",
+        "snumber": "403",
         "section": 1,
-        "attributes": [],
-        "title": "Labor Market  &  Entrepreneurshp",
+        "attributes": [
+            "ALV"
+        ],
+        "title": "Advanced Ethics:Global Justice",
         "instructor": {
-            "fullname": "Shiferaw Seyoum, Admasu",
-            "surname": "Shiferaw Seyoum",
-            "givenname": "Admasu",
+            "fullname": "Costa, Maria",
+            "surname": "Costa",
+            "givenname": "Maria",
             "nameparts": [
-                "Shiferaw Seyoum",
-                "Admasu"
+                "Costa",
+                "Maria"
             ]
         },
         "hours": 3,
         "time": {
             "has_time": true,
             "start": "1530",
-            "end": "1650",
+            "end": "1820",
+            "duration": 3,
+            "days": [
+                "W"
+            ]
+        },
+        "space": {
+            "capacity": 15,
+            "enrolled": 15,
+            "crosslisted": false,
+            "available": 0,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "23708",
+        "id": "PHIL 415 01",
+        "subject": "PHIL",
+        "snumber": "415",
+        "section": 1,
+        "attributes": [
+            "ALV"
+        ],
+        "title": "Rationality  & Biased Perception",
+        "instructor": {
+            "fullname": "Tucker, Christophe",
+            "surname": "Tucker",
+            "givenname": "Christophe",
+            "nameparts": [
+                "Tucker",
+                "Christophe"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": true,
+            "start": "1230",
+            "end": "1350",
+            "duration": 1.5,
+            "days": [
+                "T",
+                "R"
+            ]
+        },
+        "space": {
+            "capacity": 15,
+            "enrolled": 14,
+            "crosslisted": false,
+            "available": 1,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "20255",
+        "id": "PHIL 442 01",
+        "subject": "PHIL",
+        "snumber": "442",
+        "section": 1,
+        "attributes": [
+            "ALV",
+            "IN"
+        ],
+        "title": "Independent Study",
+        "instructor": {
+            "fullname": "Lemos, Noah",
+            "surname": "Lemos",
+            "givenname": "Noah",
+            "nameparts": [
+                "Lemos",
+                "Noah"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": false
+        },
+        "space": {
+            "capacity": 0,
+            "enrolled": 1,
+            "crosslisted": false,
+            "available": 4,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "23347",
+        "id": "PHIL 442 02",
+        "subject": "PHIL",
+        "snumber": "442",
+        "section": 2,
+        "attributes": [
+            "ALV",
+            "IN",
+            "X"
+        ],
+        "title": "Independent Study",
+        "instructor": {
+            "fullname": "McKinney, Tucker",
+            "surname": "McKinney",
+            "givenname": "Tucker",
+            "nameparts": [
+                "McKinney",
+                "Tucker"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": false
+        },
+        "space": {
+            "capacity": 1,
+            "enrolled": 1,
+            "crosslisted": false,
+            "available": 0,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "25279",
+        "id": "PHIL 442 03",
+        "subject": "PHIL",
+        "snumber": "442",
+        "section": 3,
+        "attributes": [
+            "ALV",
+            "X"
+        ],
+        "title": "Independent Study",
+        "instructor": {
+            "fullname": "Haug, Matthew",
+            "surname": "Haug",
+            "givenname": "Matthew",
+            "nameparts": [
+                "Haug",
+                "Matthew"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": false
+        },
+        "space": {
+            "capacity": 1,
+            "enrolled": 1,
+            "crosslisted": false,
+            "available": 0,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "24464",
+        "id": "PHIL 460 01",
+        "subject": "PHIL",
+        "snumber": "460",
+        "section": 1,
+        "attributes": [
+            "NQR"
+        ],
+        "title": "Advanced Logic",
+        "instructor": {
+            "fullname": "Gert, Joshua",
+            "surname": "Gert",
+            "givenname": "Joshua",
+            "nameparts": [
+                "Gert",
+                "Joshua"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": true,
+            "start": "1100",
+            "end": "1220",
             "duration": 1.5,
             "days": [
                 "T",
@@ -363,646 +1037,62 @@
         },
         "space": {
             "capacity": 25,
-            "enrolled": 2,
-            "crosslisted": true,
-            "available": 16,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "22630",
-        "id": "AFST 316 01",
-        "subject": "AFST",
-        "snumber": "316",
-        "section": 1,
-        "attributes": [
-            "CSI",
-            "GE4B"
-        ],
-        "title": "African History to 1800",
-        "instructor": {
-            "fullname": "Chouin, Gerard",
-            "surname": "Chouin",
-            "givenname": "Gerard",
-            "nameparts": [
-                "Chouin",
-                "Gerard"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_time": true,
-            "start": "1000",
-            "end": "1050",
-            "duration": 1,
-            "days": [
-                "M",
-                "W",
-                "F"
-            ]
-        },
-        "space": {
-            "capacity": 5,
-            "enrolled": 9,
-            "crosslisted": true,
-            "available": -4,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "24197",
-        "id": "AFST 320 01",
-        "subject": "AFST",
-        "snumber": "320",
-        "section": 1,
-        "attributes": [
-            "GE4B"
-        ],
-        "title": "African Relgns,  African Lives",
-        "instructor": {
-            "fullname": "Sanford, Mei Mei",
-            "surname": "Sanford",
-            "givenname": "Mei Mei",
-            "nameparts": [
-                "Sanford",
-                "Mei Mei"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_time": true,
-            "start": "1530",
-            "end": "1820",
-            "duration": 3,
-            "days": [
-                "W"
-            ]
-        },
-        "space": {
-            "capacity": 16,
-            "enrolled": 16,
-            "crosslisted": false,
-            "available": 0,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "23924",
-        "id": "AFST 331 01",
-        "subject": "AFST",
-        "snumber": "331",
-        "section": 1,
-        "attributes": [
-            "ALV",
-            "GE4A",
-            "GE5"
-        ],
-        "title": "History of Jazz",
-        "instructor": {
-            "fullname": "Harding, Kevin",
-            "surname": "Harding",
-            "givenname": "Kevin",
-            "nameparts": [
-                "Harding",
-                "Kevin"
-            ]
-        },
-        "hours": 4,
-        "time": {
-            "has_time": true,
-            "start": "1400",
-            "end": "1520",
-            "duration": 1.5,
-            "days": [
-                "T",
-                "R"
-            ]
-        },
-        "space": {
-            "capacity": 5,
-            "enrolled": 4,
-            "crosslisted": true,
-            "available": -1,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "23924",
-        "id": "AFST 331 01",
-        "subject": "AFST",
-        "snumber": "331",
-        "section": 1,
-        "attributes": [
-            "ALV",
-            "GE4A",
-            "GE5"
-        ],
-        "title": "History of Jazz",
-        "instructor": {
-            "fullname": "Harding, Kevin",
-            "surname": "Harding",
-            "givenname": "Kevin",
-            "nameparts": [
-                "Harding",
-                "Kevin"
-            ]
-        },
-        "hours": 4,
-        "time": {
-            "has_time": true,
-            "start": "1200",
-            "end": "1250",
-            "duration": 1,
-            "days": [
-                "W"
-            ]
-        },
-        "space": {
-            "capacity": 5,
-            "enrolled": 4,
-            "crosslisted": true,
-            "available": -1,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "24514",
-        "id": "AFST 340 01",
-        "subject": "AFST",
-        "snumber": "340",
-        "section": 1,
-        "attributes": [
-            "GE3",
-            "GE4B"
-        ],
-        "title": "Peoples  &  Cultures of Africa",
-        "instructor": {
-            "fullname": "Weiss, Brad",
-            "surname": "Weiss",
-            "givenname": "Brad",
-            "nameparts": [
-                "Weiss",
-                "Brad"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_time": true,
-            "start": "0900",
-            "end": "0950",
-            "duration": 1,
-            "days": [
-                "M",
-                "W",
-                "F"
-            ]
-        },
-        "space": {
-            "capacity": 5,
-            "enrolled": 5,
-            "crosslisted": true,
-            "available": 2,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "23294",
-        "id": "AFST 348 01",
-        "subject": "AFST",
-        "snumber": "348",
-        "section": 1,
-        "attributes": [
-            "GE4C"
-        ],
-        "title": "African American Religions",
-        "instructor": {
-            "fullname": "Fitzgerald, Maureen",
-            "surname": "Fitzgerald",
-            "givenname": "Maureen",
-            "nameparts": [
-                "Fitzgerald",
-                "Maureen"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_time": true,
-            "start": "1230",
-            "end": "1350",
-            "duration": 1.5,
-            "days": [
-                "T",
-                "R"
-            ]
-        },
-        "space": {
-            "capacity": 10,
-            "enrolled": 10,
-            "crosslisted": true,
-            "available": 6,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "24081",
-        "id": "AFST 366 01",
-        "subject": "AFST",
-        "snumber": "366",
-        "section": 1,
-        "attributes": [],
-        "title": "Modern Black American Lit",
-        "instructor": {
-            "fullname": "Pinson, Hermine",
-            "surname": "Pinson",
-            "givenname": "Hermine",
-            "nameparts": [
-                "Pinson",
-                "Hermine"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_time": true,
-            "start": "1000",
-            "end": "1050",
-            "duration": 1,
-            "days": [
-                "M",
-                "W",
-                "F"
-            ]
-        },
-        "space": {
-            "capacity": 18,
-            "enrolled": 5,
-            "crosslisted": true,
-            "available": -2,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "23735",
-        "id": "AFST 399 01",
-        "subject": "AFST",
-        "snumber": "399",
-        "section": 1,
-        "attributes": [],
-        "title": "Africana Studies Methodologies",
-        "instructor": {
-            "fullname": "Lott, Patricia",
-            "surname": "Lott",
-            "givenname": "Patricia",
-            "nameparts": [
-                "Lott",
-                "Patricia"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_time": true,
-            "start": "1400",
-            "end": "1520",
-            "duration": 1.5,
-            "days": [
-                "M",
-                "W"
-            ]
-        },
-        "space": {
-            "capacity": 15,
-            "enrolled": 2,
-            "crosslisted": false,
-            "available": 13,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "22524",
-        "id": "AFST 406 01",
-        "subject": "AFST",
-        "snumber": "406",
-        "section": 1,
-        "attributes": [
-            "CSI",
-            "GE4B",
-            "LASA"
-        ],
-        "title": "Caribbean Archaeology",
-        "instructor": {
-            "fullname": "Smith, Frederick",
-            "surname": "Smith",
-            "givenname": "Frederick",
-            "nameparts": [
-                "Smith",
-                "Frederick"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_time": true,
-            "start": "1100",
-            "end": "1220",
-            "duration": 1.5,
-            "days": [
-                "T",
-                "R"
-            ]
-        },
-        "space": {
-            "capacity": 4,
-            "enrolled": 5,
-            "crosslisted": true,
-            "available": 1,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "22525",
-        "id": "AFST 406 02",
-        "subject": "AFST",
-        "snumber": "406",
-        "section": 2,
-        "attributes": [
-            "IN"
-        ],
-        "title": "SRSM Jews  &  Muslims in N. Afri",
-        "instructor": {
-            "fullname": "Glasser, Jonathan",
-            "surname": "Glasser",
-            "givenname": "Jonathan",
-            "nameparts": [
-                "Glasser",
-                "Jonathan"
-            ]
-        },
-        "hours": 4,
-        "time": {
-            "has_time": true,
-            "start": "1100",
-            "end": "1220",
-            "duration": 1.5,
-            "days": [
-                "T",
-                "R"
-            ]
-        },
-        "space": {
-            "capacity": 1,
-            "enrolled": 0,
+            "enrolled": 24,
             "crosslisted": false,
             "available": 1,
             "status_ok": true
         }
     },
     {
-        "crn": "24053",
-        "id": "AFST 406 03",
-        "subject": "AFST",
-        "snumber": "406",
-        "section": 3,
-        "attributes": [
-            "RESC"
-        ],
-        "title": "Performing Across the Diaspora",
-        "instructor": {
-            "fullname": "Padilioni, James",
-            "surname": "Padilioni",
-            "givenname": "James",
-            "nameparts": [
-                "Padilioni",
-                "James"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_time": true,
-            "start": "1400",
-            "end": "1520",
-            "duration": 1.5,
-            "days": [
-                "M",
-                "W"
-            ]
-        },
-        "space": {
-            "capacity": 7,
-            "enrolled": 7,
-            "crosslisted": true,
-            "available": 6,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "24198",
-        "id": "AFST 406 05",
-        "subject": "AFST",
-        "snumber": "406",
-        "section": 5,
-        "attributes": [
-            "IN"
-        ],
-        "title": "Stereotypes  &  Prejudice",
-        "instructor": {
-            "fullname": "Dickter, Cheryl",
-            "surname": "Dickter",
-            "givenname": "Cheryl",
-            "nameparts": [
-                "Dickter",
-                "Cheryl"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_time": true,
-            "start": "1530",
-            "end": "1650",
-            "duration": 1.5,
-            "days": [
-                "T",
-                "R"
-            ]
-        },
-        "space": {
-            "capacity": 5,
-            "enrolled": 5,
-            "crosslisted": true,
-            "available": 2,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "23359",
-        "id": "AFST 480 01",
-        "subject": "AFST",
-        "snumber": "480",
-        "section": 1,
-        "attributes": [
-            "IN"
-        ],
-        "title": "Independent Study",
-        "instructor": {
-            "fullname": "Braxton, Joanne",
-            "surname": "Braxton",
-            "givenname": "Joanne",
-            "nameparts": [
-                "Braxton",
-                "Joanne"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_time": false
-        },
-        "space": {
-            "capacity": 1,
-            "enrolled": 1,
-            "crosslisted": false,
-            "available": 0,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "23738",
-        "id": "AFST 480 02",
-        "subject": "AFST",
-        "snumber": "480",
-        "section": 2,
-        "attributes": [
-            "IN"
-        ],
-        "title": "Independent Study",
-        "instructor": {
-            "fullname": "Charity Hudley, Anne",
-            "surname": "Charity Hudley",
-            "givenname": "Anne",
-            "nameparts": [
-                "Charity Hudley",
-                "Anne"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_time": false
-        },
-        "space": {
-            "capacity": 1,
-            "enrolled": 0,
-            "crosslisted": false,
-            "available": 1,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "23739",
-        "id": "AFST 480 03",
-        "subject": "AFST",
-        "snumber": "480",
-        "section": 3,
-        "attributes": [
-            "IN"
-        ],
-        "title": "Independent Study",
-        "instructor": {
-            "fullname": "Green, Artisia",
-            "surname": "Green",
-            "givenname": "Artisia",
-            "nameparts": [
-                "Green",
-                "Artisia"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_time": false
-        },
-        "space": {
-            "capacity": 1,
-            "enrolled": 1,
-            "crosslisted": false,
-            "available": 0,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "25240",
-        "id": "AFST 480 04",
-        "subject": "AFST",
-        "snumber": "480",
-        "section": 4,
-        "attributes": [
-            "RESC"
-        ],
-        "title": "Independent Study",
-        "instructor": {
-            "fullname": "Osiapem, Iyabo",
-            "surname": "Osiapem",
-            "givenname": "Iyabo",
-            "nameparts": [
-                "Osiapem",
-                "Iyabo"
-            ]
-        },
-        "hours": 2,
-        "time": {
-            "has_time": false
-        },
-        "space": {
-            "capacity": 1,
-            "enrolled": 1,
-            "crosslisted": false,
-            "available": 0,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "25256",
-        "id": "AFST 480 05",
-        "subject": "AFST",
-        "snumber": "480",
-        "section": 5,
-        "attributes": [
-            "RESC"
-        ],
-        "title": "Independent Study",
-        "instructor": {
-            "fullname": "Sanford, Mei Mei",
-            "surname": "Sanford",
-            "givenname": "Mei Mei",
-            "nameparts": [
-                "Sanford",
-                "Mei Mei"
-            ]
-        },
-        "hours": 2,
-        "time": {
-            "has_time": false
-        },
-        "space": {
-            "capacity": 1,
-            "enrolled": 1,
-            "crosslisted": false,
-            "available": 0,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "24104",
-        "id": "AFST 496 01",
-        "subject": "AFST",
+        "crn": "21101",
+        "id": "PHIL 496 01",
+        "subject": "PHIL",
         "snumber": "496",
         "section": 1,
         "attributes": [
-            "IN",
+            "ALV",
+            "DC"
+        ],
+        "title": "Honors",
+        "instructor": {
+            "fullname": "Freiman, Christophe",
+            "surname": "Freiman",
+            "givenname": "Christophe",
+            "nameparts": [
+                "Freiman",
+                "Christophe"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": false
+        },
+        "space": {
+            "capacity": 1,
+            "enrolled": 2,
+            "crosslisted": false,
+            "available": 1,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "24152",
+        "id": "PHIL 496 02",
+        "subject": "PHIL",
+        "snumber": "496",
+        "section": 2,
+        "attributes": [
+            "RESC",
             "X"
         ],
         "title": "Honors",
         "instructor": {
-            "fullname": "Green, Artisia",
-            "surname": "Green",
-            "givenname": "Artisia",
+            "fullname": "Vance, Chad",
+            "surname": "Vance",
+            "givenname": "Chad",
             "nameparts": [
-                "Green",
-                "Artisia"
+                "Vance",
+                "Chad"
             ]
         },
         "hours": 3,
@@ -1018,20 +1108,24 @@
         }
     },
     {
-        "crn": "24505",
-        "id": "AFST 498 01",
-        "subject": "AFST",
-        "snumber": "498",
-        "section": 1,
+        "crn": "25152",
+        "id": "PHIL 496 03",
+        "subject": "PHIL",
+        "snumber": "496",
+        "section": 3,
         "attributes": [
-            "IN"
+            "ALV",
+            "RESC",
+            "X"
         ],
-        "title": "Internship",
+        "title": "Honors",
         "instructor": {
-            "fullname": "STAFF",
-            "surname": "STAFF",
+            "fullname": "Costa, Maria",
+            "surname": "Costa",
+            "givenname": "Maria",
             "nameparts": [
-                "STAFF"
+                "Costa",
+                "Maria"
             ]
         },
         "hours": 3,
@@ -1039,128 +1133,43 @@
             "has_time": false
         },
         "space": {
-            "capacity": 1,
+            "capacity": 0,
+            "enrolled": 1,
+            "crosslisted": false,
+            "available": 0,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "25153",
+        "id": "PHIL 496 04",
+        "subject": "PHIL",
+        "snumber": "496",
+        "section": 4,
+        "attributes": [
+            "ALV",
+            "RESC",
+            "X"
+        ],
+        "title": "Honors",
+        "instructor": {
+            "fullname": "Haug, Matthew",
+            "surname": "Haug",
+            "givenname": "Matthew",
+            "nameparts": [
+                "Haug",
+                "Matthew"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_time": false
+        },
+        "space": {
+            "capacity": 0,
             "enrolled": 0,
             "crosslisted": false,
             "available": 1,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "24199",
-        "id": "AFST 499 01",
-        "subject": "AFST",
-        "snumber": "499",
-        "section": 1,
-        "attributes": [
-            "IN"
-        ],
-        "title": "Sr Project in Africana Studies",
-        "instructor": {
-            "fullname": "Tanglao-Aguas, Francis",
-            "surname": "Tanglao-Aguas",
-            "givenname": "Francis",
-            "nameparts": [
-                "Tanglao-Aguas",
-                "Francis"
-            ]
-        },
-        "hours": 2,
-        "time": {
-            "has_time": false
-        },
-        "space": {
-            "capacity": 1,
-            "enrolled": 5,
-            "crosslisted": false,
-            "available": -4,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "25079",
-        "id": "AFST 499 02",
-        "subject": "AFST",
-        "snumber": "499",
-        "section": 2,
-        "attributes": [],
-        "title": "Sr Project in Africana Studies",
-        "instructor": {
-            "fullname": "Pinson, Hermine",
-            "surname": "Pinson",
-            "givenname": "Hermine",
-            "nameparts": [
-                "Pinson",
-                "Hermine"
-            ]
-        },
-        "hours": 2,
-        "time": {
-            "has_time": false
-        },
-        "space": {
-            "capacity": 1,
-            "enrolled": 1,
-            "crosslisted": false,
-            "available": 0,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "25089",
-        "id": "AFST 499 03",
-        "subject": "AFST",
-        "snumber": "499",
-        "section": 3,
-        "attributes": [],
-        "title": "Sr Project in Africana Studies",
-        "instructor": {
-            "fullname": "Green, Artisia",
-            "surname": "Green",
-            "givenname": "Artisia",
-            "nameparts": [
-                "Green",
-                "Artisia"
-            ]
-        },
-        "hours": 2,
-        "time": {
-            "has_time": false
-        },
-        "space": {
-            "capacity": 1,
-            "enrolled": 1,
-            "crosslisted": false,
-            "available": 0,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "25269",
-        "id": "AFST 499 04",
-        "subject": "AFST",
-        "snumber": "499",
-        "section": 4,
-        "attributes": [],
-        "title": "Sr Project in Africana Studies",
-        "instructor": {
-            "fullname": "Shiferaw Seyoum, Admasu",
-            "surname": "Shiferaw Seyoum",
-            "givenname": "Admasu",
-            "nameparts": [
-                "Shiferaw Seyoum",
-                "Admasu"
-            ]
-        },
-        "hours": 2,
-        "time": {
-            "has_time": false
-        },
-        "space": {
-            "capacity": 5,
-            "enrolled": 1,
-            "crosslisted": false,
-            "available": 4,
             "status_ok": true
         }
     }

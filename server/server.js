@@ -38,8 +38,15 @@ app.post('/search/all', function(req, res){
     console.log("searching for ", req.body.searchterms);
     var terms = req.body.searchterms.split(/\s+/).filter((tkn)=>(tkn.length > 0));
     var possible = [];
+    var pkeys = [];
     var howmany = terms.length;
     //console.log("howmany", howmany);
+    
+    // This loop queries for each term given individually rather than let mongodb do its thing
+    // and search for them all at once. This doesn't create any improvements ATM
+    // but could be tweaked to allow for more general search terms to be
+    // pre-processed (8:00 converted to the database-friendly 0800 for example).
+
     for(var i = 0; i < terms.length; i++){
         //console.log("term is", terms[i]);
         db.collection(colle).find({$text:{$search:terms[i]}}, function(err, result){
@@ -52,10 +59,13 @@ app.post('/search/all', function(req, res){
                 result.toArray(function(err, result){
                     howmany = howmany - 1;
                     if(err) console.log("error in toArray", err);
-                    if(result) console.log("arraylen is " +  result.length);
+                    if(result) console.log("found: " +  result.length);
                     for(var k = 0; k < result.length; k++){
                         //console.log(result[k]);
-                        possible.push(result[k]);
+                        if(pkeys.indexOf(result[k].crn) < 0){
+                            possible.push(result[k]);
+                            pkeys.push(result[k].crn);
+                        }
                         //console.log("possible contains ", possible.length)
                     }
                     if(howmany == 0){
@@ -82,9 +92,32 @@ app.post('/search/all', function(req, res){
 // web scraper
 app.get('/scrape/:subj', function(req, res){
 
+    // have a checkmark for 'undergrad' that filters out 500+ course numbers
+    // or similar for untakeable edu or business classes with 4 digit course nums
+    // or otherwise restricted by attributes? add attributes automagically when parsing?
+
     url = 'https://courselist.wm.edu/courselist/courseinfo/searchresults';
 
-    var term = 201620;
+    var terms = {
+        spring16:201620,
+        summer16:201630,
+        autumn16:201710,
+        spring17:201720,
+    }
+
+    var seasonIDs = {
+        fall:"10",
+        autumn:"10",
+        spring:"20",
+        summer:"30",
+    }
+
+    function getTermID(year, season){ // fall of 2016 is represented by a term id starting with 2017
+        return ((season === "fall" || season === "autumn") ? (year+1).toString() : year.toString()) + seasonIDs[season].toString();
+    }
+
+    var term = getTermID(2016, "fall");
+    console.log("supposed term id is " + term);
     var subject = req.params.subj || "CSCI";
 
     var form = {
@@ -137,11 +170,12 @@ app.get('/scrape/:subj', function(req, res){
             console.log("Done parsing and saving to db.");
             console.log("Attempting to build search index.");
 
-            db.collection(colle).createIndex({
+            db.collection(colle).createIndex({/*
                     crn:"text",
                     subject:"text",
                     title:"text",
-                    "instructor.fullname":"text",
+                    "instructor.fullname":"text",*/
+                    "$**":"text"
                 }, {name:"CourseTextIndex"}, function(err){
                     if(err){
                         console.log("Failed to create index, ", err);

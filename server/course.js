@@ -68,19 +68,33 @@ var course = {};
 
 	lib.parseTime = function(rawtimes, obj){
 		obj = obj || {};
-		if(!rawtimes.raw_days && !rawtimes.raw_timeofday){
-			obj.time = {has_time:false};
-			return obj;
+		obj.time = obj.time || {};
+		if(!rawtimes.raw_days)
+			obj.time.has_days = false;
+		else{
+			obj.time.has_days = true;
+			var daytkns       = rawtimes.raw_days.split("");
+			obj.time.days     = daytkns;
 		}
-		var daytkns = rawtimes.raw_days.split("");
-		var todtkns = rawtimes.raw_timeofday.split("-");
-		obj.time = {
-			has_time:true,
-			start:todtkns[0],
-			end:todtkns[1],
-			duration:lib.adjustedHours(todtkns[1], todtkns[0]),
-			days:daytkns,
-		};
+		if(!rawtimes.raw_timeofday)
+			obj.time.has_time = false;
+		else{
+			obj.time.has_time = true;
+			var todtkns       = rawtimes.raw_timeofday.split("-");
+			obj.time.duration = lib.adjustedHours(todtkns[1], todtkns[0]);
+			obj.time.start    = todtkns[0];
+			obj.time.end      = todtkns[1];
+			obj.time.raw_days = rawtimes.raw_days;
+		}
+		
+		// obj.time = {
+		// 	has_time:true,
+		// 	start:todtkns[0],
+		// 	end:todtkns[1],
+		// 	duration:adjsdur,
+		// 	days:daytkns,
+		// 	raw_days:rawtimes.raw_days,
+		// };
 		return obj;
 	};
 

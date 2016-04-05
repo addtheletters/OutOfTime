@@ -1,109 +1,651 @@
 [
     {
-        "crn": "24454",
-        "id": "PHIL 100 01",
-        "subject": "PHIL",
+        "crn": "14320",
+        "id": "PHYS 100 01",
+        "subject": "PHYS",
         "snumber": "100",
         "section": 1,
         "attributes": [
             "C100"
         ],
-        "title": "Knowledge and Reality",
+        "title": "Scales in the Universe",
         "instructor": {
-            "fullname": "Gert, Joshua",
-            "surname": "Gert",
+            "fullname": "Lukaszew, Rosa",
+            "surname": "Lukaszew",
+            "givenname": "Rosa",
+            "nameparts": [
+                "Lukaszew",
+                "Rosa"
+            ]
+        },
+        "hours": 4,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M",
+                "W",
+                "F"
+            ],
+            "has_time": true,
+            "duration": 1,
+            "start": "1400",
+            "end": "1450",
+            "raw_days": "MWF"
+        },
+        "space": {
+            "capacity": 25,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 25,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "14321",
+        "id": "PHYS 100 02",
+        "subject": "PHYS",
+        "snumber": "100",
+        "section": 2,
+        "attributes": [
+            "C100"
+        ],
+        "title": "Great Ideas of Modern Physics",
+        "instructor": {
+            "fullname": "Erlich, Joshua",
+            "surname": "Erlich",
             "givenname": "Joshua",
             "nameparts": [
-                "Gert",
+                "Erlich",
                 "Joshua"
             ]
         },
         "hours": 4,
         "time": {
-            "has_time": true,
-            "start": "1530",
-            "end": "1650",
-            "duration": 1.5,
+            "has_days": true,
             "days": [
-                "T",
-                "R"
-            ]
+                "M",
+                "W",
+                "F"
+            ],
+            "has_time": true,
+            "duration": 1,
+            "start": "1100",
+            "end": "1150",
+            "raw_days": "MWF"
         },
         "space": {
-            "capacity": 35,
-            "enrolled": 35,
+            "capacity": 25,
+            "enrolled": 0,
             "crosslisted": false,
-            "available": 0,
-            "status_ok": false
+            "available": 25,
+            "status_ok": true
         }
     },
     {
-        "crn": "24455",
-        "id": "PHIL 100 02",
-        "subject": "PHIL",
-        "snumber": "100",
+        "crn": "10563",
+        "id": "PHYS 101 01",
+        "subject": "PHYS",
+        "snumber": "101",
+        "section": 1,
+        "attributes": [
+            "GE2A",
+            "NQR"
+        ],
+        "title": "General Physics-Lecture",
+        "instructor": {
+            "fullname": "Armstrong, David",
+            "surname": "Armstrong",
+            "givenname": "David",
+            "nameparts": [
+                "Armstrong",
+                "David"
+            ]
+        },
+        "hours": 0,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M",
+                "W",
+                "F"
+            ],
+            "has_time": true,
+            "duration": 1,
+            "start": "1100",
+            "end": "1150",
+            "raw_days": "MWF"
+        },
+        "space": {
+            "capacity": 166,
+            "enrolled": 133,
+            "crosslisted": false,
+            "available": 7,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "12431",
+        "id": "PHYS 101H 01",
+        "subject": "PHYS",
+        "snumber": "101H",
+        "section": 1,
+        "attributes": [
+            "GE2A",
+            "IN"
+        ],
+        "title": "General Physics I - Honors",
+        "instructor": {
+            "fullname": "Vahle, Patricia",
+            "surname": "Vahle",
+            "givenname": "Patricia",
+            "nameparts": [
+                "Vahle",
+                "Patricia"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M",
+                "W",
+                "F"
+            ],
+            "has_time": true,
+            "duration": 1,
+            "start": "1100",
+            "end": "1150",
+            "raw_days": "MWF"
+        },
+        "space": {
+            "capacity": 39,
+            "enrolled": 8,
+            "crosslisted": false,
+            "available": 31,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "12431",
+        "id": "PHYS 101H 01",
+        "subject": "PHYS",
+        "snumber": "101H",
+        "section": 1,
+        "attributes": [
+            "GE2A",
+            "IN"
+        ],
+        "title": "General Physics I - Honors",
+        "instructor": {
+            "fullname": "Vahle, Patricia",
+            "surname": "Vahle",
+            "givenname": "Patricia",
+            "nameparts": [
+                "Vahle",
+                "Patricia"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "R"
+            ],
+            "has_time": true,
+            "duration": 1,
+            "start": "0830",
+            "end": "0920",
+            "raw_days": "R"
+        },
+        "space": {
+            "capacity": 39,
+            "enrolled": 8,
+            "crosslisted": false,
+            "available": 31,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10564",
+        "id": "PHYS 101L 01",
+        "subject": "PHYS",
+        "snumber": "101L",
+        "section": 1,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "GE2L"
+        ],
+        "title": "General Physics-Lab",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M"
+            ],
+            "has_time": true,
+            "duration": 2.5,
+            "start": "1230",
+            "end": "1450",
+            "raw_days": "M"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 19,
+            "crosslisted": false,
+            "available": 3,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10565",
+        "id": "PHYS 101L 02",
+        "subject": "PHYS",
+        "snumber": "101L",
         "section": 2,
         "attributes": [
-            "C100"
+            "ACTV",
+            "FEE",
+            "GE2L"
         ],
-        "title": "Freedom",
+        "title": "General Physics-Lab",
         "instructor": {
-            "fullname": "Goldwater, Jonah",
-            "surname": "Goldwater",
-            "givenname": "Jonah",
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
             "nameparts": [
-                "Goldwater",
-                "Jonah"
+                "Hancock",
+                "Arthur"
             ]
         },
-        "hours": 4,
+        "hours": 1,
         "time": {
-            "has_time": true,
-            "start": "1230",
-            "end": "1350",
-            "duration": 1.5,
+            "has_days": true,
             "days": [
-                "T",
-                "R"
-            ]
+                "M"
+            ],
+            "has_time": true,
+            "duration": 2.5,
+            "start": "1630",
+            "end": "1850",
+            "raw_days": "M"
         },
         "space": {
-            "capacity": 35,
-            "enrolled": 36,
+            "capacity": 22,
+            "enrolled": 21,
             "crosslisted": false,
-            "available": -1,
-            "status_ok": false
+            "available": 1,
+            "status_ok": true
         }
     },
     {
-        "crn": "24456",
-        "id": "PHIL 100 03",
-        "subject": "PHIL",
-        "snumber": "100",
+        "crn": "10566",
+        "id": "PHYS 101L 03",
+        "subject": "PHYS",
+        "snumber": "101L",
         "section": 3,
         "attributes": [
-            "C100"
+            "ACTV",
+            "FEE",
+            "GE2L"
         ],
-        "title": "Freedom",
+        "title": "General Physics-Lab",
         "instructor": {
-            "fullname": "Goldwater, Jonah",
-            "surname": "Goldwater",
-            "givenname": "Jonah",
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
             "nameparts": [
-                "Goldwater",
-                "Jonah"
+                "Hancock",
+                "Arthur"
             ]
         },
-        "hours": 4,
+        "hours": 1,
         "time": {
-            "has_time": true,
-            "start": "1400",
-            "end": "1520",
-            "duration": 1.5,
+            "has_days": true,
             "days": [
-                "T",
-                "R"
+                "T"
+            ],
+            "has_time": true,
+            "duration": 2.5,
+            "start": "1530",
+            "end": "1750",
+            "raw_days": "T"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 20,
+            "crosslisted": false,
+            "available": 2,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10567",
+        "id": "PHYS 101L 04",
+        "subject": "PHYS",
+        "snumber": "101L",
+        "section": 4,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "GE2L"
+        ],
+        "title": "General Physics-Lab",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
             ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "W"
+            ],
+            "has_time": true,
+            "duration": 2.5,
+            "start": "1230",
+            "end": "1450",
+            "raw_days": "W"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 17,
+            "crosslisted": false,
+            "available": 5,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10568",
+        "id": "PHYS 101L 05",
+        "subject": "PHYS",
+        "snumber": "101L",
+        "section": 5,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "GE2L"
+        ],
+        "title": "General Physics-Lab",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "R"
+            ],
+            "has_time": true,
+            "duration": 2.5,
+            "start": "1630",
+            "end": "1850",
+            "raw_days": "R"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 10,
+            "crosslisted": false,
+            "available": 12,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10569",
+        "id": "PHYS 101L 06",
+        "subject": "PHYS",
+        "snumber": "101L",
+        "section": 6,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "GE2L"
+        ],
+        "title": "General Physics-Lab",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "R"
+            ],
+            "has_time": true,
+            "duration": 2.5,
+            "start": "1400",
+            "end": "1620",
+            "raw_days": "R"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 11,
+            "crosslisted": false,
+            "available": 11,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "12270",
+        "id": "PHYS 101L 07",
+        "subject": "PHYS",
+        "snumber": "101L",
+        "section": 7,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "GE2L"
+        ],
+        "title": "General Physics-Lab",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "W"
+            ],
+            "has_time": true,
+            "duration": 2.5,
+            "start": "1630",
+            "end": "1850",
+            "raw_days": "W"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 9,
+            "crosslisted": false,
+            "available": 13,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "12289",
+        "id": "PHYS 101L 08",
+        "subject": "PHYS",
+        "snumber": "101L",
+        "section": 8,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "GE2L"
+        ],
+        "title": "General Physics-Lab",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "T"
+            ],
+            "has_time": true,
+            "duration": 2.5,
+            "start": "1800",
+            "end": "2020",
+            "raw_days": "T"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 12,
+            "crosslisted": false,
+            "available": 10,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "13202",
+        "id": "PHYS 101L 09",
+        "subject": "PHYS",
+        "snumber": "101L",
+        "section": 9,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "G2LA"
+        ],
+        "title": "General Physics-Lab",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "W"
+            ],
+            "has_time": true,
+            "duration": 2.5,
+            "start": "1900",
+            "end": "2120",
+            "raw_days": "W"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 3,
+            "crosslisted": false,
+            "available": 19,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "14791",
+        "id": "PHYS 101L 10",
+        "subject": "PHYS",
+        "snumber": "101L",
+        "section": 10,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "G2LA",
+            "PHYL"
+        ],
+        "title": "General Physics-Lab",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M"
+            ],
+            "has_time": true,
+            "duration": 2.5,
+            "start": "1900",
+            "end": "2120",
+            "raw_days": "M"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 4,
+            "crosslisted": false,
+            "available": 18,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10570",
+        "id": "PHYS 101P 01",
+        "subject": "PHYS",
+        "snumber": "101P",
+        "section": 1,
+        "attributes": [
+            "GE2A"
+        ],
+        "title": "General Physics I",
+        "instructor": {
+            "fullname": "Hoatson, Gina",
+            "surname": "Hoatson",
+            "givenname": "Gina",
+            "nameparts": [
+                "Hoatson",
+                "Gina"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "W"
+            ],
+            "has_time": true,
+            "duration": 1,
+            "start": "0900",
+            "end": "0950",
+            "raw_days": "W"
         },
         "space": {
             "capacity": 35,
@@ -114,1062 +656,2159 @@
         }
     },
     {
-        "crn": "24457",
-        "id": "PHIL 100 04",
-        "subject": "PHIL",
-        "snumber": "100",
-        "section": 4,
+        "crn": "10571",
+        "id": "PHYS 101P 02",
+        "subject": "PHYS",
+        "snumber": "101P",
+        "section": 2,
         "attributes": [
-            "C100"
+            "GE2A"
         ],
-        "title": "What Are We? The Human Self",
+        "title": "General Physics I",
         "instructor": {
-            "fullname": "Haug, Matthew",
-            "surname": "Haug",
-            "givenname": "Matthew",
+            "fullname": "Erlich, Joshua",
+            "surname": "Erlich",
+            "givenname": "Joshua",
             "nameparts": [
-                "Haug",
-                "Matthew"
+                "Erlich",
+                "Joshua"
             ]
         },
-        "hours": 4,
+        "hours": 3,
         "time": {
-            "has_time": true,
-            "start": "1530",
-            "end": "1650",
-            "duration": 1.5,
+            "has_days": true,
             "days": [
-                "M",
                 "W"
-            ]
-        },
-        "space": {
-            "capacity": 35,
-            "enrolled": 33,
-            "crosslisted": false,
-            "available": 2,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "24458",
-        "id": "PHIL 100 05",
-        "subject": "PHIL",
-        "snumber": "100",
-        "section": 5,
-        "attributes": [
-            "C100"
-        ],
-        "title": "What Are We? The Human Self",
-        "instructor": {
-            "fullname": "McKinney, Tucker",
-            "surname": "McKinney",
-            "givenname": "Tucker",
-            "nameparts": [
-                "McKinney",
-                "Tucker"
-            ]
-        },
-        "hours": 4,
-        "time": {
+            ],
             "has_time": true,
-            "start": "1000",
-            "end": "1050",
             "duration": 1,
-            "days": [
-                "M",
-                "W",
-                "F"
-            ]
+            "start": "1500",
+            "end": "1550",
+            "raw_days": "W"
         },
         "space": {
             "capacity": 35,
             "enrolled": 25,
             "crosslisted": false,
-            "available": 0,
-            "status_ok": false
+            "available": 10,
+            "status_ok": true
         }
     },
     {
-        "crn": "24459",
-        "id": "PHIL 100 06",
-        "subject": "PHIL",
-        "snumber": "100",
-        "section": 6,
-        "attributes": [
-            "C100"
-        ],
-        "title": "Knowledge and Reality",
-        "instructor": {
-            "fullname": "Griffith, Aaron",
-            "surname": "Griffith",
-            "givenname": "Aaron",
-            "nameparts": [
-                "Griffith",
-                "Aaron"
-            ]
-        },
-        "hours": 4,
-        "time": {
-            "has_time": true,
-            "start": "1100",
-            "end": "1150",
-            "duration": 1,
-            "days": [
-                "M",
-                "W",
-                "F"
-            ]
-        },
-        "space": {
-            "capacity": 35,
-            "enrolled": 36,
-            "crosslisted": false,
-            "available": -1,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "24460",
-        "id": "PHIL 150 01",
-        "subject": "PHIL",
-        "snumber": "150",
-        "section": 1,
-        "attributes": [
-            "C150",
-            "FRSM",
-            "LDWR"
-        ],
-        "title": "Life  &  Death",
-        "instructor": {
-            "fullname": "Vance, Chad",
-            "surname": "Vance",
-            "givenname": "Chad",
-            "nameparts": [
-                "Vance",
-                "Chad"
-            ]
-        },
-        "hours": 4,
-        "time": {
-            "has_time": true,
-            "start": "1000",
-            "end": "1050",
-            "duration": 1,
-            "days": [
-                "M",
-                "W",
-                "F"
-            ]
-        },
-        "space": {
-            "capacity": 15,
-            "enrolled": 15,
-            "crosslisted": false,
-            "available": 0,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "24461",
-        "id": "PHIL 150 02",
-        "subject": "PHIL",
-        "snumber": "150",
-        "section": 2,
-        "attributes": [
-            "C150",
-            "FRSM",
-            "LDWR"
-        ],
-        "title": "Emotion,  Reason  &  Value",
-        "instructor": {
-            "fullname": "Radcliffe, Elizabeth",
-            "surname": "Radcliffe",
-            "givenname": "Elizabeth",
-            "nameparts": [
-                "Radcliffe",
-                "Elizabeth"
-            ]
-        },
-        "hours": 4,
-        "time": {
-            "has_time": true,
-            "start": "1400",
-            "end": "1520",
-            "duration": 1.5,
-            "days": [
-                "T",
-                "R"
-            ]
-        },
-        "space": {
-            "capacity": 15,
-            "enrolled": 15,
-            "crosslisted": false,
-            "available": 0,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "24462",
-        "id": "PHIL 150 03",
-        "subject": "PHIL",
-        "snumber": "150",
+        "crn": "10572",
+        "id": "PHYS 101P 03",
+        "subject": "PHYS",
+        "snumber": "101P",
         "section": 3,
         "attributes": [
-            "C150",
-            "FRSM",
-            "LDWR"
+            "GE2A"
         ],
-        "title": "The Good Life",
+        "title": "General Physics I",
         "instructor": {
-            "fullname": "Lemos, Noah",
-            "surname": "Lemos",
-            "givenname": "Noah",
+            "fullname": "Cooke, William",
+            "surname": "Cooke",
+            "givenname": "William",
             "nameparts": [
-                "Lemos",
-                "Noah"
+                "Cooke",
+                "William"
             ]
         },
-        "hours": 4,
+        "hours": 3,
         "time": {
-            "has_time": true,
-            "start": "1100",
-            "end": "1150",
-            "duration": 1,
+            "has_days": true,
             "days": [
-                "M",
-                "W",
-                "F"
-            ]
+                "R"
+            ],
+            "has_time": true,
+            "duration": 1,
+            "start": "1300",
+            "end": "1350",
+            "raw_days": "R"
         },
         "space": {
-            "capacity": 15,
-            "enrolled": 13,
+            "capacity": 35,
+            "enrolled": 34,
             "crosslisted": false,
-            "available": 2,
+            "available": 1,
             "status_ok": true
         }
     },
     {
-        "crn": "24863",
-        "id": "PHIL 150 04",
-        "subject": "PHIL",
-        "snumber": "150",
+        "crn": "10573",
+        "id": "PHYS 101P 04",
+        "subject": "PHYS",
+        "snumber": "101P",
         "section": 4,
         "attributes": [
-            "C150",
-            "FRSM"
+            "GE2A"
         ],
-        "title": "Music,  Beauty  &  Meaning",
+        "title": "General Physics I",
         "instructor": {
-            "fullname": "Philbrick-DeBrava, Valerie",
-            "surname": "Philbrick-DeBrava",
-            "givenname": "Valerie",
+            "fullname": "Vahala, George",
+            "surname": "Vahala",
+            "givenname": "George",
             "nameparts": [
-                "Philbrick-DeBrava",
-                "Valerie"
+                "Vahala",
+                "George"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "R"
+            ],
+            "has_time": true,
+            "duration": 1,
+            "start": "1530",
+            "end": "1620",
+            "raw_days": "R"
+        },
+        "space": {
+            "capacity": 35,
+            "enrolled": 19,
+            "crosslisted": false,
+            "available": 16,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "14793",
+        "id": "PHYS 101P 06",
+        "subject": "PHYS",
+        "snumber": "101P",
+        "section": 6,
+        "attributes": [
+            "GE2A"
+        ],
+        "title": "General Physics I",
+        "instructor": {
+            "fullname": "Carlson, Carl",
+            "surname": "Carlson",
+            "givenname": "Carl",
+            "nameparts": [
+                "Carlson",
+                "Carl"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "R"
+            ],
+            "has_time": true,
+            "duration": 1,
+            "start": "1400",
+            "end": "1450",
+            "raw_days": "R"
+        },
+        "space": {
+            "capacity": 35,
+            "enrolled": 21,
+            "crosslisted": false,
+            "available": 14,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10575",
+        "id": "PHYS 107 01",
+        "subject": "PHYS",
+        "snumber": "107",
+        "section": 1,
+        "attributes": [
+            "GE2A",
+            "NQR"
+        ],
+        "title": "Physics for Life Sciences I",
+        "instructor": {
+            "fullname": "Delos, John",
+            "surname": "Delos",
+            "givenname": "John",
+            "nameparts": [
+                "Delos",
+                "John"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M",
+                "W",
+                "F"
+            ],
+            "has_time": true,
+            "duration": 1,
+            "start": "1300",
+            "end": "1350",
+            "raw_days": "MWF"
+        },
+        "space": {
+            "capacity": 166,
+            "enrolled": 116,
+            "crosslisted": false,
+            "available": 50,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10576",
+        "id": "PHYS 107L 01",
+        "subject": "PHYS",
+        "snumber": "107L",
+        "section": 1,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "GE2L"
+        ],
+        "title": "Physics Life-Science I (Lab)",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M"
+            ],
+            "has_time": true,
+            "duration": 2.5,
+            "start": "1400",
+            "end": "1620",
+            "raw_days": "M"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 22,
+            "crosslisted": false,
+            "available": 0,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "10577",
+        "id": "PHYS 107L 02",
+        "subject": "PHYS",
+        "snumber": "107L",
+        "section": 2,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "GE2L"
+        ],
+        "title": "Physics Life-Science I (Lab)",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M"
+            ],
+            "has_time": true,
+            "duration": 2.5,
+            "start": "1900",
+            "end": "2120",
+            "raw_days": "M"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 8,
+            "crosslisted": false,
+            "available": 14,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10578",
+        "id": "PHYS 107L 03",
+        "subject": "PHYS",
+        "snumber": "107L",
+        "section": 3,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "GE2L"
+        ],
+        "title": "Physics Life-Science I (Lab)",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "W"
+            ],
+            "has_time": true,
+            "duration": 2.5,
+            "start": "1400",
+            "end": "1620",
+            "raw_days": "W"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 10,
+            "crosslisted": false,
+            "available": 12,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10579",
+        "id": "PHYS 107L 04",
+        "subject": "PHYS",
+        "snumber": "107L",
+        "section": 4,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "GE2L"
+        ],
+        "title": "Physics Life-Science I (Lab)",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "W"
+            ],
+            "has_time": true,
+            "duration": 2.5,
+            "start": "1630",
+            "end": "1850",
+            "raw_days": "W"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 3,
+            "crosslisted": false,
+            "available": 19,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10580",
+        "id": "PHYS 107L 05",
+        "subject": "PHYS",
+        "snumber": "107L",
+        "section": 5,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "GE2L"
+        ],
+        "title": "Physics Life-Science I (Lab)",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "R"
+            ],
+            "has_time": true,
+            "duration": 2.5,
+            "start": "1300",
+            "end": "1520",
+            "raw_days": "R"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 22,
+            "crosslisted": false,
+            "available": 0,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "10581",
+        "id": "PHYS 107L 06",
+        "subject": "PHYS",
+        "snumber": "107L",
+        "section": 6,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "GE2L"
+        ],
+        "title": "Physics Life-Science I (Lab)",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "T"
+            ],
+            "has_time": true,
+            "duration": 2.5,
+            "start": "1300",
+            "end": "1520",
+            "raw_days": "T"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 22,
+            "crosslisted": false,
+            "available": 0,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "11240",
+        "id": "PHYS 107L 07",
+        "subject": "PHYS",
+        "snumber": "107L",
+        "section": 7,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "GE2L"
+        ],
+        "title": "Physics Life-Science I (Lab)",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "T"
+            ],
+            "has_time": true,
+            "duration": 2.5,
+            "start": "1630",
+            "end": "1850",
+            "raw_days": "T"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 14,
+            "crosslisted": false,
+            "available": 8,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "11873",
+        "id": "PHYS 107L 08",
+        "subject": "PHYS",
+        "snumber": "107L",
+        "section": 8,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "GE2L"
+        ],
+        "title": "Physics Life-Science I (Lab)",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M"
+            ],
+            "has_time": true,
+            "duration": 2.5,
+            "start": "1630",
+            "end": "1850",
+            "raw_days": "M"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 5,
+            "crosslisted": false,
+            "available": 17,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "14576",
+        "id": "PHYS 171 01",
+        "subject": "PHYS",
+        "snumber": "171",
+        "section": 1,
+        "attributes": [
+            "C200",
+            "GE2A",
+            "NQR"
+        ],
+        "title": "Planetary  &  Stellar Astronomy",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M",
+                "W",
+                "F"
+            ],
+            "has_time": true,
+            "duration": 1,
+            "start": "0900",
+            "end": "0950",
+            "raw_days": "MWF"
+        },
+        "space": {
+            "capacity": 166,
+            "enrolled": 82,
+            "crosslisted": false,
+            "available": 84,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10583",
+        "id": "PHYS 177 01",
+        "subject": "PHYS",
+        "snumber": "177",
+        "section": 1,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "G2LA",
+            "NQR"
+        ],
+        "title": "Astronomy Laboratory",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M"
+            ],
+            "has_time": true,
+            "duration": 1,
+            "start": "2000",
+            "end": "2050",
+            "raw_days": "M"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 17,
+            "crosslisted": false,
+            "available": 5,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10583",
+        "id": "PHYS 177 01",
+        "subject": "PHYS",
+        "snumber": "177",
+        "section": 1,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "G2LA",
+            "NQR"
+        ],
+        "title": "Astronomy Laboratory",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M"
+            ],
+            "has_time": true,
+            "duration": 2,
+            "start": "1300",
+            "end": "1450",
+            "raw_days": "M"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 17,
+            "crosslisted": false,
+            "available": 5,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10584",
+        "id": "PHYS 177 02",
+        "subject": "PHYS",
+        "snumber": "177",
+        "section": 2,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "G2LA",
+            "NQR"
+        ],
+        "title": "Astronomy Laboratory",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M"
+            ],
+            "has_time": true,
+            "duration": 1,
+            "start": "2100",
+            "end": "2150",
+            "raw_days": "M"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 7,
+            "crosslisted": false,
+            "available": 15,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10584",
+        "id": "PHYS 177 02",
+        "subject": "PHYS",
+        "snumber": "177",
+        "section": 2,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "G2LA",
+            "NQR"
+        ],
+        "title": "Astronomy Laboratory",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M"
+            ],
+            "has_time": true,
+            "duration": 2,
+            "start": "1600",
+            "end": "1750",
+            "raw_days": "M"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 7,
+            "crosslisted": false,
+            "available": 15,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10585",
+        "id": "PHYS 177 03",
+        "subject": "PHYS",
+        "snumber": "177",
+        "section": 3,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "G2LA",
+            "NQR"
+        ],
+        "title": "Astronomy Laboratory",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "T"
+            ],
+            "has_time": true,
+            "duration": 2,
+            "start": "1300",
+            "end": "1450",
+            "raw_days": "T"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 4,
+            "crosslisted": false,
+            "available": 18,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10585",
+        "id": "PHYS 177 03",
+        "subject": "PHYS",
+        "snumber": "177",
+        "section": 3,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "G2LA",
+            "NQR"
+        ],
+        "title": "Astronomy Laboratory",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "T"
+            ],
+            "has_time": true,
+            "duration": 1,
+            "start": "2000",
+            "end": "2050",
+            "raw_days": "T"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 4,
+            "crosslisted": false,
+            "available": 18,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10586",
+        "id": "PHYS 177 04",
+        "subject": "PHYS",
+        "snumber": "177",
+        "section": 4,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "G2LA",
+            "NQR"
+        ],
+        "title": "Astronomy Laboratory",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "T"
+            ],
+            "has_time": true,
+            "duration": 2,
+            "start": "1600",
+            "end": "1750",
+            "raw_days": "T"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 3,
+            "crosslisted": false,
+            "available": 19,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10586",
+        "id": "PHYS 177 04",
+        "subject": "PHYS",
+        "snumber": "177",
+        "section": 4,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "G2LA",
+            "NQR"
+        ],
+        "title": "Astronomy Laboratory",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "T"
+            ],
+            "has_time": true,
+            "duration": 1,
+            "start": "2100",
+            "end": "2150",
+            "raw_days": "T"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 3,
+            "crosslisted": false,
+            "available": 19,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10587",
+        "id": "PHYS 177 05",
+        "subject": "PHYS",
+        "snumber": "177",
+        "section": 5,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "G2LA",
+            "NQR"
+        ],
+        "title": "Astronomy Laboratory",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "W"
+            ],
+            "has_time": true,
+            "duration": 2,
+            "start": "1300",
+            "end": "1450",
+            "raw_days": "W"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 6,
+            "crosslisted": false,
+            "available": 16,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10587",
+        "id": "PHYS 177 05",
+        "subject": "PHYS",
+        "snumber": "177",
+        "section": 5,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "G2LA",
+            "NQR"
+        ],
+        "title": "Astronomy Laboratory",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "W"
+            ],
+            "has_time": true,
+            "duration": 1,
+            "start": "2000",
+            "end": "2050",
+            "raw_days": "W"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 6,
+            "crosslisted": false,
+            "available": 16,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10588",
+        "id": "PHYS 177 06",
+        "subject": "PHYS",
+        "snumber": "177",
+        "section": 6,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "G2LA",
+            "NQR"
+        ],
+        "title": "Astronomy Laboratory",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "W"
+            ],
+            "has_time": true,
+            "duration": 1,
+            "start": "2100",
+            "end": "2150",
+            "raw_days": "W"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 6,
+            "crosslisted": false,
+            "available": 16,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10588",
+        "id": "PHYS 177 06",
+        "subject": "PHYS",
+        "snumber": "177",
+        "section": 6,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "G2LA",
+            "NQR"
+        ],
+        "title": "Astronomy Laboratory",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "W"
+            ],
+            "has_time": true,
+            "duration": 2,
+            "start": "1600",
+            "end": "1750",
+            "raw_days": "W"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 6,
+            "crosslisted": false,
+            "available": 16,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "11610",
+        "id": "PHYS 177 07",
+        "subject": "PHYS",
+        "snumber": "177",
+        "section": 7,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "G2LA",
+            "NQR"
+        ],
+        "title": "Astronomy Laboratory",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "R"
+            ],
+            "has_time": true,
+            "duration": 1,
+            "start": "2000",
+            "end": "2050",
+            "raw_days": "R"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 1,
+            "crosslisted": false,
+            "available": 21,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "11610",
+        "id": "PHYS 177 07",
+        "subject": "PHYS",
+        "snumber": "177",
+        "section": 7,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "G2LA",
+            "NQR"
+        ],
+        "title": "Astronomy Laboratory",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "R"
+            ],
+            "has_time": true,
+            "duration": 2,
+            "start": "1300",
+            "end": "1450",
+            "raw_days": "R"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 1,
+            "crosslisted": false,
+            "available": 21,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "12197",
+        "id": "PHYS 177 08",
+        "subject": "PHYS",
+        "snumber": "177",
+        "section": 8,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "G2LA",
+            "NQR"
+        ],
+        "title": "Astronomy Laboratory",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "R"
+            ],
+            "has_time": true,
+            "duration": 2,
+            "start": "1600",
+            "end": "1750",
+            "raw_days": "R"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 2,
+            "crosslisted": false,
+            "available": 20,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "12197",
+        "id": "PHYS 177 08",
+        "subject": "PHYS",
+        "snumber": "177",
+        "section": 8,
+        "attributes": [
+            "ACTV",
+            "FEE",
+            "G2LA",
+            "NQR"
+        ],
+        "title": "Astronomy Laboratory",
+        "instructor": {
+            "fullname": "Hancock, Arthur",
+            "surname": "Hancock",
+            "givenname": "Arthur",
+            "nameparts": [
+                "Hancock",
+                "Arthur"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "R"
+            ],
+            "has_time": true,
+            "duration": 1,
+            "start": "2100",
+            "end": "2150",
+            "raw_days": "R"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 2,
+            "crosslisted": false,
+            "available": 20,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10589",
+        "id": "PHYS 201 01",
+        "subject": "PHYS",
+        "snumber": "201",
+        "section": 1,
+        "attributes": [
+            "C200",
+            "NQR"
+        ],
+        "title": "Modern Physics",
+        "instructor": {
+            "fullname": "Sher, Marc",
+            "surname": "Sher",
+            "givenname": "Marc",
+            "nameparts": [
+                "Sher",
+                "Marc"
             ]
         },
         "hours": 4,
         "time": {
+            "has_days": true,
+            "days": [
+                "M",
+                "W",
+                "F"
+            ],
             "has_time": true,
-            "start": "0930",
+            "duration": 1,
+            "start": "1000",
             "end": "1050",
-            "duration": 1.5,
+            "raw_days": "MWF"
+        },
+        "space": {
+            "capacity": 56,
+            "enrolled": 51,
+            "crosslisted": false,
+            "available": 5,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10589",
+        "id": "PHYS 201 01",
+        "subject": "PHYS",
+        "snumber": "201",
+        "section": 1,
+        "attributes": [
+            "C200",
+            "NQR"
+        ],
+        "title": "Modern Physics",
+        "instructor": {
+            "fullname": "Sher, Marc",
+            "surname": "Sher",
+            "givenname": "Marc",
+            "nameparts": [
+                "Sher",
+                "Marc"
+            ]
+        },
+        "hours": 4,
+        "time": {
+            "has_days": true,
+            "days": [
+                "F"
+            ],
+            "has_time": true,
+            "duration": 1,
+            "start": "1400",
+            "end": "1450",
+            "raw_days": "F"
+        },
+        "space": {
+            "capacity": 56,
+            "enrolled": 51,
+            "crosslisted": false,
+            "available": 5,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "15164",
+        "id": "PHYS 213 01",
+        "subject": "PHYS",
+        "snumber": "213",
+        "section": 1,
+        "attributes": [
+            "C200",
+            "NQR"
+        ],
+        "title": "Introduction to Modern Optics",
+        "instructor": {
+            "fullname": "Novikova, Irina",
+            "surname": "Novikova",
+            "givenname": "Irina",
+            "nameparts": [
+                "Novikova",
+                "Irina"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M",
+                "W",
+                "F"
+            ],
+            "has_time": true,
+            "duration": 1,
+            "start": "0900",
+            "end": "0950",
+            "raw_days": "MWF"
+        },
+        "space": {
+            "capacity": 25,
+            "enrolled": 6,
+            "crosslisted": false,
+            "available": 19,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10591",
+        "id": "PHYS 251 01",
+        "subject": "PHYS",
+        "snumber": "251",
+        "section": 1,
+        "attributes": [],
+        "title": "Experimental Atomic Physics",
+        "instructor": {
+            "fullname": "Kordosky, Michael",
+            "surname": "Kordosky",
+            "givenname": "Michael",
+            "nameparts": [
+                "Kordosky",
+                "Michael"
+            ]
+        },
+        "hours": 2,
+        "time": {
+            "has_days": true,
+            "days": [
+                "W"
+            ],
+            "has_time": true,
+            "duration": 3,
+            "start": "1400",
+            "end": "1650",
+            "raw_days": "W"
+        },
+        "space": {
+            "capacity": 20,
+            "enrolled": 20,
+            "crosslisted": false,
+            "available": 0,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "10592",
+        "id": "PHYS 251 02",
+        "subject": "PHYS",
+        "snumber": "251",
+        "section": 2,
+        "attributes": [],
+        "title": "Experimental Atomic Physics",
+        "instructor": {
+            "fullname": "Kordosky, Michael",
+            "surname": "Kordosky",
+            "givenname": "Michael",
+            "nameparts": [
+                "Kordosky",
+                "Michael"
+            ]
+        },
+        "hours": 2,
+        "time": {
+            "has_days": true,
+            "days": [
+                "R"
+            ],
+            "has_time": true,
+            "duration": 3,
+            "start": "1400",
+            "end": "1650",
+            "raw_days": "R"
+        },
+        "space": {
+            "capacity": 20,
+            "enrolled": 20,
+            "crosslisted": false,
+            "available": 0,
+            "status_ok": false
+        }
+    },
+    {
+        "crn": "13463",
+        "id": "PHYS 256 01",
+        "subject": "PHYS",
+        "snumber": "256",
+        "section": 1,
+        "attributes": [],
+        "title": "Practical Comp for Scientists",
+        "instructor": {
+            "fullname": "Mikhailov, Eugeniy",
+            "surname": "Mikhailov",
+            "givenname": "Eugeniy",
+            "nameparts": [
+                "Mikhailov",
+                "Eugeniy"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M",
+                "W",
+                "F"
+            ],
+            "has_time": true,
+            "duration": 1,
+            "start": "1300",
+            "end": "1350",
+            "raw_days": "MWF"
+        },
+        "space": {
+            "capacity": 40,
+            "enrolled": 26,
+            "crosslisted": false,
+            "available": 14,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10593",
+        "id": "PHYS 303 01",
+        "subject": "PHYS",
+        "snumber": "303",
+        "section": 1,
+        "attributes": [],
+        "title": "Classical Mech Part/Waves II",
+        "instructor": {
+            "fullname": "Orginos, Konstantin",
+            "surname": "Orginos",
+            "givenname": "Konstantin",
+            "nameparts": [
+                "Orginos",
+                "Konstantin"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
             "days": [
                 "T",
                 "R"
-            ]
-        },
-        "space": {
-            "capacity": 15,
-            "enrolled": 18,
-            "crosslisted": false,
-            "available": -3,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "24463",
-        "id": "PHIL 205 01",
-        "subject": "PHIL",
-        "snumber": "205",
-        "section": 1,
-        "attributes": [
-            "ALV",
-            "C200",
-            "GE7"
-        ],
-        "title": "Meaning in Life",
-        "instructor": {
-            "fullname": "McKinney, Tucker",
-            "surname": "McKinney",
-            "givenname": "Tucker",
-            "nameparts": [
-                "McKinney",
-                "Tucker"
-            ]
-        },
-        "hours": 3,
-        "time": {
+            ],
             "has_time": true,
+            "duration": 1.5,
             "start": "1100",
-            "end": "1150",
-            "duration": 1,
-            "days": [
-                "M",
-                "W",
-                "F"
-            ]
+            "end": "1220",
+            "raw_days": "TR"
         },
         "space": {
-            "capacity": 35,
-            "enrolled": 36,
+            "capacity": 40,
+            "enrolled": 19,
             "crosslisted": false,
-            "available": -1,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "22741",
-        "id": "PHIL 210 01",
-        "subject": "PHIL",
-        "snumber": "210",
-        "section": 1,
-        "attributes": [
-            "ALV",
-            "C200",
-            "GE7"
-        ],
-        "title": "Critical Thinking",
-        "instructor": {
-            "fullname": "Tucker, Christophe",
-            "surname": "Tucker",
-            "givenname": "Christophe",
-            "nameparts": [
-                "Tucker",
-                "Christophe"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_time": true,
-            "start": "1100",
-            "end": "1150",
-            "duration": 1,
-            "days": [
-                "M",
-                "W",
-                "F"
-            ]
-        },
-        "space": {
-            "capacity": 60,
-            "enrolled": 58,
-            "crosslisted": false,
-            "available": 2,
+            "available": 21,
             "status_ok": true
         }
     },
     {
-        "crn": "22520",
-        "id": "PHIL 215 01",
-        "subject": "PHIL",
-        "snumber": "215",
+        "crn": "10594",
+        "id": "PHYS 313 01",
+        "subject": "PHYS",
+        "snumber": "313",
         "section": 1,
-        "attributes": [
-            "ALV",
-            "C200",
-            "GE7"
-        ],
-        "title": "Right  &  Wrong in Contemp Wrld",
+        "attributes": [],
+        "title": "Quantum Mechanics I",
         "instructor": {
-            "fullname": "Vance, Chad",
-            "surname": "Vance",
-            "givenname": "Chad",
+            "fullname": "Griffioen, Keith",
+            "surname": "Griffioen",
+            "givenname": "Keith",
             "nameparts": [
-                "Vance",
-                "Chad"
+                "Griffioen",
+                "Keith"
             ]
         },
         "hours": 3,
         "time": {
+            "has_days": true,
+            "days": [
+                "M",
+                "W",
+                "F"
+            ],
             "has_time": true,
+            "duration": 1,
+            "start": "1100",
+            "end": "1150",
+            "raw_days": "MWF"
+        },
+        "space": {
+            "capacity": 35,
+            "enrolled": 30,
+            "crosslisted": false,
+            "available": 5,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "11353",
+        "id": "PHYS 351 01",
+        "subject": "PHYS",
+        "snumber": "351",
+        "section": 1,
+        "attributes": [],
+        "title": "Scientific Instrumentation Lab",
+        "instructor": {
+            "fullname": "Cooke, William",
+            "surname": "Cooke",
+            "givenname": "William",
+            "nameparts": [
+                "Cooke",
+                "William"
+            ]
+        },
+        "hours": 2,
+        "time": {
+            "has_days": true,
+            "days": [
+                "W"
+            ],
+            "has_time": true,
+            "duration": 3,
+            "start": "1400",
+            "end": "1650",
+            "raw_days": "W"
+        },
+        "space": {
+            "capacity": 22,
+            "enrolled": 17,
+            "crosslisted": false,
+            "available": 5,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "11353",
+        "id": "PHYS 351 01",
+        "subject": "PHYS",
+        "snumber": "351",
+        "section": 1,
+        "attributes": [],
+        "title": "Scientific Instrumentation Lab",
+        "instructor": {
+            "fullname": "Cooke, William",
+            "surname": "Cooke",
+            "givenname": "William",
+            "nameparts": [
+                "Cooke",
+                "William"
+            ]
+        },
+        "hours": 2,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M"
+            ],
+            "has_time": true,
+            "duration": 1,
             "start": "1400",
             "end": "1450",
-            "duration": 1,
-            "days": [
-                "M",
-                "W",
-                "F"
-            ]
+            "raw_days": "M"
         },
         "space": {
-            "capacity": 35,
-            "enrolled": 36,
+            "capacity": 22,
+            "enrolled": 17,
             "crosslisted": false,
-            "available": -1,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "20251",
-        "id": "PHIL 215 02",
-        "subject": "PHIL",
-        "snumber": "215",
-        "section": 2,
-        "attributes": [
-            "ALV",
-            "C200",
-            "GE7"
-        ],
-        "title": "Right  &  Wrong in Contemp Wrld",
-        "instructor": {
-            "fullname": "Vance, Chad",
-            "surname": "Vance",
-            "givenname": "Chad",
-            "nameparts": [
-                "Vance",
-                "Chad"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_time": true,
-            "start": "1300",
-            "end": "1350",
-            "duration": 1,
-            "days": [
-                "M",
-                "W",
-                "F"
-            ]
-        },
-        "space": {
-            "capacity": 35,
-            "enrolled": 34,
-            "crosslisted": false,
-            "available": 1,
+            "available": 5,
             "status_ok": true
         }
     },
     {
-        "crn": "21727",
-        "id": "PHIL 232 01",
-        "subject": "PHIL",
-        "snumber": "232",
+        "crn": "10595",
+        "id": "PHYS 402 01",
+        "subject": "PHYS",
+        "snumber": "402",
         "section": 1,
-        "attributes": [
-            "ALV",
-            "GE4A"
-        ],
-        "title": "Medieval Philosophy",
+        "attributes": [],
+        "title": "Electricity  &  Magnetism II",
         "instructor": {
-            "fullname": "Lemos, Noah",
-            "surname": "Lemos",
-            "givenname": "Noah",
+            "fullname": "Aubin, Seth",
+            "surname": "Aubin",
+            "givenname": "Seth",
             "nameparts": [
-                "Lemos",
-                "Noah"
+                "Aubin",
+                "Seth"
             ]
         },
         "hours": 3,
         "time": {
+            "has_days": true,
+            "days": [
+                "T",
+                "R"
+            ],
             "has_time": true,
-            "start": "1000",
+            "duration": 1.5,
+            "start": "0930",
             "end": "1050",
-            "duration": 1,
-            "days": [
-                "M",
-                "W",
-                "F"
-            ]
+            "raw_days": "TR"
         },
         "space": {
-            "capacity": 35,
-            "enrolled": 34,
+            "capacity": 25,
+            "enrolled": 10,
             "crosslisted": false,
-            "available": 1,
+            "available": 15,
             "status_ok": true
         }
     },
     {
-        "crn": "21728",
-        "id": "PHIL 253 01",
-        "subject": "PHIL",
-        "snumber": "253",
+        "crn": "10596",
+        "id": "PHYS 403 01",
+        "subject": "PHYS",
+        "snumber": "403",
         "section": 1,
-        "attributes": [
-            "CSI",
-            "GE4A"
-        ],
-        "title": "Kant and his Successors",
+        "attributes": [],
+        "title": "Stat Mechanic/Thermodynamics",
         "instructor": {
-            "fullname": "Griffith, Aaron",
-            "surname": "Griffith",
-            "givenname": "Aaron",
+            "fullname": "Averett, Todd",
+            "surname": "Averett",
+            "givenname": "Todd",
             "nameparts": [
-                "Griffith",
-                "Aaron"
+                "Averett",
+                "Todd"
             ]
         },
         "hours": 3,
         "time": {
-            "has_time": true,
-            "start": "1300",
-            "end": "1350",
-            "duration": 1,
+            "has_days": true,
             "days": [
-                "M",
-                "W",
-                "F"
-            ]
+                "T",
+                "R"
+            ],
+            "has_time": true,
+            "duration": 1.5,
+            "start": "1400",
+            "end": "1520",
+            "raw_days": "TR"
         },
         "space": {
-            "capacity": 35,
-            "enrolled": 31,
+            "capacity": 30,
+            "enrolled": 26,
             "crosslisted": false,
             "available": 4,
             "status_ok": true
         }
     },
     {
-        "crn": "20252",
-        "id": "PHIL 303 01",
-        "subject": "PHIL",
-        "snumber": "303",
+        "crn": "10597",
+        "id": "PHYS 451 01",
+        "subject": "PHYS",
+        "snumber": "451",
         "section": 1,
-        "attributes": [
-            "ALV",
-            "C200",
-            "GE7"
-        ],
-        "title": "Ethics",
+        "attributes": [],
+        "title": "Physics Research",
         "instructor": {
-            "fullname": "Costa, Maria",
-            "surname": "Costa",
-            "givenname": "Maria",
+            "fullname": "Hoatson, Gina",
+            "surname": "Hoatson",
+            "givenname": "Gina",
             "nameparts": [
-                "Costa",
-                "Maria"
+                "Hoatson",
+                "Gina"
             ]
         },
-        "hours": 3,
+        "hours": 1,
         "time": {
-            "has_time": true,
-            "start": "1530",
-            "end": "1650",
-            "duration": 1.5,
+            "has_days": true,
             "days": [
-                "T",
-                "R"
-            ]
+                "F"
+            ],
+            "has_time": true,
+            "duration": 1,
+            "start": "1400",
+            "end": "1450",
+            "raw_days": "F"
         },
         "space": {
-            "capacity": 35,
-            "enrolled": 33,
+            "capacity": 29,
+            "enrolled": 8,
             "crosslisted": false,
-            "available": 2,
+            "available": 21,
             "status_ok": true
         }
     },
     {
-        "crn": "20253",
-        "id": "PHIL 303 02",
-        "subject": "PHIL",
-        "snumber": "303",
-        "section": 2,
-        "attributes": [
-            "ALV",
-            "C200",
-            "GE7"
-        ],
-        "title": "Ethics",
+        "crn": "10599",
+        "id": "PHYS 601 01",
+        "subject": "PHYS",
+        "snumber": "601",
+        "section": 1,
+        "attributes": [],
+        "title": "Classical Mechanics",
         "instructor": {
-            "fullname": "Goldwater, Jonah",
-            "surname": "Goldwater",
-            "givenname": "Jonah",
+            "fullname": "Vahala, George",
+            "surname": "Vahala",
+            "givenname": "George",
             "nameparts": [
-                "Goldwater",
-                "Jonah"
+                "Vahala",
+                "George"
             ]
         },
-        "hours": 3,
+        "hours": 4,
         "time": {
+            "has_days": true,
+            "days": [
+                "T",
+                "R"
+            ],
             "has_time": true,
+            "duration": 1.5,
             "start": "0930",
             "end": "1050",
-            "duration": 1.5,
-            "days": [
-                "T",
-                "R"
-            ]
+            "raw_days": "TR"
         },
         "space": {
-            "capacity": 35,
-            "enrolled": 33,
+            "capacity": 20,
+            "enrolled": 1,
             "crosslisted": false,
-            "available": 2,
+            "available": 19,
             "status_ok": true
         }
     },
     {
-        "crn": "21962",
-        "id": "PHIL 306 01",
-        "subject": "PHIL",
-        "snumber": "306",
+        "crn": "10600",
+        "id": "PHYS 603 01",
+        "subject": "PHYS",
+        "snumber": "603",
         "section": 1,
-        "attributes": [
-            "ALV",
-            "GE7"
-        ],
-        "title": "Philosophical Problems",
+        "attributes": [],
+        "title": "Mathematical Physics",
         "instructor": {
-            "fullname": "McKinney, Tucker",
-            "surname": "McKinney",
-            "givenname": "Tucker",
+            "fullname": "Krakauer, Henry",
+            "surname": "Krakauer",
+            "givenname": "Henry",
             "nameparts": [
-                "McKinney",
-                "Tucker"
+                "Krakauer",
+                "Henry"
             ]
         },
-        "hours": 3,
+        "hours": 4,
         "time": {
-            "has_time": true,
-            "start": "1530",
-            "end": "1650",
-            "duration": 1.5,
+            "has_days": true,
             "days": [
                 "M",
                 "W"
-            ]
+            ],
+            "has_time": true,
+            "duration": 1.5,
+            "start": "0930",
+            "end": "1050",
+            "raw_days": "MW"
         },
         "space": {
-            "capacity": 35,
-            "enrolled": 26,
+            "capacity": 20,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 20,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10601",
+        "id": "PHYS 611 01",
+        "subject": "PHYS",
+        "snumber": "611",
+        "section": 1,
+        "attributes": [],
+        "title": "Classical Elec  &  Magnetism II",
+        "instructor": {
+            "fullname": "Carlson, Carl",
+            "surname": "Carlson",
+            "givenname": "Carl",
+            "nameparts": [
+                "Carlson",
+                "Carl"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "T",
+                "R"
+            ],
+            "has_time": true,
+            "duration": 1.5,
+            "start": "0930",
+            "end": "1050",
+            "raw_days": "TR"
+        },
+        "space": {
+            "capacity": 15,
+            "enrolled": 6,
             "crosslisted": false,
             "available": 9,
             "status_ok": true
         }
     },
     {
-        "crn": "21864",
-        "id": "PHIL 310 01",
-        "subject": "PHIL",
-        "snumber": "310",
+        "crn": "10602",
+        "id": "PHYS 621 01",
+        "subject": "PHYS",
+        "snumber": "621",
         "section": 1,
-        "attributes": [
-            "CSI",
-            "GE7"
-        ],
-        "title": "Philosophy of Law",
+        "attributes": [],
+        "title": "Quantum Mechanics I",
         "instructor": {
-            "fullname": "Freiman, Christophe",
-            "surname": "Freiman",
+            "fullname": "Carone, Christophe",
+            "surname": "Carone",
             "givenname": "Christophe",
             "nameparts": [
-                "Freiman",
+                "Carone",
                 "Christophe"
             ]
         },
-        "hours": 3,
+        "hours": 4,
         "time": {
+            "has_days": true,
+            "days": [
+                "W",
+                "F"
+            ],
             "has_time": true,
-            "start": "1230",
-            "end": "1350",
             "duration": 1.5,
-            "days": [
-                "T",
-                "R"
-            ]
-        },
-        "space": {
-            "capacity": 35,
-            "enrolled": 36,
-            "crosslisted": false,
-            "available": -1,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "24885",
-        "id": "PHIL 325 01",
-        "subject": "PHIL",
-        "snumber": "325",
-        "section": 1,
-        "attributes": [
-            "ALV",
-            "C200",
-            "GE7",
-            "NQR"
-        ],
-        "title": "Neuroscience and Ethics",
-        "instructor": {
-            "fullname": "Haug, Matthew",
-            "surname": "Haug",
-            "givenname": "Matthew",
-            "nameparts": [
-                "Haug",
-                "Matthew"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_time": true,
-            "start": "1400",
-            "end": "1520",
-            "duration": 1.5,
-            "days": [
-                "T",
-                "R"
-            ]
-        },
-        "space": {
-            "capacity": 35,
-            "enrolled": 34,
-            "crosslisted": false,
-            "available": 1,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "21490",
-        "id": "PHIL 403 01",
-        "subject": "PHIL",
-        "snumber": "403",
-        "section": 1,
-        "attributes": [
-            "ALV"
-        ],
-        "title": "Advanced Ethics:Global Justice",
-        "instructor": {
-            "fullname": "Costa, Maria",
-            "surname": "Costa",
-            "givenname": "Maria",
-            "nameparts": [
-                "Costa",
-                "Maria"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_time": true,
-            "start": "1530",
-            "end": "1820",
-            "duration": 3,
-            "days": [
-                "W"
-            ]
-        },
-        "space": {
-            "capacity": 15,
-            "enrolled": 15,
-            "crosslisted": false,
-            "available": 0,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "23708",
-        "id": "PHIL 415 01",
-        "subject": "PHIL",
-        "snumber": "415",
-        "section": 1,
-        "attributes": [
-            "ALV"
-        ],
-        "title": "Rationality  & Biased Perception",
-        "instructor": {
-            "fullname": "Tucker, Christophe",
-            "surname": "Tucker",
-            "givenname": "Christophe",
-            "nameparts": [
-                "Tucker",
-                "Christophe"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_time": true,
-            "start": "1230",
-            "end": "1350",
-            "duration": 1.5,
-            "days": [
-                "T",
-                "R"
-            ]
-        },
-        "space": {
-            "capacity": 15,
-            "enrolled": 14,
-            "crosslisted": false,
-            "available": 1,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "20255",
-        "id": "PHIL 442 01",
-        "subject": "PHIL",
-        "snumber": "442",
-        "section": 1,
-        "attributes": [
-            "ALV",
-            "IN"
-        ],
-        "title": "Independent Study",
-        "instructor": {
-            "fullname": "Lemos, Noah",
-            "surname": "Lemos",
-            "givenname": "Noah",
-            "nameparts": [
-                "Lemos",
-                "Noah"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_time": false
-        },
-        "space": {
-            "capacity": 0,
-            "enrolled": 1,
-            "crosslisted": false,
-            "available": 4,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "23347",
-        "id": "PHIL 442 02",
-        "subject": "PHIL",
-        "snumber": "442",
-        "section": 2,
-        "attributes": [
-            "ALV",
-            "IN",
-            "X"
-        ],
-        "title": "Independent Study",
-        "instructor": {
-            "fullname": "McKinney, Tucker",
-            "surname": "McKinney",
-            "givenname": "Tucker",
-            "nameparts": [
-                "McKinney",
-                "Tucker"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_time": false
-        },
-        "space": {
-            "capacity": 1,
-            "enrolled": 1,
-            "crosslisted": false,
-            "available": 0,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "25279",
-        "id": "PHIL 442 03",
-        "subject": "PHIL",
-        "snumber": "442",
-        "section": 3,
-        "attributes": [
-            "ALV",
-            "X"
-        ],
-        "title": "Independent Study",
-        "instructor": {
-            "fullname": "Haug, Matthew",
-            "surname": "Haug",
-            "givenname": "Matthew",
-            "nameparts": [
-                "Haug",
-                "Matthew"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_time": false
-        },
-        "space": {
-            "capacity": 1,
-            "enrolled": 1,
-            "crosslisted": false,
-            "available": 0,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "24464",
-        "id": "PHIL 460 01",
-        "subject": "PHIL",
-        "snumber": "460",
-        "section": 1,
-        "attributes": [
-            "NQR"
-        ],
-        "title": "Advanced Logic",
-        "instructor": {
-            "fullname": "Gert, Joshua",
-            "surname": "Gert",
-            "givenname": "Joshua",
-            "nameparts": [
-                "Gert",
-                "Joshua"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_time": true,
             "start": "1100",
             "end": "1220",
+            "raw_days": "WF"
+        },
+        "space": {
+            "capacity": 20,
+            "enrolled": 1,
+            "crosslisted": false,
+            "available": 19,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10604",
+        "id": "PHYS 651 01",
+        "subject": "PHYS",
+        "snumber": "651",
+        "section": 1,
+        "attributes": [],
+        "title": "Teaching Physics",
+        "instructor": {
+            "fullname": "Tracy, Eugene",
+            "surname": "Tracy",
+            "givenname": "Eugene",
+            "nameparts": [
+                "Tracy",
+                "Eugene"
+            ]
+        },
+        "hours": 2,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 30,
+            "enrolled": 6,
+            "crosslisted": false,
+            "available": 24,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "14796",
+        "id": "PHYS 685 01",
+        "subject": "PHYS",
+        "snumber": "685",
+        "section": 1,
+        "attributes": [],
+        "title": "Colloquium",
+        "instructor": {
+            "fullname": "Tracy, Eugene",
+            "surname": "Tracy",
+            "givenname": "Eugene",
+            "nameparts": [
+                "Tracy",
+                "Eugene"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "F"
+            ],
+            "has_time": true,
             "duration": 1.5,
+            "start": "1530",
+            "end": "1650",
+            "raw_days": "F"
+        },
+        "space": {
+            "capacity": 40,
+            "enrolled": 5,
+            "crosslisted": false,
+            "available": 35,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "14715",
+        "id": "PHYS 694 01",
+        "subject": "PHYS",
+        "snumber": "694",
+        "section": 1,
+        "attributes": [],
+        "title": "Directed Research Topics",
+        "instructor": {
+            "fullname": "Armstrong, David",
+            "surname": "Armstrong",
+            "givenname": "David",
+            "nameparts": [
+                "Armstrong",
+                "David"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 20,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 20,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10605",
+        "id": "PHYS 695 01",
+        "subject": "PHYS",
+        "snumber": "695",
+        "section": 1,
+        "attributes": [],
+        "title": "Research",
+        "instructor": {
+            "fullname": "Tracy, Eugene",
+            "surname": "Tracy",
+            "givenname": "Eugene",
+            "nameparts": [
+                "Tracy",
+                "Eugene"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 40,
+            "enrolled": 1,
+            "crosslisted": false,
+            "available": 39,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10606",
+        "id": "PHYS 721 01",
+        "subject": "PHYS",
+        "snumber": "721",
+        "section": 1,
+        "attributes": [],
+        "title": "Quantum Field Theory I",
+        "instructor": {
+            "fullname": "Tracy, Eugene",
+            "surname": "Tracy",
+            "givenname": "Eugene",
+            "nameparts": [
+                "Tracy",
+                "Eugene"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
             "days": [
                 "T",
                 "R"
-            ]
+            ],
+            "has_time": true,
+            "duration": 1.5,
+            "start": "1100",
+            "end": "1220",
+            "raw_days": "TR"
         },
         "space": {
-            "capacity": 25,
-            "enrolled": 24,
+            "capacity": 16,
+            "enrolled": 6,
             "crosslisted": false,
-            "available": 1,
+            "available": 10,
             "status_ok": true
         }
     },
     {
-        "crn": "21101",
-        "id": "PHIL 496 01",
-        "subject": "PHIL",
-        "snumber": "496",
+        "crn": "11652",
+        "id": "PHYS 741 01",
+        "subject": "PHYS",
+        "snumber": "741",
         "section": 1,
-        "attributes": [
-            "ALV",
-            "DC"
-        ],
-        "title": "Honors",
+        "attributes": [],
+        "title": "Solid State Physics",
         "instructor": {
-            "fullname": "Freiman, Christophe",
-            "surname": "Freiman",
-            "givenname": "Christophe",
+            "fullname": "Zhang, Shiwei",
+            "surname": "Zhang",
+            "givenname": "Shiwei",
             "nameparts": [
-                "Freiman",
-                "Christophe"
+                "Zhang",
+                "Shiwei"
             ]
         },
         "hours": 3,
         "time": {
-            "has_time": false
+            "has_days": true,
+            "days": [
+                "W",
+                "F"
+            ],
+            "has_time": true,
+            "duration": 1.5,
+            "start": "1100",
+            "end": "1220",
+            "raw_days": "WF"
         },
         "space": {
-            "capacity": 1,
-            "enrolled": 2,
+            "capacity": 15,
+            "enrolled": 4,
             "crosslisted": false,
-            "available": 1,
+            "available": 11,
             "status_ok": true
         }
     },
     {
-        "crn": "24152",
-        "id": "PHIL 496 02",
-        "subject": "PHIL",
-        "snumber": "496",
-        "section": 2,
-        "attributes": [
-            "RESC",
-            "X"
-        ],
-        "title": "Honors",
+        "crn": "13796",
+        "id": "PHYS 773 01",
+        "subject": "PHYS",
+        "snumber": "773",
+        "section": 1,
+        "attributes": [],
+        "title": "Topics in LQCD",
         "instructor": {
-            "fullname": "Vance, Chad",
-            "surname": "Vance",
-            "givenname": "Chad",
+            "fullname": "Tracy, Eugene",
+            "surname": "Tracy",
+            "givenname": "Eugene",
             "nameparts": [
-                "Vance",
-                "Chad"
+                "Tracy",
+                "Eugene"
             ]
         },
         "hours": 3,
         "time": {
+            "has_days": false,
             "has_time": false
         },
         "space": {
-            "capacity": 1,
-            "enrolled": 1,
-            "crosslisted": false,
-            "available": 0,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "25152",
-        "id": "PHIL 496 03",
-        "subject": "PHIL",
-        "snumber": "496",
-        "section": 3,
-        "attributes": [
-            "ALV",
-            "RESC",
-            "X"
-        ],
-        "title": "Honors",
-        "instructor": {
-            "fullname": "Costa, Maria",
-            "surname": "Costa",
-            "givenname": "Maria",
-            "nameparts": [
-                "Costa",
-                "Maria"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_time": false
-        },
-        "space": {
-            "capacity": 0,
-            "enrolled": 1,
-            "crosslisted": false,
-            "available": 0,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "25153",
-        "id": "PHIL 496 04",
-        "subject": "PHIL",
-        "snumber": "496",
-        "section": 4,
-        "attributes": [
-            "ALV",
-            "RESC",
-            "X"
-        ],
-        "title": "Honors",
-        "instructor": {
-            "fullname": "Haug, Matthew",
-            "surname": "Haug",
-            "givenname": "Matthew",
-            "nameparts": [
-                "Haug",
-                "Matthew"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_time": false
-        },
-        "space": {
-            "capacity": 0,
+            "capacity": 15,
             "enrolled": 0,
             "crosslisted": false,
-            "available": 1,
+            "available": 15,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10607",
+        "id": "PHYS 800 01",
+        "subject": "PHYS",
+        "snumber": "800",
+        "section": 1,
+        "attributes": [],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "Tracy, Eugene",
+            "surname": "Tracy",
+            "givenname": "Eugene",
+            "nameparts": [
+                "Tracy",
+                "Eugene"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 70,
+            "enrolled": 21,
+            "crosslisted": false,
+            "available": 49,
             "status_ok": true
         }
     }

@@ -90,7 +90,7 @@ app.post('/search/all', function(req, res){
 });
 
 // web scraper
-app.get('/scrape/:subj', function(req, res){
+app.get('/scrape/courses/:subj', function(req, res){
 
     // have a checkmark for 'undergrad' that filters out 500+ course numbers
     // or similar for untakeable edu or business classes with 4 digit course nums
@@ -221,6 +221,13 @@ function saveToDB( parsed ){
         });
     });
 }
+
+// scrape the possible values for attributes and subjects from the
+// options on the courselist search page 
+app.get('/scrape/params/:type', function(req, res){
+    // TODO implement me!
+});
+
 
 app.listen(port)
 console.log('scrape active on port ' + port);

@@ -1,6 +1,8 @@
 var hbsrc = document.getElementById("result-template").innerHTML;
 var hbtemplate = Handlebars.compile(hbsrc);
 
+var lastresult;
+
 function displayResults( entries ){
 	if(entries.ok && entries.courses.length > 0){
 		showResult( hbtemplate(entries) );
@@ -22,7 +24,6 @@ function searchKeyPress(e){
 function showResult( str ){
 	var result_box = document.getElementById("results");
 	result_box.innerHTML = str;
-
 }
 
 function runSearch( str ){
@@ -40,6 +41,7 @@ function runSearch( str ){
 			console.log("Search completed.");
 			console.log(res);
 			displayResults(res);
+			lastresult = res;
 		} else {
 			console.log("Search failed: " + res.reason, 4000);
 		}

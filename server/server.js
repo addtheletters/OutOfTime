@@ -62,9 +62,19 @@ app.post('/search/all', function(req, res){
                     if(result) console.log("found: " +  result.length);
                     for(var k = 0; k < result.length; k++){
                         //console.log(result[k]);
-                        if(pkeys.indexOf(result[k].crn) < 0){
+                        var existing = pkeys.indexOf(result[k].crn);
+                        if( existing < 0 ){
                             possible.push(result[k]);
                             pkeys.push(result[k].crn);
+                        }
+                        else{
+                            // this currently just adds extraneous info
+                            // but when search terms get refined / classes are crosslisted
+                            // this will help stop confusion by telling people
+                            // that the class might be called something else
+                            if(!possible[existing].also)
+                                possible[existing].also = [];
+                            possible[existing].also.push(result[k]);
                         }
                         //console.log("possible contains ", possible.length)
                     }

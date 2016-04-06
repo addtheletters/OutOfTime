@@ -32,6 +32,7 @@ function grabJSON( filename, callback ){
 }
 
 // generate key-value object
+// This shouldn't be necessary with the adjustment in server.js that does this right after the scrape
 function generateKVOS( obj ){
 	if(obj.keyvalue_list){
 		console.log("object already has keyvalue_list");

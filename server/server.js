@@ -265,16 +265,19 @@ app.get('/scrape/params/:type', function(req, res){
             var select = $("#"+ids[req.params.type]);
 
             var options = {
+                // these should go in a meta subobject. would need to change scrape_help.js/html handlebars slightly to accomodate
                 param_id:ids[req.params.type],
                 raw_param:req.params.type,
-                value_list:[],
-                key_list:[],
+                // value_list:[],
+                // key_list:[],
+                keyvalue_list:[]
             };
 
             select.children().each(function(index){
                 options[$(this).val()] = $(this).text(); // see potential bug below
-                options.value_list.push($(this).text());
-                options.key_list.push($(this).val());
+                // options.value_list.push($(this).text());
+                // options.key_list.push($(this).val());
+                options.keyvalue_list.push( {key:$(this).val(), value:$(this).text()} );
             });
 
             // potential bug above: keys cannot contain certain characters.

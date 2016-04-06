@@ -274,16 +274,14 @@ app.get('/scrape/params/:type', function(req, res){
             };
 
             select.children().each(function(index){
-                options[$(this).val()] = $(this).text(); // see potential bug below
+                var ckey = $(this).val();
+                var cval = $(this).text();
+                options[ckey] = cval; // this may not be necessary and using it seems like a bad idea
+                // because it will break if the ckey has an incompatible-with-database key (character like . of $ is used)
                 // options.value_list.push($(this).text());
                 // options.key_list.push($(this).val());
-                options.keyvalue_list.push( {key:$(this).val(), value:$(this).text()} );
+                options.keyvalue_list.push( {key:ckey, value:cval} );
             });
-
-            // potential bug above: keys cannot contain certain characters.
-            // If it turns out a key has a banned character, assigning it into an object will cause an error
-            // This may be solved by just using key_list like value_list and then just comparing indexes
-            // instead of doing the typical object lookup
 
             saveToDB( options, paramscolle, "param_id" );
 

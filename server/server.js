@@ -11,8 +11,10 @@ app.use(bodyparser.json());
 var db      = require('mongoskin').db('mongodb://localhost:27017/courses');
 var coursecolle = "test1";
 var paramscolle = "params";
-var outfile = "scraped_course_stats.json";
+var outfile = "scrape_results.json";
 var port    = "8081";
+
+var should_outfile = true;
 
 var static = function(pth){ 
     return function(req, res){
@@ -20,10 +22,17 @@ var static = function(pth){
     }
 }
 
+// serve css
 app.get("/css/:file", function(req, res){
     res.sendFile("/css/" + req.params.file, {root: path.join(__dirname, "../public")});
 });
 
+// serve json
+app.get("/json/:file", function(req, res){
+    res.sendFile("/json/" + req.params.file, {root: path.join(__dirname, "../public")});
+});
+
+// serve javascript
 app.get(/\/js\/(.*)/, function(req, res){
     res.sendFile("/js/" + req.params[0], {root: path.join(__dirname, "../public")});
 });
@@ -33,15 +42,15 @@ app.get('/view', function(req, res){
     res.sendFile("/viewer.html", {root: path.join(__dirname, "../public")});
 });
 
-// respond to searches from viewer
+// respond to search queries from viewer
 app.post('/search/all', function(req, res){
     //console.log("req.body", req.body);
     console.log("searching for ", req.body.searchterms);
-    var terms = req.body.searchterms.split(/\s+/).filter((tkn)=>(tkn.length > 0));
-    var possible = [];
-    var pkeys = [];
-    var howmany = terms.length;
-    //console.log("howmany", howmany);
+    var terms    = req.body.searchterms.split(/\s+/).filter((tkn)=>(tkn.length > 0)); // split on whitespace; remove no-length tokens
+    var possible = []; // results to return
+    var pkeys    = []; // keep track of what has been put in results to avoid duplicates
+    var howmany  = terms.length; // count how many of our queries are still pending
+    // when this count reaches 0 we know all queries are done so we can send the response
     
     // This loop queries for each term given individually rather than let mongodb do its thing
     // and search for them all at once. This doesn't create any improvements ATM
@@ -85,32 +94,22 @@ app.post('/search/all', function(req, res){
                         res.status(200).send({ok:true, courses:possible});                        
                     }
                 });
-                /*
-                result.each(function(err, course){
-                    if(err){
-                        console.log("error in result ", err);
-                    }
-                    if(course){
-                        console.log(course);
-                        possible.push(course);
-                    }
-                });*/
             }
         });
     }
 });
 
 // to save / update database entries
-function saveToDB( parsed, colle, identifier ){
+function saveToDB( doc, colle, identifier ){
     //console.log("trying to save " + JSON.stringify(parsed));
     // hey look it's es6
-    db.collection(colle).findOne({[identifier]:parsed[identifier]}, function(err, result){
+    db.collection(colle).findOne({[identifier]:doc[identifier]}, function(err, result){
         if(err){console.log("Error finding existing identifier ("+identifier+"). " + err)};
         if(result){
             //console.log("found " + JSON.stringify( result ) );
-            parsed._id = result._id;
+            doc._id = result._id;
         }
-        db.collection(colle).save(parsed, function(err, result){
+        db.collection(colle).save(doc, function(err, result){
             if(err){
                 console.log("Failed to save to db. " + err);
             }
@@ -120,6 +119,21 @@ function saveToDB( parsed, colle, identifier ){
         });
     });
 }
+
+function writeJSONFile( str, filename ){
+    fs.writeFile(filename, JSON.stringify(str, null, 4), function(err){
+        if(err){
+            console.log("failed to write data to file. " + err);
+        }
+        else{
+            console.log("successfully wrote to file " + filename);
+        }
+    });
+}
+
+app.get('/scrape/help', function(req, res){
+    res.sendFile("/scrape_help.html", {root: path.join(__dirname, "../public")});
+});
 
 // web scraper for course information
 app.get('/scrape/courses/:subj', function(req, res){
@@ -136,6 +150,7 @@ app.get('/scrape/courses/:subj', function(req, res){
         autumn16:201710,
         spring17:201720,
     }
+    // eventually these things (and other options) will be dynamically loaded from files in /public/json
 
     var seasonIDs = {
         fall:"10",
@@ -185,10 +200,7 @@ app.get('/scrape/courses/:subj', function(req, res){
                 }
                 var coursekey = columns[index % columns.length];
                 data[Math.floor(index / columns.length)][coursekey] = $(this).text().trim();
-                //return $(this).html();
             });
-
-            //console.log(data);
 
             var parsed = [];
 
@@ -196,17 +208,12 @@ app.get('/scrape/courses/:subj', function(req, res){
                 console.log("Confirmed course: " + data[i]["COURSE ID"]);
                 parsed.push(course.parse(data[i]));
                 saveToDB(parsed[i], coursecolle, "crn");
-                //console.log(parsed[i]);
             }
 
-            console.log("Done parsing and saving to db.");
             console.log("Attempting to build search index.");
 
-            db.collection(coursecolle).createIndex({/*
-                    crn:"text",
-                    subject:"text",
-                    title:"text",
-                    "instructor.fullname":"text",*/ // this disturbs me, why so inconsistent with dot notation?
+            // building a search index on all text fields so searches are easy
+            db.collection(coursecolle).createIndex({
                     "$**":"text"
                 }, {name:"CourseTextIndex"}, function(err){
                     if(err){
@@ -218,14 +225,10 @@ app.get('/scrape/courses/:subj', function(req, res){
                 }
             );
 
-            fs.writeFile(outfile, JSON.stringify(parsed, null, 4), function(err){
-                if(err){
-                    console.log("failed to write data to file. " + err);
-                }
-                else{
-                    console.log("successfully wrote to file " + outfile);
-                }
-            });
+            if(should_outfile){
+                writeJSONFile(parsed, outfile);
+            }
+
             res.send("Let's go. We're getting somewhere, eventually. <hr><textarea rows='40' cols='100'>"+JSON.stringify(parsed, null, 4)+"</textarea>");
         }
         else{
@@ -238,7 +241,7 @@ app.get('/scrape/courses/:subj', function(req, res){
 // scrape the possible values for attributes and subjects from the
 // options on the courselist search page 
 app.get('/scrape/params/:type', function(req, res){
-    // TODO implement me!
+
     var url = "https://courselist.wm.edu/courselist/";
     var ids = {
         term:"term_code",
@@ -247,7 +250,7 @@ app.get('/scrape/params/:type', function(req, res){
         status:"status",
         level:"levl", // not displayed in OCL results (would need to tag ourselves by retreiving results for each level)
         part_of_term:"ptrm", // not displayed in OCL results
-    };
+    }; // could load this from /public/json/params.json
 
     request.get({uri:url}, function(error, response, html){
         if(!error){
@@ -280,6 +283,10 @@ app.get('/scrape/params/:type', function(req, res){
             // instead of doing the typical object lookup
 
             saveToDB( options, paramscolle, "param_id" );
+
+            if(should_outfile){
+                writeJSONFile(options, outfile);
+            }
 
             res.send("We're making progress. Scrape for: ["+ids[req.params.type]+"] <hr><textarea rows='40' cols='100'>"+JSON.stringify(options, null, 4)+"</textarea>");
         }

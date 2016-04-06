@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Help!</title>
+	<style type="text/css">
+	body{
+		font-family: monospace;
+		font-size: 20px;
+	}
+	</style>
+	<script type="text/javascript" src="js/lib/handlebars-v4.0.5.js"></script>
+	<script id="keyval-list-template" type="text/x-handlebars-template">
+		{{#list keyvalue_list}}
+			{{key}} : {{value}}
+		{{/list}}
+	</script>
+	<script type="text/javascript" src="js/scrape_help.js"></script>
+</head>
+<body>
+	<h3>Scraping Help</h3>
+	<hr>
+	<section>
+		<h4>/courses</h4>
+		<p>
+			Use /scrape/courses/SUBJECTID to scrape courses of a specific subject from the internally-set semester.
+		</p>
+		<span>Known subject IDs are:</span>
+		<div id="subj-list">
+			[none]
+		</div>
+	</section>
+	<hr>
+	<section>
+		<h4>/params</h4>
+		<p>
+			Use /scrape/params/TYPE to scrape the options for a parameter (one of the dropdowns on the OCL search page).
+		</p>
+		<span>Known parameters are:</span>
+		<div id="param-list">
+			[none]
+		</div>
+	</section>
+</body>
+</html>

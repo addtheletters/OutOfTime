@@ -14,7 +14,7 @@ function displayResults( entries ){
 
 function searchKeyPress(e){
     e = e || window.event;
-    if (e.keyCode == 13){
+    if (e.keyCode == 13){ // if enter is pressed, it's the same thing as clicking the search button
         document.getElementById('search-button').click();
         return false;
     }

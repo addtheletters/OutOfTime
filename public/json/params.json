@@ -1,0 +1,24 @@
+{
+    "term":"term_code",
+    "subject":"term_subj",
+    "attribute":"attr",
+    "status":"status",
+    "level":"levl", 
+    "part_of_term":"ptrm", 
+    "key_list":[
+		"term",
+		"subject",
+		"attribute",
+		"status",
+		"level",
+		"part_of_term"
+    ],
+    "value_list":[
+	    "term_code",
+		"term_subj",
+		"attr",
+		"status",
+		"levl",
+		"ptrm"
+    ]
+}

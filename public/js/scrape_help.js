@@ -52,12 +52,12 @@ function generateKVOS( obj ){
 
 function onParams( pobj ){
 	var pbox = document.getElementById("param-list");
-	pbox.innerHTML = hbtemplate( generateKVOS(pobj) );
+	pbox.innerHTML = hbtemplate( generateKVOS(pobj.meta) );
 }
 
 function onSubjects( sobj ){
 	var sbox = document.getElementById("subj-list");
-	sbox.innerHTML = hbtemplate( generateKVOS(sobj) );
+	sbox.innerHTML = hbtemplate( generateKVOS(sobj.meta) );
 }
 
 document.addEventListener("DOMContentLoaded", function(){

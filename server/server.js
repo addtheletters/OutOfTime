@@ -265,12 +265,11 @@ app.get('/scrape/params/:type', function(req, res){
             var select = $("#"+ids[req.params.type]);
 
             var options = {
-                // these should go in a meta subobject. would need to change scrape_help.js/html handlebars slightly to accomodate
-                param_id:ids[req.params.type],
-                raw_param:req.params.type,
-                // value_list:[],
-                // key_list:[],
-                keyvalue_list:[]
+                meta:{
+                    param_id:ids[req.params.type],
+                    param_raw:req.params.type,
+                    keyvalue_list:[]
+                },
             };
 
             select.children().each(function(index){
@@ -280,7 +279,7 @@ app.get('/scrape/params/:type', function(req, res){
                 // because it will break if the ckey has an incompatible-with-database key (character like . of $ is used)
                 // options.value_list.push($(this).text());
                 // options.key_list.push($(this).val());
-                options.keyvalue_list.push( {key:ckey, value:cval} );
+                options.meta.keyvalue_list.push( {key:ckey, value:cval} );
             });
 
             saveToDB( options, paramscolle, "param_id" );

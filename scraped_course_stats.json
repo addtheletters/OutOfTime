@@ -1,2153 +1,57 @@
 [
     {
-        "crn": "14320",
-        "id": "PHYS 100 01",
-        "subject": "PHYS",
-        "snumber": "100",
+        "crn": "11397",
+        "id": "EDUC 301 01",
+        "subject": "EDUC",
+        "snumber": "301",
         "section": 1,
-        "attributes": [
-            "C100"
-        ],
-        "title": "Scales in the Universe",
+        "attributes": [],
+        "title": "Educational Psychology",
         "instructor": {
-            "fullname": "Lukaszew, Rosa",
-            "surname": "Lukaszew",
-            "givenname": "Rosa",
+            "fullname": "Joseph, Jacob",
+            "surname": "Joseph",
+            "givenname": "Jacob",
             "nameparts": [
-                "Lukaszew",
-                "Rosa"
-            ]
-        },
-        "hours": 4,
-        "time": {
-            "has_days": true,
-            "days": [
-                "M",
-                "W",
-                "F"
-            ],
-            "has_time": true,
-            "duration": 1,
-            "start": "1400",
-            "end": "1450",
-            "raw_days": "MWF"
-        },
-        "space": {
-            "capacity": 25,
-            "enrolled": 0,
-            "crosslisted": false,
-            "available": 25,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "14321",
-        "id": "PHYS 100 02",
-        "subject": "PHYS",
-        "snumber": "100",
-        "section": 2,
-        "attributes": [
-            "C100"
-        ],
-        "title": "Great Ideas of Modern Physics",
-        "instructor": {
-            "fullname": "Erlich, Joshua",
-            "surname": "Erlich",
-            "givenname": "Joshua",
-            "nameparts": [
-                "Erlich",
-                "Joshua"
-            ]
-        },
-        "hours": 4,
-        "time": {
-            "has_days": true,
-            "days": [
-                "M",
-                "W",
-                "F"
-            ],
-            "has_time": true,
-            "duration": 1,
-            "start": "1100",
-            "end": "1150",
-            "raw_days": "MWF"
-        },
-        "space": {
-            "capacity": 25,
-            "enrolled": 0,
-            "crosslisted": false,
-            "available": 25,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10563",
-        "id": "PHYS 101 01",
-        "subject": "PHYS",
-        "snumber": "101",
-        "section": 1,
-        "attributes": [
-            "GE2A",
-            "NQR"
-        ],
-        "title": "General Physics-Lecture",
-        "instructor": {
-            "fullname": "Armstrong, David",
-            "surname": "Armstrong",
-            "givenname": "David",
-            "nameparts": [
-                "Armstrong",
-                "David"
-            ]
-        },
-        "hours": 0,
-        "time": {
-            "has_days": true,
-            "days": [
-                "M",
-                "W",
-                "F"
-            ],
-            "has_time": true,
-            "duration": 1,
-            "start": "1100",
-            "end": "1150",
-            "raw_days": "MWF"
-        },
-        "space": {
-            "capacity": 166,
-            "enrolled": 133,
-            "crosslisted": false,
-            "available": 7,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "12431",
-        "id": "PHYS 101H 01",
-        "subject": "PHYS",
-        "snumber": "101H",
-        "section": 1,
-        "attributes": [
-            "GE2A",
-            "IN"
-        ],
-        "title": "General Physics I - Honors",
-        "instructor": {
-            "fullname": "Vahle, Patricia",
-            "surname": "Vahle",
-            "givenname": "Patricia",
-            "nameparts": [
-                "Vahle",
-                "Patricia"
+                "Joseph",
+                "Jacob"
             ]
         },
         "hours": 3,
         "time": {
             "has_days": true,
             "days": [
-                "M",
-                "W",
-                "F"
-            ],
-            "has_time": true,
-            "duration": 1,
-            "start": "1100",
-            "end": "1150",
-            "raw_days": "MWF"
-        },
-        "space": {
-            "capacity": 39,
-            "enrolled": 8,
-            "crosslisted": false,
-            "available": 31,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "12431",
-        "id": "PHYS 101H 01",
-        "subject": "PHYS",
-        "snumber": "101H",
-        "section": 1,
-        "attributes": [
-            "GE2A",
-            "IN"
-        ],
-        "title": "General Physics I - Honors",
-        "instructor": {
-            "fullname": "Vahle, Patricia",
-            "surname": "Vahle",
-            "givenname": "Patricia",
-            "nameparts": [
-                "Vahle",
-                "Patricia"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_days": true,
-            "days": [
+                "T",
                 "R"
             ],
             "has_time": true,
-            "duration": 1,
-            "start": "0830",
-            "end": "0920",
-            "raw_days": "R"
+            "duration": 1.5,
+            "start": "1100",
+            "end": "1220",
+            "raw_days": "TR"
         },
         "space": {
-            "capacity": 39,
-            "enrolled": 8,
-            "crosslisted": false,
-            "available": 31,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10564",
-        "id": "PHYS 101L 01",
-        "subject": "PHYS",
-        "snumber": "101L",
-        "section": 1,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "GE2L"
-        ],
-        "title": "General Physics-Lab",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "M"
-            ],
-            "has_time": true,
-            "duration": 2.5,
-            "start": "1230",
-            "end": "1450",
-            "raw_days": "M"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 19,
+            "capacity": 20,
+            "enrolled": 17,
             "crosslisted": false,
             "available": 3,
             "status_ok": true
         }
     },
     {
-        "crn": "10565",
-        "id": "PHYS 101L 02",
-        "subject": "PHYS",
-        "snumber": "101L",
-        "section": 2,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "GE2L"
-        ],
-        "title": "General Physics-Lab",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "M"
-            ],
-            "has_time": true,
-            "duration": 2.5,
-            "start": "1630",
-            "end": "1850",
-            "raw_days": "M"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 21,
-            "crosslisted": false,
-            "available": 1,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10566",
-        "id": "PHYS 101L 03",
-        "subject": "PHYS",
-        "snumber": "101L",
-        "section": 3,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "GE2L"
-        ],
-        "title": "General Physics-Lab",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "T"
-            ],
-            "has_time": true,
-            "duration": 2.5,
-            "start": "1530",
-            "end": "1750",
-            "raw_days": "T"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 20,
-            "crosslisted": false,
-            "available": 2,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10567",
-        "id": "PHYS 101L 04",
-        "subject": "PHYS",
-        "snumber": "101L",
-        "section": 4,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "GE2L"
-        ],
-        "title": "General Physics-Lab",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "W"
-            ],
-            "has_time": true,
-            "duration": 2.5,
-            "start": "1230",
-            "end": "1450",
-            "raw_days": "W"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 17,
-            "crosslisted": false,
-            "available": 5,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10568",
-        "id": "PHYS 101L 05",
-        "subject": "PHYS",
-        "snumber": "101L",
-        "section": 5,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "GE2L"
-        ],
-        "title": "General Physics-Lab",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "R"
-            ],
-            "has_time": true,
-            "duration": 2.5,
-            "start": "1630",
-            "end": "1850",
-            "raw_days": "R"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 10,
-            "crosslisted": false,
-            "available": 12,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10569",
-        "id": "PHYS 101L 06",
-        "subject": "PHYS",
-        "snumber": "101L",
-        "section": 6,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "GE2L"
-        ],
-        "title": "General Physics-Lab",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "R"
-            ],
-            "has_time": true,
-            "duration": 2.5,
-            "start": "1400",
-            "end": "1620",
-            "raw_days": "R"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 11,
-            "crosslisted": false,
-            "available": 11,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "12270",
-        "id": "PHYS 101L 07",
-        "subject": "PHYS",
-        "snumber": "101L",
-        "section": 7,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "GE2L"
-        ],
-        "title": "General Physics-Lab",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "W"
-            ],
-            "has_time": true,
-            "duration": 2.5,
-            "start": "1630",
-            "end": "1850",
-            "raw_days": "W"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 9,
-            "crosslisted": false,
-            "available": 13,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "12289",
-        "id": "PHYS 101L 08",
-        "subject": "PHYS",
-        "snumber": "101L",
-        "section": 8,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "GE2L"
-        ],
-        "title": "General Physics-Lab",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "T"
-            ],
-            "has_time": true,
-            "duration": 2.5,
-            "start": "1800",
-            "end": "2020",
-            "raw_days": "T"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 12,
-            "crosslisted": false,
-            "available": 10,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "13202",
-        "id": "PHYS 101L 09",
-        "subject": "PHYS",
-        "snumber": "101L",
-        "section": 9,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "G2LA"
-        ],
-        "title": "General Physics-Lab",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "W"
-            ],
-            "has_time": true,
-            "duration": 2.5,
-            "start": "1900",
-            "end": "2120",
-            "raw_days": "W"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 3,
-            "crosslisted": false,
-            "available": 19,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "14791",
-        "id": "PHYS 101L 10",
-        "subject": "PHYS",
-        "snumber": "101L",
-        "section": 10,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "G2LA",
-            "PHYL"
-        ],
-        "title": "General Physics-Lab",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "M"
-            ],
-            "has_time": true,
-            "duration": 2.5,
-            "start": "1900",
-            "end": "2120",
-            "raw_days": "M"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 4,
-            "crosslisted": false,
-            "available": 18,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10570",
-        "id": "PHYS 101P 01",
-        "subject": "PHYS",
-        "snumber": "101P",
-        "section": 1,
-        "attributes": [
-            "GE2A"
-        ],
-        "title": "General Physics I",
-        "instructor": {
-            "fullname": "Hoatson, Gina",
-            "surname": "Hoatson",
-            "givenname": "Gina",
-            "nameparts": [
-                "Hoatson",
-                "Gina"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_days": true,
-            "days": [
-                "W"
-            ],
-            "has_time": true,
-            "duration": 1,
-            "start": "0900",
-            "end": "0950",
-            "raw_days": "W"
-        },
-        "space": {
-            "capacity": 35,
-            "enrolled": 34,
-            "crosslisted": false,
-            "available": 1,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10571",
-        "id": "PHYS 101P 02",
-        "subject": "PHYS",
-        "snumber": "101P",
-        "section": 2,
-        "attributes": [
-            "GE2A"
-        ],
-        "title": "General Physics I",
-        "instructor": {
-            "fullname": "Erlich, Joshua",
-            "surname": "Erlich",
-            "givenname": "Joshua",
-            "nameparts": [
-                "Erlich",
-                "Joshua"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_days": true,
-            "days": [
-                "W"
-            ],
-            "has_time": true,
-            "duration": 1,
-            "start": "1500",
-            "end": "1550",
-            "raw_days": "W"
-        },
-        "space": {
-            "capacity": 35,
-            "enrolled": 25,
-            "crosslisted": false,
-            "available": 10,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10572",
-        "id": "PHYS 101P 03",
-        "subject": "PHYS",
-        "snumber": "101P",
-        "section": 3,
-        "attributes": [
-            "GE2A"
-        ],
-        "title": "General Physics I",
-        "instructor": {
-            "fullname": "Cooke, William",
-            "surname": "Cooke",
-            "givenname": "William",
-            "nameparts": [
-                "Cooke",
-                "William"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_days": true,
-            "days": [
-                "R"
-            ],
-            "has_time": true,
-            "duration": 1,
-            "start": "1300",
-            "end": "1350",
-            "raw_days": "R"
-        },
-        "space": {
-            "capacity": 35,
-            "enrolled": 34,
-            "crosslisted": false,
-            "available": 1,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10573",
-        "id": "PHYS 101P 04",
-        "subject": "PHYS",
-        "snumber": "101P",
-        "section": 4,
-        "attributes": [
-            "GE2A"
-        ],
-        "title": "General Physics I",
-        "instructor": {
-            "fullname": "Vahala, George",
-            "surname": "Vahala",
-            "givenname": "George",
-            "nameparts": [
-                "Vahala",
-                "George"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_days": true,
-            "days": [
-                "R"
-            ],
-            "has_time": true,
-            "duration": 1,
-            "start": "1530",
-            "end": "1620",
-            "raw_days": "R"
-        },
-        "space": {
-            "capacity": 35,
-            "enrolled": 19,
-            "crosslisted": false,
-            "available": 16,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "14793",
-        "id": "PHYS 101P 06",
-        "subject": "PHYS",
-        "snumber": "101P",
-        "section": 6,
-        "attributes": [
-            "GE2A"
-        ],
-        "title": "General Physics I",
-        "instructor": {
-            "fullname": "Carlson, Carl",
-            "surname": "Carlson",
-            "givenname": "Carl",
-            "nameparts": [
-                "Carlson",
-                "Carl"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_days": true,
-            "days": [
-                "R"
-            ],
-            "has_time": true,
-            "duration": 1,
-            "start": "1400",
-            "end": "1450",
-            "raw_days": "R"
-        },
-        "space": {
-            "capacity": 35,
-            "enrolled": 21,
-            "crosslisted": false,
-            "available": 14,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10575",
-        "id": "PHYS 107 01",
-        "subject": "PHYS",
-        "snumber": "107",
-        "section": 1,
-        "attributes": [
-            "GE2A",
-            "NQR"
-        ],
-        "title": "Physics for Life Sciences I",
-        "instructor": {
-            "fullname": "Delos, John",
-            "surname": "Delos",
-            "givenname": "John",
-            "nameparts": [
-                "Delos",
-                "John"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_days": true,
-            "days": [
-                "M",
-                "W",
-                "F"
-            ],
-            "has_time": true,
-            "duration": 1,
-            "start": "1300",
-            "end": "1350",
-            "raw_days": "MWF"
-        },
-        "space": {
-            "capacity": 166,
-            "enrolled": 116,
-            "crosslisted": false,
-            "available": 50,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10576",
-        "id": "PHYS 107L 01",
-        "subject": "PHYS",
-        "snumber": "107L",
-        "section": 1,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "GE2L"
-        ],
-        "title": "Physics Life-Science I (Lab)",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "M"
-            ],
-            "has_time": true,
-            "duration": 2.5,
-            "start": "1400",
-            "end": "1620",
-            "raw_days": "M"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 22,
-            "crosslisted": false,
-            "available": 0,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "10577",
-        "id": "PHYS 107L 02",
-        "subject": "PHYS",
-        "snumber": "107L",
-        "section": 2,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "GE2L"
-        ],
-        "title": "Physics Life-Science I (Lab)",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "M"
-            ],
-            "has_time": true,
-            "duration": 2.5,
-            "start": "1900",
-            "end": "2120",
-            "raw_days": "M"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 8,
-            "crosslisted": false,
-            "available": 14,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10578",
-        "id": "PHYS 107L 03",
-        "subject": "PHYS",
-        "snumber": "107L",
-        "section": 3,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "GE2L"
-        ],
-        "title": "Physics Life-Science I (Lab)",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "W"
-            ],
-            "has_time": true,
-            "duration": 2.5,
-            "start": "1400",
-            "end": "1620",
-            "raw_days": "W"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 10,
-            "crosslisted": false,
-            "available": 12,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10579",
-        "id": "PHYS 107L 04",
-        "subject": "PHYS",
-        "snumber": "107L",
-        "section": 4,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "GE2L"
-        ],
-        "title": "Physics Life-Science I (Lab)",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "W"
-            ],
-            "has_time": true,
-            "duration": 2.5,
-            "start": "1630",
-            "end": "1850",
-            "raw_days": "W"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 3,
-            "crosslisted": false,
-            "available": 19,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10580",
-        "id": "PHYS 107L 05",
-        "subject": "PHYS",
-        "snumber": "107L",
-        "section": 5,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "GE2L"
-        ],
-        "title": "Physics Life-Science I (Lab)",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "R"
-            ],
-            "has_time": true,
-            "duration": 2.5,
-            "start": "1300",
-            "end": "1520",
-            "raw_days": "R"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 22,
-            "crosslisted": false,
-            "available": 0,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "10581",
-        "id": "PHYS 107L 06",
-        "subject": "PHYS",
-        "snumber": "107L",
-        "section": 6,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "GE2L"
-        ],
-        "title": "Physics Life-Science I (Lab)",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "T"
-            ],
-            "has_time": true,
-            "duration": 2.5,
-            "start": "1300",
-            "end": "1520",
-            "raw_days": "T"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 22,
-            "crosslisted": false,
-            "available": 0,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "11240",
-        "id": "PHYS 107L 07",
-        "subject": "PHYS",
-        "snumber": "107L",
-        "section": 7,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "GE2L"
-        ],
-        "title": "Physics Life-Science I (Lab)",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "T"
-            ],
-            "has_time": true,
-            "duration": 2.5,
-            "start": "1630",
-            "end": "1850",
-            "raw_days": "T"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 14,
-            "crosslisted": false,
-            "available": 8,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "11873",
-        "id": "PHYS 107L 08",
-        "subject": "PHYS",
-        "snumber": "107L",
-        "section": 8,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "GE2L"
-        ],
-        "title": "Physics Life-Science I (Lab)",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "M"
-            ],
-            "has_time": true,
-            "duration": 2.5,
-            "start": "1630",
-            "end": "1850",
-            "raw_days": "M"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 5,
-            "crosslisted": false,
-            "available": 17,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "14576",
-        "id": "PHYS 171 01",
-        "subject": "PHYS",
-        "snumber": "171",
-        "section": 1,
-        "attributes": [
-            "C200",
-            "GE2A",
-            "NQR"
-        ],
-        "title": "Planetary  &  Stellar Astronomy",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_days": true,
-            "days": [
-                "M",
-                "W",
-                "F"
-            ],
-            "has_time": true,
-            "duration": 1,
-            "start": "0900",
-            "end": "0950",
-            "raw_days": "MWF"
-        },
-        "space": {
-            "capacity": 166,
-            "enrolled": 82,
-            "crosslisted": false,
-            "available": 84,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10583",
-        "id": "PHYS 177 01",
-        "subject": "PHYS",
-        "snumber": "177",
-        "section": 1,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "G2LA",
-            "NQR"
-        ],
-        "title": "Astronomy Laboratory",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "M"
-            ],
-            "has_time": true,
-            "duration": 1,
-            "start": "2000",
-            "end": "2050",
-            "raw_days": "M"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 17,
-            "crosslisted": false,
-            "available": 5,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10583",
-        "id": "PHYS 177 01",
-        "subject": "PHYS",
-        "snumber": "177",
-        "section": 1,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "G2LA",
-            "NQR"
-        ],
-        "title": "Astronomy Laboratory",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "M"
-            ],
-            "has_time": true,
-            "duration": 2,
-            "start": "1300",
-            "end": "1450",
-            "raw_days": "M"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 17,
-            "crosslisted": false,
-            "available": 5,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10584",
-        "id": "PHYS 177 02",
-        "subject": "PHYS",
-        "snumber": "177",
-        "section": 2,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "G2LA",
-            "NQR"
-        ],
-        "title": "Astronomy Laboratory",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "M"
-            ],
-            "has_time": true,
-            "duration": 1,
-            "start": "2100",
-            "end": "2150",
-            "raw_days": "M"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 7,
-            "crosslisted": false,
-            "available": 15,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10584",
-        "id": "PHYS 177 02",
-        "subject": "PHYS",
-        "snumber": "177",
-        "section": 2,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "G2LA",
-            "NQR"
-        ],
-        "title": "Astronomy Laboratory",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "M"
-            ],
-            "has_time": true,
-            "duration": 2,
-            "start": "1600",
-            "end": "1750",
-            "raw_days": "M"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 7,
-            "crosslisted": false,
-            "available": 15,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10585",
-        "id": "PHYS 177 03",
-        "subject": "PHYS",
-        "snumber": "177",
-        "section": 3,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "G2LA",
-            "NQR"
-        ],
-        "title": "Astronomy Laboratory",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "T"
-            ],
-            "has_time": true,
-            "duration": 2,
-            "start": "1300",
-            "end": "1450",
-            "raw_days": "T"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 4,
-            "crosslisted": false,
-            "available": 18,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10585",
-        "id": "PHYS 177 03",
-        "subject": "PHYS",
-        "snumber": "177",
-        "section": 3,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "G2LA",
-            "NQR"
-        ],
-        "title": "Astronomy Laboratory",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "T"
-            ],
-            "has_time": true,
-            "duration": 1,
-            "start": "2000",
-            "end": "2050",
-            "raw_days": "T"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 4,
-            "crosslisted": false,
-            "available": 18,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10586",
-        "id": "PHYS 177 04",
-        "subject": "PHYS",
-        "snumber": "177",
-        "section": 4,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "G2LA",
-            "NQR"
-        ],
-        "title": "Astronomy Laboratory",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "T"
-            ],
-            "has_time": true,
-            "duration": 2,
-            "start": "1600",
-            "end": "1750",
-            "raw_days": "T"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 3,
-            "crosslisted": false,
-            "available": 19,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10586",
-        "id": "PHYS 177 04",
-        "subject": "PHYS",
-        "snumber": "177",
-        "section": 4,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "G2LA",
-            "NQR"
-        ],
-        "title": "Astronomy Laboratory",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "T"
-            ],
-            "has_time": true,
-            "duration": 1,
-            "start": "2100",
-            "end": "2150",
-            "raw_days": "T"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 3,
-            "crosslisted": false,
-            "available": 19,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10587",
-        "id": "PHYS 177 05",
-        "subject": "PHYS",
-        "snumber": "177",
-        "section": 5,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "G2LA",
-            "NQR"
-        ],
-        "title": "Astronomy Laboratory",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "W"
-            ],
-            "has_time": true,
-            "duration": 2,
-            "start": "1300",
-            "end": "1450",
-            "raw_days": "W"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 6,
-            "crosslisted": false,
-            "available": 16,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10587",
-        "id": "PHYS 177 05",
-        "subject": "PHYS",
-        "snumber": "177",
-        "section": 5,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "G2LA",
-            "NQR"
-        ],
-        "title": "Astronomy Laboratory",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "W"
-            ],
-            "has_time": true,
-            "duration": 1,
-            "start": "2000",
-            "end": "2050",
-            "raw_days": "W"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 6,
-            "crosslisted": false,
-            "available": 16,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10588",
-        "id": "PHYS 177 06",
-        "subject": "PHYS",
-        "snumber": "177",
-        "section": 6,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "G2LA",
-            "NQR"
-        ],
-        "title": "Astronomy Laboratory",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "W"
-            ],
-            "has_time": true,
-            "duration": 1,
-            "start": "2100",
-            "end": "2150",
-            "raw_days": "W"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 6,
-            "crosslisted": false,
-            "available": 16,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10588",
-        "id": "PHYS 177 06",
-        "subject": "PHYS",
-        "snumber": "177",
-        "section": 6,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "G2LA",
-            "NQR"
-        ],
-        "title": "Astronomy Laboratory",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "W"
-            ],
-            "has_time": true,
-            "duration": 2,
-            "start": "1600",
-            "end": "1750",
-            "raw_days": "W"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 6,
-            "crosslisted": false,
-            "available": 16,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "11610",
-        "id": "PHYS 177 07",
-        "subject": "PHYS",
-        "snumber": "177",
-        "section": 7,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "G2LA",
-            "NQR"
-        ],
-        "title": "Astronomy Laboratory",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "R"
-            ],
-            "has_time": true,
-            "duration": 1,
-            "start": "2000",
-            "end": "2050",
-            "raw_days": "R"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 1,
-            "crosslisted": false,
-            "available": 21,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "11610",
-        "id": "PHYS 177 07",
-        "subject": "PHYS",
-        "snumber": "177",
-        "section": 7,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "G2LA",
-            "NQR"
-        ],
-        "title": "Astronomy Laboratory",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "R"
-            ],
-            "has_time": true,
-            "duration": 2,
-            "start": "1300",
-            "end": "1450",
-            "raw_days": "R"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 1,
-            "crosslisted": false,
-            "available": 21,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "12197",
-        "id": "PHYS 177 08",
-        "subject": "PHYS",
-        "snumber": "177",
-        "section": 8,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "G2LA",
-            "NQR"
-        ],
-        "title": "Astronomy Laboratory",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "R"
-            ],
-            "has_time": true,
-            "duration": 2,
-            "start": "1600",
-            "end": "1750",
-            "raw_days": "R"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 2,
-            "crosslisted": false,
-            "available": 20,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "12197",
-        "id": "PHYS 177 08",
-        "subject": "PHYS",
-        "snumber": "177",
-        "section": 8,
-        "attributes": [
-            "ACTV",
-            "FEE",
-            "G2LA",
-            "NQR"
-        ],
-        "title": "Astronomy Laboratory",
-        "instructor": {
-            "fullname": "Hancock, Arthur",
-            "surname": "Hancock",
-            "givenname": "Arthur",
-            "nameparts": [
-                "Hancock",
-                "Arthur"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "R"
-            ],
-            "has_time": true,
-            "duration": 1,
-            "start": "2100",
-            "end": "2150",
-            "raw_days": "R"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 2,
-            "crosslisted": false,
-            "available": 20,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10589",
-        "id": "PHYS 201 01",
-        "subject": "PHYS",
-        "snumber": "201",
-        "section": 1,
-        "attributes": [
-            "C200",
-            "NQR"
-        ],
-        "title": "Modern Physics",
-        "instructor": {
-            "fullname": "Sher, Marc",
-            "surname": "Sher",
-            "givenname": "Marc",
-            "nameparts": [
-                "Sher",
-                "Marc"
-            ]
-        },
-        "hours": 4,
-        "time": {
-            "has_days": true,
-            "days": [
-                "M",
-                "W",
-                "F"
-            ],
-            "has_time": true,
-            "duration": 1,
-            "start": "1000",
-            "end": "1050",
-            "raw_days": "MWF"
-        },
-        "space": {
-            "capacity": 56,
-            "enrolled": 51,
-            "crosslisted": false,
-            "available": 5,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10589",
-        "id": "PHYS 201 01",
-        "subject": "PHYS",
-        "snumber": "201",
-        "section": 1,
-        "attributes": [
-            "C200",
-            "NQR"
-        ],
-        "title": "Modern Physics",
-        "instructor": {
-            "fullname": "Sher, Marc",
-            "surname": "Sher",
-            "givenname": "Marc",
-            "nameparts": [
-                "Sher",
-                "Marc"
-            ]
-        },
-        "hours": 4,
-        "time": {
-            "has_days": true,
-            "days": [
-                "F"
-            ],
-            "has_time": true,
-            "duration": 1,
-            "start": "1400",
-            "end": "1450",
-            "raw_days": "F"
-        },
-        "space": {
-            "capacity": 56,
-            "enrolled": 51,
-            "crosslisted": false,
-            "available": 5,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "15164",
-        "id": "PHYS 213 01",
-        "subject": "PHYS",
-        "snumber": "213",
-        "section": 1,
-        "attributes": [
-            "C200",
-            "NQR"
-        ],
-        "title": "Introduction to Modern Optics",
-        "instructor": {
-            "fullname": "Novikova, Irina",
-            "surname": "Novikova",
-            "givenname": "Irina",
-            "nameparts": [
-                "Novikova",
-                "Irina"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_days": true,
-            "days": [
-                "M",
-                "W",
-                "F"
-            ],
-            "has_time": true,
-            "duration": 1,
-            "start": "0900",
-            "end": "0950",
-            "raw_days": "MWF"
-        },
-        "space": {
-            "capacity": 25,
-            "enrolled": 6,
-            "crosslisted": false,
-            "available": 19,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10591",
-        "id": "PHYS 251 01",
-        "subject": "PHYS",
-        "snumber": "251",
-        "section": 1,
-        "attributes": [],
-        "title": "Experimental Atomic Physics",
-        "instructor": {
-            "fullname": "Kordosky, Michael",
-            "surname": "Kordosky",
-            "givenname": "Michael",
-            "nameparts": [
-                "Kordosky",
-                "Michael"
-            ]
-        },
-        "hours": 2,
-        "time": {
-            "has_days": true,
-            "days": [
-                "W"
-            ],
-            "has_time": true,
-            "duration": 3,
-            "start": "1400",
-            "end": "1650",
-            "raw_days": "W"
-        },
-        "space": {
-            "capacity": 20,
-            "enrolled": 20,
-            "crosslisted": false,
-            "available": 0,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "10592",
-        "id": "PHYS 251 02",
-        "subject": "PHYS",
-        "snumber": "251",
+        "crn": "12311",
+        "id": "EDUC 301 02",
+        "subject": "EDUC",
+        "snumber": "301",
         "section": 2,
         "attributes": [],
-        "title": "Experimental Atomic Physics",
+        "title": "Educational Psychology",
         "instructor": {
-            "fullname": "Kordosky, Michael",
-            "surname": "Kordosky",
-            "givenname": "Michael",
+            "fullname": "Chen, Jason",
+            "surname": "Chen",
+            "givenname": "Jason",
             "nameparts": [
-                "Kordosky",
-                "Michael"
-            ]
-        },
-        "hours": 2,
-        "time": {
-            "has_days": true,
-            "days": [
-                "R"
-            ],
-            "has_time": true,
-            "duration": 3,
-            "start": "1400",
-            "end": "1650",
-            "raw_days": "R"
-        },
-        "space": {
-            "capacity": 20,
-            "enrolled": 20,
-            "crosslisted": false,
-            "available": 0,
-            "status_ok": false
-        }
-    },
-    {
-        "crn": "13463",
-        "id": "PHYS 256 01",
-        "subject": "PHYS",
-        "snumber": "256",
-        "section": 1,
-        "attributes": [],
-        "title": "Practical Comp for Scientists",
-        "instructor": {
-            "fullname": "Mikhailov, Eugeniy",
-            "surname": "Mikhailov",
-            "givenname": "Eugeniy",
-            "nameparts": [
-                "Mikhailov",
-                "Eugeniy"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_days": true,
-            "days": [
-                "M",
-                "W",
-                "F"
-            ],
-            "has_time": true,
-            "duration": 1,
-            "start": "1300",
-            "end": "1350",
-            "raw_days": "MWF"
-        },
-        "space": {
-            "capacity": 40,
-            "enrolled": 26,
-            "crosslisted": false,
-            "available": 14,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10593",
-        "id": "PHYS 303 01",
-        "subject": "PHYS",
-        "snumber": "303",
-        "section": 1,
-        "attributes": [],
-        "title": "Classical Mech Part/Waves II",
-        "instructor": {
-            "fullname": "Orginos, Konstantin",
-            "surname": "Orginos",
-            "givenname": "Konstantin",
-            "nameparts": [
-                "Orginos",
-                "Konstantin"
+                "Chen",
+                "Jason"
             ]
         },
         "hours": 3,
@@ -2164,476 +68,716 @@
             "raw_days": "TR"
         },
         "space": {
-            "capacity": 40,
-            "enrolled": 19,
-            "crosslisted": false,
-            "available": 21,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10594",
-        "id": "PHYS 313 01",
-        "subject": "PHYS",
-        "snumber": "313",
-        "section": 1,
-        "attributes": [],
-        "title": "Quantum Mechanics I",
-        "instructor": {
-            "fullname": "Griffioen, Keith",
-            "surname": "Griffioen",
-            "givenname": "Keith",
-            "nameparts": [
-                "Griffioen",
-                "Keith"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_days": true,
-            "days": [
-                "M",
-                "W",
-                "F"
-            ],
-            "has_time": true,
-            "duration": 1,
-            "start": "1100",
-            "end": "1150",
-            "raw_days": "MWF"
-        },
-        "space": {
-            "capacity": 35,
-            "enrolled": 30,
-            "crosslisted": false,
-            "available": 5,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "11353",
-        "id": "PHYS 351 01",
-        "subject": "PHYS",
-        "snumber": "351",
-        "section": 1,
-        "attributes": [],
-        "title": "Scientific Instrumentation Lab",
-        "instructor": {
-            "fullname": "Cooke, William",
-            "surname": "Cooke",
-            "givenname": "William",
-            "nameparts": [
-                "Cooke",
-                "William"
-            ]
-        },
-        "hours": 2,
-        "time": {
-            "has_days": true,
-            "days": [
-                "W"
-            ],
-            "has_time": true,
-            "duration": 3,
-            "start": "1400",
-            "end": "1650",
-            "raw_days": "W"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 17,
-            "crosslisted": false,
-            "available": 5,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "11353",
-        "id": "PHYS 351 01",
-        "subject": "PHYS",
-        "snumber": "351",
-        "section": 1,
-        "attributes": [],
-        "title": "Scientific Instrumentation Lab",
-        "instructor": {
-            "fullname": "Cooke, William",
-            "surname": "Cooke",
-            "givenname": "William",
-            "nameparts": [
-                "Cooke",
-                "William"
-            ]
-        },
-        "hours": 2,
-        "time": {
-            "has_days": true,
-            "days": [
-                "M"
-            ],
-            "has_time": true,
-            "duration": 1,
-            "start": "1400",
-            "end": "1450",
-            "raw_days": "M"
-        },
-        "space": {
-            "capacity": 22,
-            "enrolled": 17,
-            "crosslisted": false,
-            "available": 5,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10595",
-        "id": "PHYS 402 01",
-        "subject": "PHYS",
-        "snumber": "402",
-        "section": 1,
-        "attributes": [],
-        "title": "Electricity  &  Magnetism II",
-        "instructor": {
-            "fullname": "Aubin, Seth",
-            "surname": "Aubin",
-            "givenname": "Seth",
-            "nameparts": [
-                "Aubin",
-                "Seth"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_days": true,
-            "days": [
-                "T",
-                "R"
-            ],
-            "has_time": true,
-            "duration": 1.5,
-            "start": "0930",
-            "end": "1050",
-            "raw_days": "TR"
-        },
-        "space": {
-            "capacity": 25,
-            "enrolled": 10,
-            "crosslisted": false,
-            "available": 15,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10596",
-        "id": "PHYS 403 01",
-        "subject": "PHYS",
-        "snumber": "403",
-        "section": 1,
-        "attributes": [],
-        "title": "Stat Mechanic/Thermodynamics",
-        "instructor": {
-            "fullname": "Averett, Todd",
-            "surname": "Averett",
-            "givenname": "Todd",
-            "nameparts": [
-                "Averett",
-                "Todd"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_days": true,
-            "days": [
-                "T",
-                "R"
-            ],
-            "has_time": true,
-            "duration": 1.5,
-            "start": "1400",
-            "end": "1520",
-            "raw_days": "TR"
-        },
-        "space": {
-            "capacity": 30,
-            "enrolled": 26,
-            "crosslisted": false,
-            "available": 4,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10597",
-        "id": "PHYS 451 01",
-        "subject": "PHYS",
-        "snumber": "451",
-        "section": 1,
-        "attributes": [],
-        "title": "Physics Research",
-        "instructor": {
-            "fullname": "Hoatson, Gina",
-            "surname": "Hoatson",
-            "givenname": "Gina",
-            "nameparts": [
-                "Hoatson",
-                "Gina"
-            ]
-        },
-        "hours": 1,
-        "time": {
-            "has_days": true,
-            "days": [
-                "F"
-            ],
-            "has_time": true,
-            "duration": 1,
-            "start": "1400",
-            "end": "1450",
-            "raw_days": "F"
-        },
-        "space": {
-            "capacity": 29,
-            "enrolled": 8,
-            "crosslisted": false,
-            "available": 21,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10599",
-        "id": "PHYS 601 01",
-        "subject": "PHYS",
-        "snumber": "601",
-        "section": 1,
-        "attributes": [],
-        "title": "Classical Mechanics",
-        "instructor": {
-            "fullname": "Vahala, George",
-            "surname": "Vahala",
-            "givenname": "George",
-            "nameparts": [
-                "Vahala",
-                "George"
-            ]
-        },
-        "hours": 4,
-        "time": {
-            "has_days": true,
-            "days": [
-                "T",
-                "R"
-            ],
-            "has_time": true,
-            "duration": 1.5,
-            "start": "0930",
-            "end": "1050",
-            "raw_days": "TR"
-        },
-        "space": {
             "capacity": 20,
-            "enrolled": 1,
-            "crosslisted": false,
-            "available": 19,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10600",
-        "id": "PHYS 603 01",
-        "subject": "PHYS",
-        "snumber": "603",
-        "section": 1,
-        "attributes": [],
-        "title": "Mathematical Physics",
-        "instructor": {
-            "fullname": "Krakauer, Henry",
-            "surname": "Krakauer",
-            "givenname": "Henry",
-            "nameparts": [
-                "Krakauer",
-                "Henry"
-            ]
-        },
-        "hours": 4,
-        "time": {
-            "has_days": true,
-            "days": [
-                "M",
-                "W"
-            ],
-            "has_time": true,
-            "duration": 1.5,
-            "start": "0930",
-            "end": "1050",
-            "raw_days": "MW"
-        },
-        "space": {
-            "capacity": 20,
-            "enrolled": 0,
-            "crosslisted": false,
-            "available": 20,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10601",
-        "id": "PHYS 611 01",
-        "subject": "PHYS",
-        "snumber": "611",
-        "section": 1,
-        "attributes": [],
-        "title": "Classical Elec  &  Magnetism II",
-        "instructor": {
-            "fullname": "Carlson, Carl",
-            "surname": "Carlson",
-            "givenname": "Carl",
-            "nameparts": [
-                "Carlson",
-                "Carl"
-            ]
-        },
-        "hours": 3,
-        "time": {
-            "has_days": true,
-            "days": [
-                "T",
-                "R"
-            ],
-            "has_time": true,
-            "duration": 1.5,
-            "start": "0930",
-            "end": "1050",
-            "raw_days": "TR"
-        },
-        "space": {
-            "capacity": 15,
-            "enrolled": 6,
+            "enrolled": 11,
             "crosslisted": false,
             "available": 9,
             "status_ok": true
         }
     },
     {
-        "crn": "10602",
-        "id": "PHYS 621 01",
-        "subject": "PHYS",
-        "snumber": "621",
+        "crn": "11710",
+        "id": "EDUC 305 01",
+        "subject": "EDUC",
+        "snumber": "305",
         "section": 1,
-        "attributes": [],
-        "title": "Quantum Mechanics I",
+        "attributes": [
+            "SUST"
+        ],
+        "title": "Dsgns for Tech-Enhanced Lrng",
         "instructor": {
-            "fullname": "Carone, Christophe",
-            "surname": "Carone",
-            "givenname": "Christophe",
+            "fullname": "Hofer, Mark",
+            "surname": "Hofer",
+            "givenname": "Mark",
             "nameparts": [
-                "Carone",
-                "Christophe"
-            ]
-        },
-        "hours": 4,
-        "time": {
-            "has_days": true,
-            "days": [
-                "W",
-                "F"
-            ],
-            "has_time": true,
-            "duration": 1.5,
-            "start": "1100",
-            "end": "1220",
-            "raw_days": "WF"
-        },
-        "space": {
-            "capacity": 20,
-            "enrolled": 1,
-            "crosslisted": false,
-            "available": 19,
-            "status_ok": true
-        }
-    },
-    {
-        "crn": "10604",
-        "id": "PHYS 651 01",
-        "subject": "PHYS",
-        "snumber": "651",
-        "section": 1,
-        "attributes": [],
-        "title": "Teaching Physics",
-        "instructor": {
-            "fullname": "Tracy, Eugene",
-            "surname": "Tracy",
-            "givenname": "Eugene",
-            "nameparts": [
-                "Tracy",
-                "Eugene"
+                "Hofer",
+                "Mark"
             ]
         },
         "hours": 2,
         "time": {
-            "has_days": false,
-            "has_time": false
+            "has_days": true,
+            "days": [
+                "T"
+            ],
+            "has_time": true,
+            "duration": 1.8333333333333333,
+            "start": "1000",
+            "end": "1140",
+            "raw_days": "T"
         },
         "space": {
-            "capacity": 30,
-            "enrolled": 6,
-            "crosslisted": false,
-            "available": 24,
+            "capacity": 10,
+            "enrolled": 4,
+            "crosslisted": true,
+            "available": 21,
             "status_ok": true
         }
     },
     {
-        "crn": "14796",
-        "id": "PHYS 685 01",
-        "subject": "PHYS",
-        "snumber": "685",
+        "crn": "12247",
+        "id": "EDUC 305 02",
+        "subject": "EDUC",
+        "snumber": "305",
+        "section": 2,
+        "attributes": [],
+        "title": "Dsgns for Tech-Enhanced Lrng",
+        "instructor": {
+            "fullname": "Hofer, Mark",
+            "surname": "Hofer",
+            "givenname": "Mark",
+            "nameparts": [
+                "Hofer",
+                "Mark"
+            ]
+        },
+        "hours": 2,
+        "time": {
+            "has_days": true,
+            "days": [
+                "W"
+            ],
+            "has_time": true,
+            "duration": 1.8333333333333333,
+            "start": "1630",
+            "end": "1810",
+            "raw_days": "W"
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 2,
+            "crosslisted": true,
+            "available": 23,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "11548",
+        "id": "EDUC 309 01",
+        "subject": "EDUC",
+        "snumber": "309",
         "section": 1,
         "attributes": [],
-        "title": "Colloquium",
+        "title": "Adpt Excp Stds (Sec)",
         "instructor": {
-            "fullname": "Tracy, Eugene",
-            "surname": "Tracy",
-            "givenname": "Eugene",
+            "fullname": "Mclaughlin, Virginia",
+            "surname": "Mclaughlin",
+            "givenname": "Virginia",
             "nameparts": [
-                "Tracy",
-                "Eugene"
+                "Mclaughlin",
+                "Virginia"
             ]
         },
         "hours": 1,
         "time": {
             "has_days": true,
             "days": [
-                "F"
+                "T"
             ],
             "has_time": true,
-            "duration": 1.5,
-            "start": "1530",
-            "end": "1650",
-            "raw_days": "F"
+            "duration": 2.9166666666666665,
+            "start": "1300",
+            "end": "1545",
+            "raw_days": "T"
         },
         "space": {
-            "capacity": 40,
-            "enrolled": 5,
-            "crosslisted": false,
-            "available": 35,
+            "capacity": 30,
+            "enrolled": 2,
+            "crosslisted": true,
+            "available": 23,
             "status_ok": true
         }
     },
     {
-        "crn": "14715",
-        "id": "PHYS 694 01",
-        "subject": "PHYS",
-        "snumber": "694",
+        "crn": "12178",
+        "id": "EDUC 309 02",
+        "subject": "EDUC",
+        "snumber": "309",
+        "section": 2,
+        "attributes": [],
+        "title": "Adpt Excp Stds (Sec)",
+        "instructor": {
+            "fullname": "Ramer, Deborah",
+            "surname": "Ramer",
+            "givenname": "Deborah",
+            "nameparts": [
+                "Ramer",
+                "Deborah"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "R"
+            ],
+            "has_time": true,
+            "duration": 2.9166666666666665,
+            "start": "0900",
+            "end": "1145",
+            "raw_days": "R"
+        },
+        "space": {
+            "capacity": 30,
+            "enrolled": 3,
+            "crosslisted": true,
+            "available": 22,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10486",
+        "id": "EDUC 310 01",
+        "subject": "EDUC",
+        "snumber": "310",
         "section": 1,
         "attributes": [],
-        "title": "Directed Research Topics",
+        "title": "Soc  &  Phil Fndtns Ed",
         "instructor": {
-            "fullname": "Armstrong, David",
-            "surname": "Armstrong",
-            "givenname": "David",
+            "fullname": "Barber, Catherine",
+            "surname": "Barber",
+            "givenname": "Catherine",
             "nameparts": [
-                "Armstrong",
-                "David"
+                "Barber",
+                "Catherine"
+            ]
+        },
+        "hours": 2,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M",
+                "W"
+            ],
+            "has_time": true,
+            "duration": 1,
+            "start": "1300",
+            "end": "1350",
+            "raw_days": "MW"
+        },
+        "space": {
+            "capacity": 30,
+            "enrolled": 12,
+            "crosslisted": false,
+            "available": 18,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "11549",
+        "id": "EDUC 311 01",
+        "subject": "EDUC",
+        "snumber": "311",
+        "section": 1,
+        "attributes": [],
+        "title": "Clsrm Mang/Disp Sec",
+        "instructor": {
+            "fullname": "Mclaughlin, Virginia",
+            "surname": "Mclaughlin",
+            "givenname": "Virginia",
+            "nameparts": [
+                "Mclaughlin",
+                "Virginia"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 30,
+            "enrolled": 2,
+            "crosslisted": true,
+            "available": 23,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "12179",
+        "id": "EDUC 311 02",
+        "subject": "EDUC",
+        "snumber": "311",
+        "section": 2,
+        "attributes": [],
+        "title": "Clsrm Mang/Disp Sec",
+        "instructor": {
+            "fullname": "Ramer, Deborah",
+            "surname": "Ramer",
+            "givenname": "Deborah",
+            "nameparts": [
+                "Ramer",
+                "Deborah"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 30,
+            "enrolled": 3,
+            "crosslisted": true,
+            "available": 22,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "11550",
+        "id": "EDUC 312 01",
+        "subject": "EDUC",
+        "snumber": "312",
+        "section": 1,
+        "attributes": [],
+        "title": "Exceptional Stdnt Pop - Sec",
+        "instructor": {
+            "fullname": "Mclaughlin, Virginia",
+            "surname": "Mclaughlin",
+            "givenname": "Virginia",
+            "nameparts": [
+                "Mclaughlin",
+                "Virginia"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 30,
+            "enrolled": 2,
+            "crosslisted": true,
+            "available": 23,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "12180",
+        "id": "EDUC 312 02",
+        "subject": "EDUC",
+        "snumber": "312",
+        "section": 2,
+        "attributes": [],
+        "title": "Exceptional Stdnt Pop - Sec",
+        "instructor": {
+            "fullname": "Ramer, Deborah",
+            "surname": "Ramer",
+            "givenname": "Deborah",
+            "nameparts": [
+                "Ramer",
+                "Deborah"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 30,
+            "enrolled": 3,
+            "crosslisted": true,
+            "available": 22,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "11551",
+        "id": "EDUC 315 01",
+        "subject": "EDUC",
+        "snumber": "315",
+        "section": 1,
+        "attributes": [],
+        "title": "Mng Div Clsrms Prac - Sec",
+        "instructor": {
+            "fullname": "Mclaughlin, Virginia",
+            "surname": "Mclaughlin",
+            "givenname": "Virginia",
+            "nameparts": [
+                "Mclaughlin",
+                "Virginia"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 30,
+            "enrolled": 2,
+            "crosslisted": true,
+            "available": 23,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "12181",
+        "id": "EDUC 315 02",
+        "subject": "EDUC",
+        "snumber": "315",
+        "section": 2,
+        "attributes": [],
+        "title": "Mng Div Clsrms Prac - Sec",
+        "instructor": {
+            "fullname": "Ramer, Deborah",
+            "surname": "Ramer",
+            "givenname": "Deborah",
+            "nameparts": [
+                "Ramer",
+                "Deborah"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 30,
+            "enrolled": 3,
+            "crosslisted": true,
+            "available": 22,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "13955",
+        "id": "EDUC 400 03",
+        "subject": "EDUC",
+        "snumber": "400",
+        "section": 3,
+        "attributes": [
+            "EDFA",
+            "FEE",
+            "IN"
+        ],
+        "title": "UrbanEd: Plcy,  Prac,   &  Ldrshp",
+        "instructor": {
+            "fullname": "Stelljes, Andrew",
+            "surname": "Stelljes",
+            "givenname": "Andrew",
+            "nameparts": [
+                "Stelljes",
+                "Andrew"
             ]
         },
         "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 25,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 25,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "14782",
+        "id": "EDUC 400 06",
+        "subject": "EDUC",
+        "snumber": "400",
+        "section": 6,
+        "attributes": [
+            "EDFA"
+        ],
+        "title": "Leadershp and Intrpersnl Skils",
+        "instructor": {
+            "fullname": "Stelljes, Andrew",
+            "surname": "Stelljes",
+            "givenname": "Andrew",
+            "nameparts": [
+                "Stelljes",
+                "Andrew"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "W"
+            ],
+            "has_time": true,
+            "duration": 2.9166666666666665,
+            "start": "1530",
+            "end": "1815",
+            "raw_days": "W"
+        },
+        "space": {
+            "capacity": 15,
+            "enrolled": 3,
+            "crosslisted": false,
+            "available": 12,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10489",
+        "id": "EDUC 405 01",
+        "subject": "EDUC",
+        "snumber": "405",
+        "section": 1,
+        "attributes": [
+            "IN"
+        ],
+        "title": "Elem Social Studies C  &  I",
+        "instructor": {
+            "fullname": "McEachron, Gail",
+            "surname": "McEachron",
+            "givenname": "Gail",
+            "nameparts": [
+                "McEachron",
+                "Gail"
+            ]
+        },
+        "hours": 2,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M",
+                "W"
+            ],
+            "has_time": true,
+            "duration": 1,
+            "start": "1000",
+            "end": "1050",
+            "raw_days": "MW"
+        },
+        "space": {
+            "capacity": 20,
+            "enrolled": 3,
+            "crosslisted": true,
+            "available": 22,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "12174",
+        "id": "EDUC 405 02",
+        "subject": "EDUC",
+        "snumber": "405",
+        "section": 2,
+        "attributes": [
+            "IN"
+        ],
+        "title": "Elem Social Studies C  &  I",
+        "instructor": {
+            "fullname": "McEachron, Gail",
+            "surname": "McEachron",
+            "givenname": "Gail",
+            "nameparts": [
+                "McEachron",
+                "Gail"
+            ]
+        },
+        "hours": 2,
+        "time": {
+            "has_days": true,
+            "days": [
+                "R"
+            ],
+            "has_time": true,
+            "duration": 2.0833333333333335,
+            "start": "1200",
+            "end": "1355",
+            "raw_days": "R"
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 2,
+            "crosslisted": true,
+            "available": 23,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10490",
+        "id": "EDUC 410 01",
+        "subject": "EDUC",
+        "snumber": "410",
+        "section": 1,
+        "attributes": [],
+        "title": "Elem Rd/Lg Arts Curr",
+        "instructor": {
+            "fullname": "Johnson, Carla",
+            "surname": "Johnson",
+            "givenname": "Carla",
+            "nameparts": [
+                "Johnson",
+                "Carla"
+            ]
+        },
+        "hours": 5,
+        "time": {
+            "has_days": true,
+            "days": [
+                "T",
+                "R"
+            ],
+            "has_time": true,
+            "duration": 2.25,
+            "start": "0930",
+            "end": "1135",
+            "raw_days": "TR"
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 5,
+            "crosslisted": true,
+            "available": 20,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "12172",
+        "id": "EDUC 410 02",
+        "subject": "EDUC",
+        "snumber": "410",
+        "section": 2,
+        "attributes": [],
+        "title": "Elem Rd/Lg Arts Curr",
+        "instructor": {
+            "fullname": "Blackburn, Stephanie",
+            "surname": "Blackburn",
+            "givenname": "Stephanie",
+            "nameparts": [
+                "Blackburn",
+                "Stephanie"
+            ]
+        },
+        "hours": 5,
+        "time": {
+            "has_days": true,
+            "days": [
+                "T"
+            ],
+            "has_time": true,
+            "duration": 4.166666666666667,
+            "start": "1700",
+            "end": "2100",
+            "raw_days": "T"
+        },
+        "space": {
+            "capacity": 8,
+            "enrolled": 0,
+            "crosslisted": true,
+            "available": 25,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10491",
+        "id": "EDUC 412 01",
+        "subject": "EDUC",
+        "snumber": "412",
+        "section": 1,
+        "attributes": [],
+        "title": "Rd  &  Lg Arts Curr",
+        "instructor": {
+            "fullname": "Johnson, Carla",
+            "surname": "Johnson",
+            "givenname": "Carla",
+            "nameparts": [
+                "Johnson",
+                "Carla"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 20,
+            "enrolled": 5,
+            "crosslisted": true,
+            "available": 20,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "12193",
+        "id": "EDUC 412 02",
+        "subject": "EDUC",
+        "snumber": "412",
+        "section": 2,
+        "attributes": [],
+        "title": "Rd  &  Lg Arts Curr",
+        "instructor": {
+            "fullname": "Blackburn, Stephanie",
+            "surname": "Blackburn",
+            "givenname": "Stephanie",
+            "nameparts": [
+                "Blackburn",
+                "Stephanie"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 28,
+            "enrolled": 0,
+            "crosslisted": true,
+            "available": 25,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "11543",
+        "id": "EDUC 420 01",
+        "subject": "EDUC",
+        "snumber": "420",
+        "section": 1,
+        "attributes": [],
+        "title": "Sec Eng Cur Ins Prac",
+        "instructor": {
+            "fullname": "Johnson, Melinda",
+            "surname": "Johnson",
+            "givenname": "Melinda",
+            "nameparts": [
+                "Johnson",
+                "Melinda"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 30,
+            "enrolled": 1,
+            "crosslisted": false,
+            "available": 29,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "11544",
+        "id": "EDUC 429 01",
+        "subject": "EDUC",
+        "snumber": "429",
+        "section": 1,
+        "attributes": [],
+        "title": "Sec Math Cur Ins Prac",
+        "instructor": {
+            "fullname": "Rhodes, Samuel",
+            "surname": "Rhodes",
+            "givenname": "Samuel",
+            "nameparts": [
+                "Rhodes",
+                "Samuel"
+            ]
+        },
+        "hours": 1,
         "time": {
             "has_days": false,
             "has_time": false
@@ -2647,20 +791,20 @@
         }
     },
     {
-        "crn": "10605",
-        "id": "PHYS 695 01",
-        "subject": "PHYS",
-        "snumber": "695",
+        "crn": "11545",
+        "id": "EDUC 434 01",
+        "subject": "EDUC",
+        "snumber": "434",
         "section": 1,
         "attributes": [],
-        "title": "Research",
+        "title": "Sec Fr Lng Ins Prac",
         "instructor": {
-            "fullname": "Tracy, Eugene",
-            "surname": "Tracy",
-            "givenname": "Eugene",
+            "fullname": "Barko-Alva, Katherine",
+            "surname": "Barko-Alva",
+            "givenname": "Katherine",
             "nameparts": [
-                "Tracy",
-                "Eugene"
+                "Barko-Alva",
+                "Katherine"
             ]
         },
         "hours": 1,
@@ -2669,107 +813,2674 @@
             "has_time": false
         },
         "space": {
-            "capacity": 40,
+            "capacity": 20,
             "enrolled": 1,
             "crosslisted": false,
-            "available": 39,
+            "available": 19,
             "status_ok": true
         }
     },
     {
-        "crn": "10606",
-        "id": "PHYS 721 01",
-        "subject": "PHYS",
-        "snumber": "721",
+        "crn": "11546",
+        "id": "EDUC 436 01",
+        "subject": "EDUC",
+        "snumber": "436",
         "section": 1,
         "attributes": [],
-        "title": "Quantum Field Theory I",
+        "title": "Sec Sci Cur Ins Prac",
         "instructor": {
-            "fullname": "Tracy, Eugene",
-            "surname": "Tracy",
-            "givenname": "Eugene",
+            "fullname": "Kier, Meredith",
+            "surname": "Kier",
+            "givenname": "Meredith",
             "nameparts": [
-                "Tracy",
-                "Eugene"
+                "Kier",
+                "Meredith"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 20,
+            "enrolled": 0,
+            "crosslisted": true,
+            "available": 25,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "11547",
+        "id": "EDUC 437 01",
+        "subject": "EDUC",
+        "snumber": "437",
+        "section": 1,
+        "attributes": [],
+        "title": "Sec Soc St Ins Prac",
+        "instructor": {
+            "fullname": "Stoddard, Jeremy",
+            "surname": "Stoddard",
+            "givenname": "Jeremy",
+            "nameparts": [
+                "Stoddard",
+                "Jeremy"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 30,
+            "enrolled": 2,
+            "crosslisted": false,
+            "available": 28,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10492",
+        "id": "EDUC 440 01",
+        "subject": "EDUC",
+        "snumber": "440",
+        "section": 1,
+        "attributes": [],
+        "title": "Curr/Ins Meth Soc St",
+        "instructor": {
+            "fullname": "Stoddard, Jeremy",
+            "surname": "Stoddard",
+            "givenname": "Jeremy",
+            "nameparts": [
+                "Stoddard",
+                "Jeremy"
             ]
         },
         "hours": 3,
         "time": {
             "has_days": true,
             "days": [
-                "T",
-                "R"
+                "M",
+                "W"
             ],
             "has_time": true,
             "duration": 1.5,
-            "start": "1100",
-            "end": "1220",
-            "raw_days": "TR"
+            "start": "1300",
+            "end": "1420",
+            "raw_days": "MW"
         },
         "space": {
-            "capacity": 16,
-            "enrolled": 6,
+            "capacity": 30,
+            "enrolled": 2,
+            "crosslisted": true,
+            "available": 23,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10493",
+        "id": "EDUC 441 01",
+        "subject": "EDUC",
+        "snumber": "441",
+        "section": 1,
+        "attributes": [],
+        "title": "Curr/Ins Meth Eng",
+        "instructor": {
+            "fullname": "Johnson, Melinda",
+            "surname": "Johnson",
+            "givenname": "Melinda",
+            "nameparts": [
+                "Johnson",
+                "Melinda"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M",
+                "W"
+            ],
+            "has_time": true,
+            "duration": 1.5,
+            "start": "1300",
+            "end": "1420",
+            "raw_days": "MW"
+        },
+        "space": {
+            "capacity": 20,
+            "enrolled": 1,
+            "crosslisted": true,
+            "available": 24,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10494",
+        "id": "EDUC 442 01",
+        "subject": "EDUC",
+        "snumber": "442",
+        "section": 1,
+        "attributes": [],
+        "title": "Cur/Ins Meth Frn Lng",
+        "instructor": {
+            "fullname": "Barko-Alva, Katherine",
+            "surname": "Barko-Alva",
+            "givenname": "Katherine",
+            "nameparts": [
+                "Barko-Alva",
+                "Katherine"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "T"
+            ],
+            "has_time": true,
+            "duration": 2.6666666666666665,
+            "start": "1630",
+            "end": "1900",
+            "raw_days": "T"
+        },
+        "space": {
+            "capacity": 20,
+            "enrolled": 1,
+            "crosslisted": true,
+            "available": 24,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10495",
+        "id": "EDUC 443 01",
+        "subject": "EDUC",
+        "snumber": "443",
+        "section": 1,
+        "attributes": [],
+        "title": "Curr/Ins Meth Math",
+        "instructor": {
+            "fullname": "Rhodes, Samuel",
+            "surname": "Rhodes",
+            "givenname": "Samuel",
+            "nameparts": [
+                "Rhodes",
+                "Samuel"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M"
+            ],
+            "has_time": true,
+            "duration": 2.6666666666666665,
+            "start": "1630",
+            "end": "1900",
+            "raw_days": "M"
+        },
+        "space": {
+            "capacity": 20,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 20,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10496",
+        "id": "EDUC 444 01",
+        "subject": "EDUC",
+        "snumber": "444",
+        "section": 1,
+        "attributes": [],
+        "title": "Curr/Ins Meth Sci",
+        "instructor": {
+            "fullname": "Kier, Meredith",
+            "surname": "Kier",
+            "givenname": "Meredith",
+            "nameparts": [
+                "Kier",
+                "Meredith"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M"
+            ],
+            "has_time": true,
+            "duration": 2.6666666666666665,
+            "start": "1630",
+            "end": "1900",
+            "raw_days": "M"
+        },
+        "space": {
+            "capacity": 20,
+            "enrolled": 0,
+            "crosslisted": true,
+            "available": 25,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10497",
+        "id": "EDUC 475 01",
+        "subject": "EDUC",
+        "snumber": "475",
+        "section": 1,
+        "attributes": [],
+        "title": "Elem Soc St C & I Lab",
+        "instructor": {
+            "fullname": "McEachron, Gail",
+            "surname": "McEachron",
+            "givenname": "Gail",
+            "nameparts": [
+                "McEachron",
+                "Gail"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 20,
+            "enrolled": 4,
+            "crosslisted": false,
+            "available": 16,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "12192",
+        "id": "EDUC 475 02",
+        "subject": "EDUC",
+        "snumber": "475",
+        "section": 2,
+        "attributes": [],
+        "title": "Elem Soc St C & I Lab",
+        "instructor": {
+            "fullname": "McEachron, Gail",
+            "surname": "McEachron",
+            "givenname": "Gail",
+            "nameparts": [
+                "McEachron",
+                "Gail"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 25,
+            "enrolled": 1,
+            "crosslisted": false,
+            "available": 24,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10498",
+        "id": "EDUC 480 01",
+        "subject": "EDUC",
+        "snumber": "480",
+        "section": 1,
+        "attributes": [],
+        "title": "Psych/Ed Gftd Learnr",
+        "instructor": {
+            "fullname": "Kim, Mihyeon",
+            "surname": "Kim",
+            "givenname": "Mihyeon",
+            "nameparts": [
+                "Kim",
+                "Mihyeon"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "R"
+            ],
+            "has_time": true,
+            "duration": 2.6666666666666665,
+            "start": "1630",
+            "end": "1900",
+            "raw_days": "R"
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 0,
+            "crosslisted": true,
+            "available": 25,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "11298",
+        "id": "EDUC 603 01",
+        "subject": "EDUC",
+        "snumber": "603",
+        "section": 1,
+        "attributes": [],
+        "title": "Coll Stdnt: Dev Themes",
+        "instructor": {
+            "fullname": "Callahan, Kathleen",
+            "surname": "Callahan",
+            "givenname": "Kathleen",
+            "nameparts": [
+                "Callahan",
+                "Kathleen"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "T"
+            ],
+            "has_time": true,
+            "duration": 2.6666666666666665,
+            "start": "1915",
+            "end": "2145",
+            "raw_days": "T"
+        },
+        "space": {
+            "capacity": 20,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 20,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10501",
+        "id": "EDUC 630 01",
+        "subject": "EDUC",
+        "snumber": "630",
+        "section": 1,
+        "attributes": [],
+        "title": "Family Development",
+        "instructor": {
+            "fullname": "STAFF",
+            "surname": "STAFF",
+            "nameparts": [
+                "STAFF"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "T"
+            ],
+            "has_time": true,
+            "duration": 2.5833333333333335,
+            "start": "0900",
+            "end": "1125",
+            "raw_days": "T"
+        },
+        "space": {
+            "capacity": 20,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 20,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "15430",
+        "id": "EDUC 632 01",
+        "subject": "EDUC",
+        "snumber": "632",
+        "section": 1,
+        "attributes": [
+            "EDFA"
+        ],
+        "title": "Adv Cnslg Theories",
+        "instructor": {
+            "fullname": "McAdams, Charles",
+            "surname": "McAdams",
+            "givenname": "Charles",
+            "nameparts": [
+                "McAdams",
+                "Charles"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "T"
+            ],
+            "has_time": true,
+            "duration": 2.6666666666666665,
+            "start": "1200",
+            "end": "1430",
+            "raw_days": "T"
+        },
+        "space": {
+            "capacity": 0,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 20,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "12167",
+        "id": "EDUC 635 01",
+        "subject": "EDUC",
+        "snumber": "635",
+        "section": 1,
+        "attributes": [],
+        "title": "Adv. Fam. Counseling",
+        "instructor": {
+            "fullname": "Foster, Victoria",
+            "surname": "Foster",
+            "givenname": "Victoria",
+            "nameparts": [
+                "Foster",
+                "Victoria"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "T"
+            ],
+            "has_time": true,
+            "duration": 2.6666666666666665,
+            "start": "1000",
+            "end": "1230",
+            "raw_days": "T"
+        },
+        "space": {
+            "capacity": 20,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 20,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10502",
+        "id": "EDUC 639 01",
+        "subject": "EDUC",
+        "snumber": "639",
+        "section": 1,
+        "attributes": [],
+        "title": "Thry/Proc Cns Sprvsn",
+        "instructor": {
+            "fullname": "STAFF",
+            "surname": "STAFF",
+            "nameparts": [
+                "STAFF"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "T"
+            ],
+            "has_time": true,
+            "duration": 2.6666666666666665,
+            "start": "1200",
+            "end": "1430",
+            "raw_days": "T"
+        },
+        "space": {
+            "capacity": 20,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 20,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10503",
+        "id": "EDUC 646 01",
+        "subject": "EDUC",
+        "snumber": "646",
+        "section": 1,
+        "attributes": [],
+        "title": "Internship Fam Cnsl",
+        "instructor": {
+            "fullname": "Foster, Victoria",
+            "surname": "Foster",
+            "givenname": "Victoria",
+            "nameparts": [
+                "Foster",
+                "Victoria"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "T"
+            ],
+            "has_time": true,
+            "duration": 2.6666666666666665,
+            "start": "1300",
+            "end": "1530",
+            "raw_days": "T"
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 0,
             "crosslisted": false,
             "available": 10,
             "status_ok": true
         }
     },
     {
-        "crn": "11652",
-        "id": "PHYS 741 01",
-        "subject": "PHYS",
-        "snumber": "741",
-        "section": 1,
+        "crn": "11234",
+        "id": "EDUC 646 02",
+        "subject": "EDUC",
+        "snumber": "646",
+        "section": 2,
         "attributes": [],
-        "title": "Solid State Physics",
+        "title": "Internship Fam Cnsl",
         "instructor": {
-            "fullname": "Zhang, Shiwei",
-            "surname": "Zhang",
-            "givenname": "Shiwei",
+            "fullname": "McAdams, Charles",
+            "surname": "McAdams",
+            "givenname": "Charles",
             "nameparts": [
-                "Zhang",
-                "Shiwei"
+                "McAdams",
+                "Charles"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "R"
+            ],
+            "has_time": true,
+            "duration": 2.6666666666666665,
+            "start": "1200",
+            "end": "1430",
+            "raw_days": "R"
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 10,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "13728",
+        "id": "EDUC 651 01",
+        "subject": "EDUC",
+        "snumber": "651",
+        "section": 1,
+        "attributes": [
+            "EDFA"
+        ],
+        "title": "Inquiry I:DataBased Decsn Makg",
+        "instructor": {
+            "fullname": "Roche, Eugene",
+            "surname": "Roche",
+            "givenname": "Eugene",
+            "nameparts": [
+                "Roche",
+                "Eugene"
             ]
         },
         "hours": 3,
         "time": {
             "has_days": true,
             "days": [
-                "W",
-                "F"
+                "W"
             ],
             "has_time": true,
-            "duration": 1.5,
-            "start": "1100",
-            "end": "1220",
-            "raw_days": "WF"
+            "duration": 2.6666666666666665,
+            "start": "1630",
+            "end": "1900",
+            "raw_days": "W"
         },
         "space": {
-            "capacity": 15,
-            "enrolled": 4,
+            "capacity": 20,
+            "enrolled": 0,
             "crosslisted": false,
-            "available": 11,
+            "available": 20,
             "status_ok": true
         }
     },
     {
-        "crn": "13796",
-        "id": "PHYS 773 01",
-        "subject": "PHYS",
-        "snumber": "773",
+        "crn": "14466",
+        "id": "EDUC 653 01",
+        "subject": "EDUC",
+        "snumber": "653",
         "section": 1,
-        "attributes": [],
-        "title": "Topics in LQCD",
+        "attributes": [
+            "EDFA"
+        ],
+        "title": "Inquiry III: Program Eval",
         "instructor": {
-            "fullname": "Tracy, Eugene",
-            "surname": "Tracy",
-            "givenname": "Eugene",
+            "fullname": "Gareis, Christophe",
+            "surname": "Gareis",
+            "givenname": "Christophe",
             "nameparts": [
-                "Tracy",
-                "Eugene"
+                "Gareis",
+                "Christophe"
             ]
         },
         "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M"
+            ],
+            "has_time": true,
+            "duration": 2.6666666666666665,
+            "start": "1630",
+            "end": "1900",
+            "raw_days": "M"
+        },
+        "space": {
+            "capacity": 20,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 20,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10504",
+        "id": "EDUC 659 01",
+        "subject": "EDUC",
+        "snumber": "659",
+        "section": 1,
+        "attributes": [],
+        "title": "Intrn School Psychol",
+        "instructor": {
+            "fullname": "Hardinge, Gail",
+            "surname": "Hardinge",
+            "givenname": "Gail",
+            "nameparts": [
+                "Hardinge",
+                "Gail"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": true,
+            "days": [
+                "F"
+            ],
+            "has_time": true,
+            "duration": 3,
+            "start": "0900",
+            "end": "1150",
+            "raw_days": "F"
+        },
+        "space": {
+            "capacity": 20,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 20,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10505",
+        "id": "EDUC 663 01",
+        "subject": "EDUC",
+        "snumber": "663",
+        "section": 1,
+        "attributes": [],
+        "title": "Prin Educ Research",
+        "instructor": {
+            "fullname": "Kim, Kyung-Hee",
+            "surname": "Kim",
+            "givenname": "Kyung-Hee",
+            "nameparts": [
+                "Kim",
+                "Kyung-Hee"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M"
+            ],
+            "has_time": true,
+            "duration": 2.9166666666666665,
+            "start": "1915",
+            "end": "2200",
+            "raw_days": "M"
+        },
+        "space": {
+            "capacity": 25,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 25,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10507",
+        "id": "EDUC 665 01",
+        "subject": "EDUC",
+        "snumber": "665",
+        "section": 1,
+        "attributes": [],
+        "title": "Interm Statistics Ed",
+        "instructor": {
+            "fullname": "Bracken, Bruce",
+            "surname": "Bracken",
+            "givenname": "Bruce",
+            "nameparts": [
+                "Bracken",
+                "Bruce"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M"
+            ],
+            "has_time": true,
+            "duration": 2.6666666666666665,
+            "start": "1630",
+            "end": "1900",
+            "raw_days": "M"
+        },
+        "space": {
+            "capacity": 20,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 20,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "12170",
+        "id": "EDUC 675 01",
+        "subject": "EDUC",
+        "snumber": "675",
+        "section": 1,
+        "attributes": [],
+        "title": "Theo/Strat Cnslg Sch Aged Chld",
+        "instructor": {
+            "fullname": "Mullen, Patrick",
+            "surname": "Mullen",
+            "givenname": "Patrick",
+            "nameparts": [
+                "Mullen",
+                "Patrick"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "R"
+            ],
+            "has_time": true,
+            "duration": 2.6666666666666665,
+            "start": "1630",
+            "end": "1900",
+            "raw_days": "R"
+        },
+        "space": {
+            "capacity": 30,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 30,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "11951",
+        "id": "EDUC 694A 01",
+        "subject": "EDUC",
+        "snumber": "694A",
+        "section": 1,
+        "attributes": [],
+        "title": "Qual Res Methods/Design I",
+        "instructor": {
+            "fullname": "Harris, Judith",
+            "surname": "Harris",
+            "givenname": "Judith",
+            "nameparts": [
+                "Harris",
+                "Judith"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "W"
+            ],
+            "has_time": true,
+            "duration": 2.6666666666666665,
+            "start": "1630",
+            "end": "1900",
+            "raw_days": "W"
+        },
+        "space": {
+            "capacity": 20,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 20,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "14677",
+        "id": "EDUC 700 02",
+        "subject": "EDUC",
+        "snumber": "700",
+        "section": 2,
+        "attributes": [
+            "EDFA",
+            "IN"
+        ],
+        "title": "Advanced Statistics",
+        "instructor": {
+            "fullname": "Ward, Thomas",
+            "surname": "Ward",
+            "givenname": "Thomas",
+            "nameparts": [
+                "Ward",
+                "Thomas"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 1,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 1,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10508",
+        "id": "EDUC 763 02",
+        "subject": "EDUC",
+        "snumber": "763",
+        "section": 2,
+        "attributes": [],
+        "title": "Doctoral Practicum",
+        "instructor": {
+            "fullname": "Foster, Victoria",
+            "surname": "Foster",
+            "givenname": "Victoria",
+            "nameparts": [
+                "Foster",
+                "Victoria"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 10,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10509",
+        "id": "EDUC 763 03",
+        "subject": "EDUC",
+        "snumber": "763",
+        "section": 3,
+        "attributes": [],
+        "title": "Doctoral Practicum",
+        "instructor": {
+            "fullname": "Gressard, Charles",
+            "surname": "Gressard",
+            "givenname": "Charles",
+            "nameparts": [
+                "Gressard",
+                "Charles"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 10,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10510",
+        "id": "EDUC 763 05",
+        "subject": "EDUC",
+        "snumber": "763",
+        "section": 5,
+        "attributes": [],
+        "title": "Doctoral Practicum",
+        "instructor": {
+            "fullname": "McAdams, Charles",
+            "surname": "McAdams",
+            "givenname": "Charles",
+            "nameparts": [
+                "McAdams",
+                "Charles"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 10,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "14465",
+        "id": "EDUC 763 07",
+        "subject": "EDUC",
+        "snumber": "763",
+        "section": 7,
+        "attributes": [
+            "EDFD"
+        ],
+        "title": "Doctoral Practicum",
+        "instructor": {
+            "fullname": "Brendel, Johnston",
+            "surname": "Brendel",
+            "givenname": "Johnston",
+            "nameparts": [
+                "Brendel",
+                "Johnston"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 5,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 5,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10512",
+        "id": "EDUC 765 02",
+        "subject": "EDUC",
+        "snumber": "765",
+        "section": 2,
+        "attributes": [],
+        "title": "Doctoral Internship",
+        "instructor": {
+            "fullname": "Foster, Victoria",
+            "surname": "Foster",
+            "givenname": "Victoria",
+            "nameparts": [
+                "Foster",
+                "Victoria"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 10,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10513",
+        "id": "EDUC 765 03",
+        "subject": "EDUC",
+        "snumber": "765",
+        "section": 3,
+        "attributes": [],
+        "title": "Doctoral Internship",
+        "instructor": {
+            "fullname": "Gressard, Charles",
+            "surname": "Gressard",
+            "givenname": "Charles",
+            "nameparts": [
+                "Gressard",
+                "Charles"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 10,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10514",
+        "id": "EDUC 765 05",
+        "subject": "EDUC",
+        "snumber": "765",
+        "section": 5,
+        "attributes": [],
+        "title": "Doctoral Internship",
+        "instructor": {
+            "fullname": "McAdams, Charles",
+            "surname": "McAdams",
+            "givenname": "Charles",
+            "nameparts": [
+                "McAdams",
+                "Charles"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 10,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "12553",
+        "id": "EDUC 799 01",
+        "subject": "EDUC",
+        "snumber": "799",
+        "section": 1,
+        "attributes": [],
+        "title": "Continuous Enrollment",
+        "instructor": {
+            "fullname": "Grant, Leslie",
+            "surname": "Grant",
+            "givenname": "Leslie",
+            "nameparts": [
+                "Grant",
+                "Leslie"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 20,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 20,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "13494",
+        "id": "EDUC 800 01",
+        "subject": "EDUC",
+        "snumber": "800",
+        "section": 1,
+        "attributes": [
+            "EDFB"
+        ],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "Rodriguez, Jacqueline",
+            "surname": "Rodriguez",
+            "givenname": "Jacqueline",
+            "nameparts": [
+                "Rodriguez",
+                "Jacqueline"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 2,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 2,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10517",
+        "id": "EDUC 800 04",
+        "subject": "EDUC",
+        "snumber": "800",
+        "section": 4,
+        "attributes": [],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "Cole, Eddie",
+            "surname": "Cole",
+            "givenname": "Eddie",
+            "nameparts": [
+                "Cole",
+                "Eddie"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 10,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "14655",
+        "id": "EDUC 800 06",
+        "subject": "EDUC",
+        "snumber": "800",
+        "section": 6,
+        "attributes": [
+            "EDFB"
+        ],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "Brendel, Johnston",
+            "surname": "Brendel",
+            "givenname": "Johnston",
+            "nameparts": [
+                "Brendel",
+                "Johnston"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 5,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 5,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "13043",
+        "id": "EDUC 800 07",
+        "subject": "EDUC",
+        "snumber": "800",
+        "section": 7,
+        "attributes": [
+            "EDFB"
+        ],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "Donnor, Jamel",
+            "surname": "Donnor",
+            "givenname": "Jamel",
+            "nameparts": [
+                "Donnor",
+                "Jamel"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 5,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 5,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "14479",
+        "id": "EDUC 800 08",
+        "subject": "EDUC",
+        "snumber": "800",
+        "section": 8,
+        "attributes": [
+            "EDFB"
+        ],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "Korinek, Loraine",
+            "surname": "Korinek",
+            "givenname": "Loraine",
+            "nameparts": [
+                "Korinek",
+                "Loraine"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 5,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 5,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "13496",
+        "id": "EDUC 800 09",
+        "subject": "EDUC",
+        "snumber": "800",
+        "section": 9,
+        "attributes": [
+            "EDFB"
+        ],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "Finnegan, Dorothy",
+            "surname": "Finnegan",
+            "givenname": "Dorothy",
+            "nameparts": [
+                "Finnegan",
+                "Dorothy"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 2,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 2,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10519",
+        "id": "EDUC 800 10",
+        "subject": "EDUC",
+        "snumber": "800",
+        "section": 10,
+        "attributes": [],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "Mclaughlin, Virginia",
+            "surname": "Mclaughlin",
+            "givenname": "Virginia",
+            "nameparts": [
+                "Mclaughlin",
+                "Virginia"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 10,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "14667",
+        "id": "EDUC 800 12",
+        "subject": "EDUC",
+        "snumber": "800",
+        "section": 12,
+        "attributes": [
+            "EDFB"
+        ],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "Chandler, Kimberley",
+            "surname": "Chandler",
+            "givenname": "Kimberley",
+            "nameparts": [
+                "Chandler",
+                "Kimberley"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 5,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 5,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10521",
+        "id": "EDUC 800 13",
+        "subject": "EDUC",
+        "snumber": "800",
+        "section": 13,
+        "attributes": [],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "Tschannen-Moran, Megan",
+            "surname": "Tschannen-Moran",
+            "givenname": "Megan",
+            "nameparts": [
+                "Tschannen-Moran",
+                "Megan"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 10,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10522",
+        "id": "EDUC 800 15",
+        "subject": "EDUC",
+        "snumber": "800",
+        "section": 15,
+        "attributes": [],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "Stronge, James",
+            "surname": "Stronge",
+            "givenname": "James",
+            "nameparts": [
+                "Stronge",
+                "James"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 10,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10523",
+        "id": "EDUC 800 17",
+        "subject": "EDUC",
+        "snumber": "800",
+        "section": 17,
+        "attributes": [],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "Cross, Tracy",
+            "surname": "Cross",
+            "givenname": "Tracy",
+            "nameparts": [
+                "Cross",
+                "Tracy"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 10,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "14477",
+        "id": "EDUC 800 18",
+        "subject": "EDUC",
+        "snumber": "800",
+        "section": 18,
+        "attributes": [
+            "EDFB"
+        ],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "Ward, Thomas",
+            "surname": "Ward",
+            "givenname": "Thomas",
+            "nameparts": [
+                "Ward",
+                "Thomas"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 10,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "13495",
+        "id": "EDUC 800 19",
+        "subject": "EDUC",
+        "snumber": "800",
+        "section": 19,
+        "attributes": [
+            "EDFB"
+        ],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "Gareis, Christophe",
+            "surname": "Gareis",
+            "givenname": "Christophe",
+            "nameparts": [
+                "Gareis",
+                "Christophe"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 5,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 5,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10525",
+        "id": "EDUC 800 20",
+        "subject": "EDUC",
+        "snumber": "800",
+        "section": 20,
+        "attributes": [],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "DiPaola, Michael",
+            "surname": "DiPaola",
+            "givenname": "Michael",
+            "nameparts": [
+                "DiPaola",
+                "Michael"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 10,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "11312",
+        "id": "EDUC 800 21",
+        "subject": "EDUC",
+        "snumber": "800",
+        "section": 21,
+        "attributes": [],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "Harris, Judith",
+            "surname": "Harris",
+            "givenname": "Judith",
+            "nameparts": [
+                "Harris",
+                "Judith"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 5,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 5,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10526",
+        "id": "EDUC 800 22",
+        "subject": "EDUC",
+        "snumber": "800",
+        "section": 22,
+        "attributes": [],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "Grant, Leslie",
+            "surname": "Grant",
+            "givenname": "Leslie",
+            "nameparts": [
+                "Grant",
+                "Leslie"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 10,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10527",
+        "id": "EDUC 800 23",
+        "subject": "EDUC",
+        "snumber": "800",
+        "section": 23,
+        "attributes": [],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "Foster, Victoria",
+            "surname": "Foster",
+            "givenname": "Victoria",
+            "nameparts": [
+                "Foster",
+                "Victoria"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 10,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10528",
+        "id": "EDUC 800 24",
+        "subject": "EDUC",
+        "snumber": "800",
+        "section": 24,
+        "attributes": [],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "Mason, Marguerite",
+            "surname": "Mason",
+            "givenname": "Marguerite",
+            "nameparts": [
+                "Mason",
+                "Marguerite"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 10,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10529",
+        "id": "EDUC 800 25",
+        "subject": "EDUC",
+        "snumber": "800",
+        "section": 25,
+        "attributes": [
+            "IN"
+        ],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "Barber, James",
+            "surname": "Barber",
+            "givenname": "James",
+            "nameparts": [
+                "Barber",
+                "James"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 5,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 5,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10530",
+        "id": "EDUC 800 26",
+        "subject": "EDUC",
+        "snumber": "800",
+        "section": 26,
+        "attributes": [],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "Ward, Sandra",
+            "surname": "Ward",
+            "givenname": "Sandra",
+            "nameparts": [
+                "Ward",
+                "Sandra"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 10,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10531",
+        "id": "EDUC 800 27",
+        "subject": "EDUC",
+        "snumber": "800",
+        "section": 27,
+        "attributes": [],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "Eddy, Pamela",
+            "surname": "Eddy",
+            "givenname": "Pamela",
+            "nameparts": [
+                "Eddy",
+                "Pamela"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 10,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "14478",
+        "id": "EDUC 800 28",
+        "subject": "EDUC",
+        "snumber": "800",
+        "section": 28,
+        "attributes": [
+            "EDFB"
+        ],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "Kim, Kyung-Hee",
+            "surname": "Kim",
+            "givenname": "Kyung-Hee",
+            "nameparts": [
+                "Kim",
+                "Kyung-Hee"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 5,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 5,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10532",
+        "id": "EDUC 800 29",
+        "subject": "EDUC",
+        "snumber": "800",
+        "section": 29,
+        "attributes": [],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "McAdams, Charles",
+            "surname": "McAdams",
+            "givenname": "Charles",
+            "nameparts": [
+                "McAdams",
+                "Charles"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 10,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10533",
+        "id": "EDUC 800 30",
+        "subject": "EDUC",
+        "snumber": "800",
+        "section": 30,
+        "attributes": [],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "Gressard, Charles",
+            "surname": "Gressard",
+            "givenname": "Charles",
+            "nameparts": [
+                "Gressard",
+                "Charles"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 10,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "12546",
+        "id": "EDUC 800 31",
+        "subject": "EDUC",
+        "snumber": "800",
+        "section": 31,
+        "attributes": [],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "Hofer, Mark",
+            "surname": "Hofer",
+            "givenname": "Mark",
+            "nameparts": [
+                "Hofer",
+                "Mark"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 5,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 5,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "14476",
+        "id": "EDUC 800 34",
+        "subject": "EDUC",
+        "snumber": "800",
+        "section": 34,
+        "attributes": [
+            "EDFB"
+        ],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "Bracken, Bruce",
+            "surname": "Bracken",
+            "givenname": "Bruce",
+            "nameparts": [
+                "Bracken",
+                "Bruce"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 5,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 5,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "12019",
+        "id": "EDUC 800 35",
+        "subject": "EDUC",
+        "snumber": "800",
+        "section": 35,
+        "attributes": [],
+        "title": "Dissertation",
+        "instructor": {
+            "fullname": "Tieso, Carol",
+            "surname": "Tieso",
+            "givenname": "Carol",
+            "nameparts": [
+                "Tieso",
+                "Carol"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 5,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 5,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10536",
+        "id": "EDUC C29 01",
+        "subject": "EDUC",
+        "snumber": "C29",
+        "section": 1,
+        "attributes": [],
+        "title": "Substance Abuse  &  Society",
+        "instructor": {
+            "fullname": "STAFF",
+            "surname": "STAFF",
+            "nameparts": [
+                "STAFF"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "W"
+            ],
+            "has_time": true,
+            "duration": 2.6666666666666665,
+            "start": "1630",
+            "end": "1900",
+            "raw_days": "W"
+        },
+        "space": {
+            "capacity": 30,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 30,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10537",
+        "id": "EDUC C32 01",
+        "subject": "EDUC",
+        "snumber": "C32",
+        "section": 1,
+        "attributes": [],
+        "title": "Theories Cnsl Psy",
+        "instructor": {
+            "fullname": "Mullen, Patrick",
+            "surname": "Mullen",
+            "givenname": "Patrick",
+            "nameparts": [
+                "Mullen",
+                "Patrick"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M"
+            ],
+            "has_time": true,
+            "duration": 2.5833333333333335,
+            "start": "0900",
+            "end": "1125",
+            "raw_days": "M"
+        },
+        "space": {
+            "capacity": 32,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 32,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10538",
+        "id": "EDUC C33 01",
+        "subject": "EDUC",
+        "snumber": "C33",
+        "section": 1,
+        "attributes": [],
+        "title": "Techniques of Counseling",
+        "instructor": {
+            "fullname": "Russett, Jill",
+            "surname": "Russett",
+            "givenname": "Jill",
+            "nameparts": [
+                "Russett",
+                "Jill"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M"
+            ],
+            "has_time": true,
+            "duration": 2.6666666666666665,
+            "start": "1915",
+            "end": "2145",
+            "raw_days": "M"
+        },
+        "space": {
+            "capacity": 20,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 20,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10539",
+        "id": "EDUC C33 02",
+        "subject": "EDUC",
+        "snumber": "C33",
+        "section": 2,
+        "attributes": [],
+        "title": "Techniques of Counseling",
+        "instructor": {
+            "fullname": "Honderich, Eleni",
+            "surname": "Honderich",
+            "givenname": "Eleni",
+            "nameparts": [
+                "Honderich",
+                "Eleni"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M"
+            ],
+            "has_time": true,
+            "duration": 2.6666666666666665,
+            "start": "1915",
+            "end": "2145",
+            "raw_days": "M"
+        },
+        "space": {
+            "capacity": 20,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 20,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10540",
+        "id": "EDUC C34 01",
+        "subject": "EDUC",
+        "snumber": "C34",
+        "section": 1,
+        "attributes": [],
+        "title": "Group Theory  &  Techniques",
+        "instructor": {
+            "fullname": "Brendel, Johnston",
+            "surname": "Brendel",
+            "givenname": "Johnston",
+            "nameparts": [
+                "Brendel",
+                "Johnston"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "R"
+            ],
+            "has_time": true,
+            "duration": 2.6666666666666665,
+            "start": "0900",
+            "end": "1130",
+            "raw_days": "R"
+        },
+        "space": {
+            "capacity": 18,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 18,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10541",
+        "id": "EDUC C34 02",
+        "subject": "EDUC",
+        "snumber": "C34",
+        "section": 2,
+        "attributes": [],
+        "title": "Group Theory  &  Techniques",
+        "instructor": {
+            "fullname": "Brendel, Johnston",
+            "surname": "Brendel",
+            "givenname": "Johnston",
+            "nameparts": [
+                "Brendel",
+                "Johnston"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "R"
+            ],
+            "has_time": true,
+            "duration": 2.6666666666666665,
+            "start": "1030",
+            "end": "1300",
+            "raw_days": "R"
+        },
+        "space": {
+            "capacity": 18,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 18,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10542",
+        "id": "EDUC C35 01",
+        "subject": "EDUC",
+        "snumber": "C35",
+        "section": 1,
+        "attributes": [],
+        "title": "Intro Prof Sch Couns",
+        "instructor": {
+            "fullname": "Haskins, Natoya",
+            "surname": "Haskins",
+            "givenname": "Natoya",
+            "nameparts": [
+                "Haskins",
+                "Natoya"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "W"
+            ],
+            "has_time": true,
+            "duration": 2.6666666666666665,
+            "start": "1400",
+            "end": "1630",
+            "raw_days": "W"
+        },
+        "space": {
+            "capacity": 20,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 20,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10543",
+        "id": "EDUC C43 01",
+        "subject": "EDUC",
+        "snumber": "C43",
+        "section": 1,
+        "attributes": [],
+        "title": "Prf Ethl Iss Cnsl",
+        "instructor": {
+            "fullname": "Honderich, Eleni",
+            "surname": "Honderich",
+            "givenname": "Eleni",
+            "nameparts": [
+                "Honderich",
+                "Eleni"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "R"
+            ],
+            "has_time": true,
+            "duration": 2.6666666666666665,
+            "start": "1400",
+            "end": "1630",
+            "raw_days": "R"
+        },
+        "space": {
+            "capacity": 32,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 32,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "11803",
+        "id": "EDUC C45 01",
+        "subject": "EDUC",
+        "snumber": "C45",
+        "section": 1,
+        "attributes": [],
+        "title": "Transpersonal Counseling",
+        "instructor": {
+            "fullname": "Gressard, Charles",
+            "surname": "Gressard",
+            "givenname": "Charles",
+            "nameparts": [
+                "Gressard",
+                "Charles"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M"
+            ],
+            "has_time": true,
+            "duration": 2.6666666666666665,
+            "start": "1300",
+            "end": "1530",
+            "raw_days": "M"
+        },
+        "space": {
+            "capacity": 20,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 20,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10544",
+        "id": "EDUC C47 01",
+        "subject": "EDUC",
+        "snumber": "C47",
+        "section": 1,
+        "attributes": [],
+        "title": "Intern ClinicalMntl Hlth Cnslg",
+        "instructor": {
+            "fullname": "Brendel, Johnston",
+            "surname": "Brendel",
+            "givenname": "Johnston",
+            "nameparts": [
+                "Brendel",
+                "Johnston"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "T"
+            ],
+            "has_time": true,
+            "duration": 2.5833333333333335,
+            "start": "0900",
+            "end": "1125",
+            "raw_days": "T"
+        },
+        "space": {
+            "capacity": 20,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 20,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "11451",
+        "id": "EDUC C49 02",
+        "subject": "EDUC",
+        "snumber": "C49",
+        "section": 2,
+        "attributes": [],
+        "title": "Sup Intrn Sch Couns",
+        "instructor": {
+            "fullname": "Brendel, Johnston",
+            "surname": "Brendel",
+            "givenname": "Johnston",
+            "nameparts": [
+                "Brendel",
+                "Johnston"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "T"
+            ],
+            "has_time": true,
+            "duration": 2.5833333333333335,
+            "start": "1400",
+            "end": "1625",
+            "raw_days": "T"
+        },
+        "space": {
+            "capacity": 20,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 20,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10545",
+        "id": "EDUC F65 01",
+        "subject": "EDUC",
+        "snumber": "F65",
+        "section": 1,
+        "attributes": [],
+        "title": "Research Methods",
+        "instructor": {
+            "fullname": "Joseph, Jacob",
+            "surname": "Joseph",
+            "givenname": "Jacob",
+            "nameparts": [
+                "Joseph",
+                "Jacob"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "T"
+            ],
+            "has_time": true,
+            "duration": 2.6666666666666665,
+            "start": "1630",
+            "end": "1900",
+            "raw_days": "T"
+        },
+        "space": {
+            "capacity": 30,
+            "enrolled": 1,
+            "crosslisted": false,
+            "available": 29,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "14509",
+        "id": "EDUC F65 02",
+        "subject": "EDUC",
+        "snumber": "F65",
+        "section": 2,
+        "attributes": [
+            "EDFA"
+        ],
+        "title": "Research Methods",
+        "instructor": {
+            "fullname": "Kim, Kyung-Hee",
+            "surname": "Kim",
+            "givenname": "Kyung-Hee",
+            "nameparts": [
+                "Kim",
+                "Kyung-Hee"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M"
+            ],
+            "has_time": true,
+            "duration": 2.6666666666666665,
+            "start": "1630",
+            "end": "1900",
+            "raw_days": "M"
+        },
+        "space": {
+            "capacity": 30,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 30,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10546",
+        "id": "EDUC F67 01",
+        "subject": "EDUC",
+        "snumber": "F67",
+        "section": 1,
+        "attributes": [],
+        "title": "Psy  &  Educ Measure",
+        "instructor": {
+            "fullname": "Ward, Thomas",
+            "surname": "Ward",
+            "givenname": "Thomas",
+            "nameparts": [
+                "Ward",
+                "Thomas"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "T"
+            ],
+            "has_time": true,
+            "duration": 2.6666666666666665,
+            "start": "1630",
+            "end": "1900",
+            "raw_days": "T"
+        },
+        "space": {
+            "capacity": 30,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 30,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "11450",
+        "id": "EDUC F67 02",
+        "subject": "EDUC",
+        "snumber": "F67",
+        "section": 2,
+        "attributes": [],
+        "title": "Psy  &  Educ Measure",
+        "instructor": {
+            "fullname": "Bracken, Bruce",
+            "surname": "Bracken",
+            "givenname": "Bruce",
+            "nameparts": [
+                "Bracken",
+                "Bruce"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "M"
+            ],
+            "has_time": true,
+            "duration": 2.5,
+            "start": "0900",
+            "end": "1120",
+            "raw_days": "M"
+        },
+        "space": {
+            "capacity": 30,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 30,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "15031",
+        "id": "EDUC P20A 01",
+        "subject": "EDUC",
+        "snumber": "P20A",
+        "section": 1,
+        "attributes": [
+            "EDFA"
+        ],
+        "title": "Psychoed Assessment",
+        "instructor": {
+            "fullname": "Ward, Sandra",
+            "surname": "Ward",
+            "givenname": "Sandra",
+            "nameparts": [
+                "Ward",
+                "Sandra"
+            ]
+        },
+        "hours": 4,
+        "time": {
+            "has_days": true,
+            "days": [
+                "T"
+            ],
+            "has_time": true,
+            "duration": 3.4166666666666665,
+            "start": "0900",
+            "end": "1215",
+            "raw_days": "T"
+        },
+        "space": {
+            "capacity": 0,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 20,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "15424",
+        "id": "EDUC P23 01",
+        "subject": "EDUC",
+        "snumber": "P23",
+        "section": 1,
+        "attributes": [
+            "EDFA"
+        ],
+        "title": "Intro Prof School Psychology",
+        "instructor": {
+            "fullname": "McGill, Ryan",
+            "surname": "McGill",
+            "givenname": "Ryan",
+            "nameparts": [
+                "McGill",
+                "Ryan"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "R"
+            ],
+            "has_time": true,
+            "duration": 2.6666666666666665,
+            "start": "1630",
+            "end": "1900",
+            "raw_days": "R"
+        },
+        "space": {
+            "capacity": 0,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 20,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "10548",
+        "id": "EDUC P24 01",
+        "subject": "EDUC",
+        "snumber": "P24",
+        "section": 1,
+        "attributes": [],
+        "title": "Prctcm School Psy",
+        "instructor": {
+            "fullname": "Hardinge, Gail",
+            "surname": "Hardinge",
+            "givenname": "Gail",
+            "nameparts": [
+                "Hardinge",
+                "Gail"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": true,
+            "days": [
+                "T"
+            ],
+            "has_time": true,
+            "duration": 2.6666666666666665,
+            "start": "1630",
+            "end": "1900",
+            "raw_days": "T"
+        },
+        "space": {
+            "capacity": 10,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 10,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "14663",
+        "id": "EDUC V63 01",
+        "subject": "EDUC",
+        "snumber": "V63",
+        "section": 1,
+        "attributes": [
+            "EDFA"
+        ],
+        "title": "Pract Sci Math High Needs Schl",
+        "instructor": {
+            "fullname": "Chen, Amy",
+            "surname": "Chen",
+            "givenname": "Amy",
+            "nameparts": [
+                "Chen",
+                "Amy"
+            ]
+        },
+        "hours": 1,
         "time": {
             "has_days": false,
             "has_time": false
@@ -2783,20 +3494,20 @@
         }
     },
     {
-        "crn": "10607",
-        "id": "PHYS 800 01",
-        "subject": "PHYS",
-        "snumber": "800",
-        "section": 1,
+        "crn": "10551",
+        "id": "EDUC V91 04",
+        "subject": "EDUC",
+        "snumber": "V91",
+        "section": 4,
         "attributes": [],
-        "title": "Dissertation",
+        "title": "Indep Study",
         "instructor": {
-            "fullname": "Tracy, Eugene",
-            "surname": "Tracy",
-            "givenname": "Eugene",
+            "fullname": "Hardinge, Gail",
+            "surname": "Hardinge",
+            "givenname": "Gail",
             "nameparts": [
-                "Tracy",
-                "Eugene"
+                "Hardinge",
+                "Gail"
             ]
         },
         "hours": 1,
@@ -2805,10 +3516,162 @@
             "has_time": false
         },
         "space": {
-            "capacity": 70,
-            "enrolled": 21,
+            "capacity": 2,
+            "enrolled": 0,
             "crosslisted": false,
-            "available": 49,
+            "available": 2,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "11609",
+        "id": "EDUC V91 07",
+        "subject": "EDUC",
+        "snumber": "V91",
+        "section": 7,
+        "attributes": [],
+        "title": "Ind Study--Addictions Research",
+        "instructor": {
+            "fullname": "Gressard, Charles",
+            "surname": "Gressard",
+            "givenname": "Charles",
+            "nameparts": [
+                "Gressard",
+                "Charles"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 1,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 1,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "11848",
+        "id": "EDUC V91 09",
+        "subject": "EDUC",
+        "snumber": "V91",
+        "section": 9,
+        "attributes": [],
+        "title": "Independent Study",
+        "instructor": {
+            "fullname": "Kim, Kyung-Hee",
+            "surname": "Kim",
+            "givenname": "Kyung-Hee",
+            "nameparts": [
+                "Kim",
+                "Kyung-Hee"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 5,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 5,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "11884",
+        "id": "EDUC V91 10",
+        "subject": "EDUC",
+        "snumber": "V91",
+        "section": 10,
+        "attributes": [],
+        "title": "Independent Study",
+        "instructor": {
+            "fullname": "McAdams, Charles",
+            "surname": "McAdams",
+            "givenname": "Charles",
+            "nameparts": [
+                "McAdams",
+                "Charles"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 1,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 1,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "12560",
+        "id": "EDUC V91 13",
+        "subject": "EDUC",
+        "snumber": "V91",
+        "section": 13,
+        "attributes": [],
+        "title": "Independent Study",
+        "instructor": {
+            "fullname": "Hofer, Mark",
+            "surname": "Hofer",
+            "givenname": "Mark",
+            "nameparts": [
+                "Hofer",
+                "Mark"
+            ]
+        },
+        "hours": 3,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 1,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 1,
+            "status_ok": true
+        }
+    },
+    {
+        "crn": "13988",
+        "id": "EDUC V91 15",
+        "subject": "EDUC",
+        "snumber": "V91",
+        "section": 15,
+        "attributes": [
+            "EDFB"
+        ],
+        "title": "Independent Study",
+        "instructor": {
+            "fullname": "Foster, Victoria",
+            "surname": "Foster",
+            "givenname": "Victoria",
+            "nameparts": [
+                "Foster",
+                "Victoria"
+            ]
+        },
+        "hours": 1,
+        "time": {
+            "has_days": false,
+            "has_time": false
+        },
+        "space": {
+            "capacity": 1,
+            "enrolled": 0,
+            "crosslisted": false,
+            "available": 1,
             "status_ok": true
         }
     }

@@ -9,7 +9,8 @@ var app     = express();
 app.use(bodyparser.json());
 
 var db      = require('mongoskin').db('mongodb://localhost:27017/courses');
-var colle   = "test1";
+var coursecolle = "test1";
+var paramscolle = "params";
 var outfile = "scraped_course_stats.json";
 var port    = "8081";
 
@@ -49,7 +50,7 @@ app.post('/search/all', function(req, res){
 
     for(var i = 0; i < terms.length; i++){
         //console.log("term is", terms[i]);
-        db.collection(colle).find({$text:{$search:terms[i]}}, function(err, result){
+        db.collection(coursecolle).find({$text:{$search:terms[i]}}, function(err, result){
             //console.log("howmany is " + howmany);
             if(err){
                 console.log("error in search ", err);
@@ -99,14 +100,35 @@ app.post('/search/all', function(req, res){
     }
 });
 
-// web scraper
+// to save / update database entries
+function saveToDB( parsed, colle, identifier ){
+    //console.log("trying to save " + JSON.stringify(parsed));
+    // hey look it's es6
+    db.collection(colle).findOne({[identifier]:parsed[identifier]}, function(err, result){
+        if(err){console.log("Error finding existing identifier ("+identifier+"). " + err)};
+        if(result){
+            //console.log("found " + JSON.stringify( result ) );
+            parsed._id = result._id;
+        }
+        db.collection(colle).save(parsed, function(err, result){
+            if(err){
+                console.log("Failed to save to db. " + err);
+            }
+            if(result){
+                //console.log("Saved to db.");
+            }
+        });
+    });
+}
+
+// web scraper for course information
 app.get('/scrape/courses/:subj', function(req, res){
 
     // have a checkmark for 'undergrad' that filters out 500+ course numbers
     // or similar for untakeable edu or business classes with 4 digit course nums
     // or otherwise restricted by attributes? add attributes automagically when parsing?
 
-    url = 'https://courselist.wm.edu/courselist/courseinfo/searchresults';
+    var url = "https://courselist.wm.edu/courselist/courseinfo/searchresults"; // I like doublequotes okay
 
     var terms = {
         spring16:201620,
@@ -173,18 +195,18 @@ app.get('/scrape/courses/:subj', function(req, res){
             for(var i = 0; i < data.length; i++){
                 console.log("Confirmed course: " + data[i]["COURSE ID"]);
                 parsed.push(course.parse(data[i]));
-                saveToDB(parsed[i]);
+                saveToDB(parsed[i], coursecolle, "crn");
                 //console.log(parsed[i]);
             }
 
             console.log("Done parsing and saving to db.");
             console.log("Attempting to build search index.");
 
-            db.collection(colle).createIndex({/*
+            db.collection(coursecolle).createIndex({/*
                     crn:"text",
                     subject:"text",
                     title:"text",
-                    "instructor.fullname":"text",*/
+                    "instructor.fullname":"text",*/ // this disturbs me, why so inconsistent with dot notation?
                     "$**":"text"
                 }, {name:"CourseTextIndex"}, function(err){
                     if(err){
@@ -210,35 +232,65 @@ app.get('/scrape/courses/:subj', function(req, res){
             res.send("Something went wrong. "  + error);
         }
     });
-    console.log("Made a request to somewhere.");
+    console.log("Made a request to " + url );
 });
-
-function saveToDB( parsed ){
-    //console.log("trying to save " + JSON.stringify(parsed));
-    db.collection(colle).findOne({crn:parsed.crn}, function(err, result){
-        if(err){console.log("Error finding existing course CRN. " + err)};
-        if(result){
-            //console.log("found " + JSON.stringify( result ) );
-            parsed._id = result._id;
-        }
-        db.collection(colle).save(parsed, function(err, result){
-            if(err){
-                console.log("Failed to save to db. " + err);
-            }
-            if(result){
-                //console.log("Saved to db.");
-            }
-        });
-    });
-}
 
 // scrape the possible values for attributes and subjects from the
 // options on the courselist search page 
 app.get('/scrape/params/:type', function(req, res){
     // TODO implement me!
+    var url = "https://courselist.wm.edu/courselist/";
+    var ids = {
+        term:"term_code",
+        subject:"term_subj",
+        attribute:"attr",
+        status:"status",
+        level:"levl", // not displayed in OCL results (would need to tag ourselves by retreiving results for each level)
+        part_of_term:"ptrm", // not displayed in OCL results
+    };
+
+    request.get({uri:url}, function(error, response, html){
+        if(!error){
+            var $ = cheerio.load(html);
+            //console.log("found html", html);
+
+            if(!ids[req.params.type]){
+                res.send("Parameter type did not exist: " + req.params.type);
+                return;
+            }
+
+            var select = $("#"+ids[req.params.type]);
+
+            var options = {
+                param_id:ids[req.params.type],
+                raw_param:req.params.type,
+                value_list:[],
+                key_list:[],
+            };
+
+            select.children().each(function(index){
+                options[$(this).val()] = $(this).text(); // see potential bug below
+                options.value_list.push($(this).text());
+                options.key_list.push($(this).val());
+            });
+
+            // potential bug above: keys cannot contain certain characters.
+            // If it turns out a key has a banned character, assigning it into an object will cause an error
+            // This may be solved by just using key_list like value_list and then just comparing indexes
+            // instead of doing the typical object lookup
+
+            saveToDB( options, paramscolle, "param_id" );
+
+            res.send("We're making progress. Scrape for: ["+ids[req.params.type]+"] <hr><textarea rows='40' cols='100'>"+JSON.stringify(options, null, 4)+"</textarea>");
+        }
+        else{
+            console.log("Something went wrong. " + error);
+            res.send("Something went wrong. " + error);
+        }
+    });
+    console.log("Made a request to " + url );
 });
 
-
 app.listen(port)
-console.log('scrape active on port ' + port);
+console.log("scrape active on port " + port);
 exports = module.exports = app;

@@ -54,7 +54,7 @@ input{
 #search{
     position: relative;
     padding: 10px;
-    min-width: 70%;
+    min-width: 75%;
 }
 #search-button{
     width: 80px;

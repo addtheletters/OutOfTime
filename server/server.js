@@ -57,6 +57,10 @@ app.post('/search/all', function(req, res){
     // but could be tweaked to allow for more general search terms to be
     // pre-processed (8:00 converted to the database-friendly 0800 for example).
 
+    if(terms.length <= 0){
+        res.status(200).send({ok:true, courses:[]});
+    }
+
     for(var i = 0; i < terms.length; i++){
         //console.log("term is", terms[i]);
         db.collection(coursecolle).find({$text:{$search:terms[i]}}, function(err, result){

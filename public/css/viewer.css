@@ -5,6 +5,7 @@ body {
 .centered {
     position: relative;
     max-width: 1400px;
+    min-width: 80%;
     height: auto;
     margin: auto;
     padding: 10px;
@@ -21,9 +22,12 @@ body {
 .disabled{
     background-color: rgba(210, 0, 0, .6);
 }
-.aside{
-    margin-left: 20px;
-    margin-right:20px;
+.searchbar{
+    position: relative;
+    margin: 20px;
+    top: 50%; 
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
 }
 .pbutton{
     box-shadow: 3px 5px 10px 1px gray;
@@ -42,11 +46,37 @@ label{
 input{
     font-family: monospace;
     font-size: 16px;
-    min-width: 500px;
+    max-width: 1200px;
+}
+#search-bar-box{
+    display: inline-block;
 }
 #search{
-    
+    position: relative;
+    padding: 10px;
+    min-width: 70%;
 }
+#search-button{
+    width: 80px;
+    float:right;
+}
+#search-button-mini{
+    float:left;
+}
+/*#search{
+    float:left;
+    position: relative;
+    top: 50%; 
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+#search-button{
+    float:left;
+    position: relative;
+    top: 50%; 
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}*/
 #loaded{
     position: fixed;
     z-index: 100;

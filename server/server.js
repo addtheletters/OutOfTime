@@ -14,6 +14,25 @@ var paramscolle = "params";
 var outfile = "scrape_results.json";
 var port    = "8081";
 
+var terms = {
+    spring16:201620,
+    summer16:201630,
+    autumn16:201710,
+    spring17:201720,
+}
+// eventually these things (and other options) will be dynamically loaded from files in /public/json
+
+var seasonIDs = {
+    fall:"10",
+    autumn:"10",
+    spring:"20",
+    summer:"30",
+}
+
+function getTermID(year, season){ // fall of 2016 is represented by a term id starting with 2017
+    return ((season === "fall" || season === "autumn") ? (year+1).toString() : year.toString()) + seasonIDs[season].toString();
+}
+
 var should_outfile = true;
 
 var static = function(pth){ 
@@ -148,25 +167,6 @@ app.get('/scrape/courses/:subj', function(req, res){
 
     var url = "https://courselist.wm.edu/courselist/courseinfo/searchresults"; // I like doublequotes okay
 
-    var terms = {
-        spring16:201620,
-        summer16:201630,
-        autumn16:201710,
-        spring17:201720,
-    }
-    // eventually these things (and other options) will be dynamically loaded from files in /public/json
-
-    var seasonIDs = {
-        fall:"10",
-        autumn:"10",
-        spring:"20",
-        summer:"30",
-    }
-
-    function getTermID(year, season){ // fall of 2016 is represented by a term id starting with 2017
-        return ((season === "fall" || season === "autumn") ? (year+1).toString() : year.toString()) + seasonIDs[season].toString();
-    }
-
     var term = getTermID(2016, "fall");
     console.log("supposed term id is " + term);
     var subject = req.params.subj || "CSCI";
@@ -240,6 +240,26 @@ app.get('/scrape/courses/:subj', function(req, res){
         }
     });
     console.log("Made a request to " + url );
+});
+
+app.get('/scrape/detail/:year/:season/:crn/:day/:time', function(req, res){
+    var url = "https://courselist.wm.edu/courselist/courseinfo/addInfo";
+    var queryParams = {
+        fterm:getTermID(req.params.year, req.params.season),
+        fcrn:req.params.crn,
+        fday:null,//req.params.day,
+        ftime:req.params.time
+    };
+    request.get({uri:url, qs:queryParams}, function(error, response, html){
+        if(!error){
+            var $ = cheerio.load(html);
+            res.send(html);
+        }
+        else{
+            console.log("Something went wrong with get request:", error);
+            res.send("Something went wrong", error);
+        }
+    });
 });
 
 // scrape the possible values for attributes and subjects from the

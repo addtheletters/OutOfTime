@@ -247,7 +247,7 @@ app.get('/scrape/detail/:year/:season/:crn/:day/:time', function(req, res){
     var queryParams = {
         fterm:getTermID(req.params.year, req.params.season),
         fcrn:req.params.crn,
-        fday:null,//req.params.day,
+        fday:req.params.day,
         ftime:req.params.time
     };
     request.get({uri:url, qs:queryParams}, function(error, response, html){

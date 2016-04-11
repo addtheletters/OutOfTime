@@ -5,12 +5,14 @@ var request = require('request');
 var bodyparser = require("body-parser");
 var cheerio = require('cheerio');
 var course  = require('./course.js');
+var detail  = require('./detail.js');
 var app     = express();
 app.use(bodyparser.json());
 
 var db      = require('mongoskin').db('mongodb://localhost:27017/courses');
 var coursecolle = "test1";
 var paramscolle = "params";
+var detailcolle = "details";
 var outfile = "scrape_results.json";
 var port    = "8081";
 
@@ -250,10 +252,53 @@ app.get('/scrape/detail/:year/:season/:crn/:day/:time', function(req, res){
         fday:req.params.day,
         ftime:req.params.time
     };
+    console.log("making request with params", queryParams);
     request.get({uri:url, qs:queryParams}, function(error, response, html){
         if(!error){
             var $ = cheerio.load(html);
+            //res.send(html);
+            var info = $("#addinfo");
+            var fc = info.children().first();
+            var lc = info.children().last();
+            console.log("info", info.html());
+            console.log("fc", fc.html());
+            console.log("lc", lc.html());
+
+            var raw = {
+                crn:req.params.crn,
+                term:queryParams.fterm,
+                /*maybe don't need year or season; maybe need day and time*/
+            };
+            var lastkey = null;
+
+            fc.find("tbody").children().each(function(index){
+                //console.log("child " + index, $(this).html());
+                // this odd control flow is because of a random extra row under prereqs which we want to ignore
+                if((index == 0) || (index > 1 && index % 2 == 1)){
+                    lastkey = $(this).text().replace(/:/, "").trim();
+                }
+                else{
+                    if(index > 1){
+                        raw[lastkey] = $(this).text().trim();
+                    }
+                }
+            });
+
+            lc.children().each(function(index){
+                console.log("child " + index, $(this).html());
+                if(index > 0){
+                    var rkey = $(this).children().first().text().replace(/:/, "").trim();
+                    if( rkey.length > 0 ){
+                        raw[ rkey ] = $(this).children().last().text();
+                    }
+                }
+            });
+
+            console.log("raw",raw);
+            console.log("parsed", detail.parse(raw));
+
             res.send(html);
+
         }
         else{
             console.log("Something went wrong with get request:", error);

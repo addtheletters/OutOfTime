@@ -297,7 +297,7 @@ app.get('/scrape/detail/:year/:season/:crn/:day/:time', function(req, res){
             console.log("raw",raw);
             console.log("parsed", detail.parse(raw));
 
-            res.send(html);
+            res.send(JSON.stringify(detail.parse(raw), null, 4));
 
         }
         else{

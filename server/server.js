@@ -4,8 +4,6 @@ var path    = require('path');
 var request = require('request');
 var bodyparser = require("body-parser");
 var cheerio = require('cheerio');
-var course  = require('./course.js');
-var detail  = require('./detail.js');
 var search  = require('./search.js');
 var scrape  = require('./scrape.js');
 var app     = express();
@@ -162,7 +160,7 @@ app.get('/scrape/courses/:subj', function(req, res){
                 writeJSONFile(result, outfile);
             }
 
-            res.send("Let's go. We're getting somewhere, eventually. <hr><textarea rows='40' cols='100'>"+JSON.stringify(result, null, 4)+"</textarea>");
+            res.send("Let's go. We're getting somewhere, eventually. Search was for ["+req.params.subj+"] <hr><textarea rows='40' cols='100'>"+JSON.stringify(result, null, 4)+"</textarea>");
         }
     });
 });
@@ -178,7 +176,7 @@ app.get('/scrape/detail/:year/:season/:crn/:day/:time', function(req, res){
     //console.log("making request with params", queryParams);
     scrape.details( queryParams, function(result){
         if(!result.error){
-            res.send("Science! <hr><textarea rows='40' cols='100'>"+JSON.stringify(result, null, 4)+"</textarea>");
+            res.send("Science! Scrape for crn ["+req.params.crn+"] <hr><textarea rows='40' cols='100'>"+JSON.stringify(result, null, 4)+"</textarea>");
         }
         else{
             res.send("Something went wrong. " + result.error);

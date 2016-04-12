@@ -37,7 +37,6 @@ var detail  = require('./detail.js');
 	            for(var i = 0; i < data.length; i++){
 	                console.log("Confirmed course: " + data[i]["COURSE ID"]);
 	                parsed.push(course.parse(data[i]));
-	                //saveToDB(parsed[i], coursecolle, "crn");
 	            }
 
 	            callback(parsed);
@@ -91,7 +90,6 @@ var detail  = require('./detail.js');
 
 	            var parsed = detail.parse(raw);
 	            callback( parsed );
-	            //res.send("Science! <hr><textarea rows='40' cols='100'>"+JSON.stringify(parsed, null, 4)+"</textarea>");
 	        }
 	        else{
 	            console.log("Something went wrong with get request:", error);
@@ -141,7 +139,6 @@ var detail  = require('./detail.js');
 	            });
 
 	            callback( options );
-	            //res.send("We're making progress. Scrape for: ["+ids[req.params.type]+"] <hr><textarea rows='40' cols='100'>"+JSON.stringify(options, null, 4)+"</textarea>");
 	        }
 	        else{
 	            console.log("Something went wrong. " + error);

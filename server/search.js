@@ -19,7 +19,6 @@ var coursecolle = "test1";
 
 	    if(terms.length <= 0){
 	    	callback([]);
-	        //res.status(200).send({ok:true, courses:[]});
 	    }
 
 	    for(var i = 0; i < terms.length; i++){
@@ -54,8 +53,7 @@ var coursecolle = "test1";
 	                    }
 	                    if(howmany == 0){
 	                        console.log("returning search results");
-	                        callback(possible);
-	                        //res.status(200).send({ok:true, courses:possible});                        
+	                        callback(possible);                   
 	                    }
 	                });
 	            }

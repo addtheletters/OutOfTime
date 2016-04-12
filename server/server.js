@@ -260,9 +260,6 @@ app.get('/scrape/detail/:year/:season/:crn/:day/:time', function(req, res){
             var info = $("#addinfo");
             var fc = info.children().first();
             var lc = info.children().last();
-            console.log("info", info.html());
-            console.log("fc", fc.html());
-            console.log("lc", lc.html());
 
             var raw = {
                 crn:req.params.crn,
@@ -285,7 +282,7 @@ app.get('/scrape/detail/:year/:season/:crn/:day/:time', function(req, res){
             });
 
             lc.children().each(function(index){
-                console.log("child " + index, $(this).html());
+                //console.log("child " + index, $(this).html());
                 if(index > 0){
                     var rkey = $(this).children().first().text().replace(/:/, "").trim();
                     if( rkey.length > 0 ){
@@ -294,11 +291,11 @@ app.get('/scrape/detail/:year/:season/:crn/:day/:time', function(req, res){
                 }
             });
 
+            var parsed = detail.parse(raw);
             console.log("raw",raw);
-            console.log("parsed", detail.parse(raw));
+            console.log("parsed", parsed);
 
-            res.send(JSON.stringify(detail.parse(raw), null, 4));
-
+            res.send("Science! <hr><textarea rows='40' cols='100'>"+JSON.stringify(parsed, null, 4)+"</textarea>");
         }
         else{
             console.log("Something went wrong with get request:", error);

@@ -8,12 +8,28 @@ var detail = {};
 			corequisites:lib.reqs.parseReqs(raw_object["Corequisites"])
 		};
 
-		//lib.parsePrereqs(raw_object["Corequisites"], parsed);
-		//lib.parseCoreqs(raw_object["Prerequisites"], parsed);
-		// parsed.ptokens = lib.reqs.tokenize(raw_object["Prerequisites"]); 
-		// parsed.ast = lib.reqs.buildAST(parsed.ptokens);
+		lib.parseDates( raw_object["Course Dates"], parsed );
 		
 		return parsed;
+	};
+
+	lib.parseDates = function(dates, obj){
+		var tkns = dates.split("-").filter((tkn)=>(tkn.length > 0)).map((tkn)=>(tkn.trim()));
+		obj      = obj || {};
+		obj.dates       = {};
+		obj.dates.raw   = dates;
+		obj.dates.start = tkns[0]; // maybe want to parse this more, but only if that becomes important
+		obj.dates.end   = tkns[1];	// these are already plenty human-readable
+		return obj;
+	};
+
+	lib.parseLocation = function(place, obj){
+		var tkns = place.split("--").filter((tkn)=>(tkn.length > 0)).map((tkn)=>(tkn.trim()));
+		obj      = obj || {};
+		obj.location          = {};
+		obj.location.building = tkns[0];
+		obj.location.room     = tkns[1];
+		return obj;
 	};
 
 	lib.reqs = {};
@@ -30,13 +46,13 @@ var detail = {};
 
 	// Shunting-yard algorithm
 	lib.reqs.buildAST = function( tokens ){
-		var out = [];
-		var operators = [];
+		var out          = [];
+		var operators    = [];
 		var result_stack = [];
 
 		function addNode( stack, operator ){
 			var rightNode = stack.pop();
-			var leftNode = stack.pop();
+			var leftNode  = stack.pop();
 			stack.push( new lib.reqs.ASTNode( operator, leftNode, rightNode ) );
 		}
 
@@ -49,29 +65,29 @@ var detail = {};
 			OR:1
 		}
 
-		yardmain:
 		for(var i = 0; i < tokens.length; i++){
 			console.log("token is", tokens[i]);
 			switch(tokens[i]){
 				case '(':
-					console.log("found left paren");
+					//console.log("found left paren");
 					operators.push(tokens[i]);
 					break;
 				case ')':
-					console.log("found right paren");
+					//console.log("found right paren");
 					var popped;
 					while(operators.length > 0){
 						popped = operators.pop();
-						console.log("popped", popped);
+						//console.log("popped", popped);
 						if(popped === "("){
 							break;
 						}
 						else{
-							console.log("adding to result", popped);
+							//console.log("adding to result", popped);
 							addNode(result_stack, popped);
 						}
 					}
-					console.log("unbalanced parens!");
+					if(popped !== "(")
+						console.log("unbalanced parens! uh oh. Check requisite-course string for issues.");
 					break;
 				default:
 					if(isOperator(tokens[i])){

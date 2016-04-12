@@ -11,7 +11,7 @@
 	<script type="text/javascript" src="js/lib/handlebars-v4.0.5.js"></script>
 	<script id="keyval-list-template" type="text/x-handlebars-template">
 		{{#list keyvalue_list}}
-			{{key}} : {{value}}
+		<b>{{key}}</b> : {{value}}
 		{{/list}}
 	</script>
 	<script type="text/javascript" src="js/scrape_help.js"></script>
@@ -28,6 +28,23 @@
 		<div id="param-list">
 			[none]
 		</div>
+	</section>
+	<hr>
+	<section>
+		<h4>/detail</h4>
+		<p>
+			Use /scrape/detail/YEAR/SEASON/CRN/DAYS/TIME to scrape for detailed information (what comes up when you click a CRN on the OCL results page). 
+		</p>
+		<p>
+			For some reason, just supplying a CRN is not enough to retreive fully detailed information; days and time must also be accurately provided. The other collections of the database could be queried to supply this information automatically, but for now they must be included in the URL.
+		</p>
+		<ul>
+			<li><b>YEAR:</b> The school year, as a four-digit number. Example: 2016</li>
+			<li><b>SEASON:</b> Possible values: fall, autumn, winter, spring, summer</li>
+			<li><b>CRN:</b> The CRN of the class. If DAYS or TIME are given bogus values, this is enough for a bit of detail to come up (but not all).</li>
+			<li><b>DAYS:</b> The condensed string representation of the days of the week the class occurs on. Example: MWF</li>
+			<li><b>TIME:</b> The condensed string representation of the time the class meets. Example: 1100-1150</li>
+		</ul>
 	</section>
 	<hr>
 	<section>

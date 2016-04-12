@@ -100,7 +100,7 @@ function runSearch( str ){
 	};
 	xhr.open("POST", "/search/all", true);
 	xhr.setRequestHeader("Content-Type", "application/json");
-	xhr.send(JSON.stringify({searchterms:str}));
+	xhr.send(JSON.stringify({searchtext:str}));
 }
 
 document.addEventListener("DOMContentLoaded", function(){

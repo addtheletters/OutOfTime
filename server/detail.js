@@ -66,7 +66,7 @@ var detail = {};
 		}
 
 		for(var i = 0; i < tokens.length; i++){
-			console.log("token is", tokens[i]);
+			//console.log("token is", tokens[i]);
 			switch(tokens[i]){
 				case '(':
 					//console.log("found left paren");

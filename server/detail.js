@@ -90,13 +90,11 @@ var detail = {};
 							addNode(result_stack, popped);
 						}
 					}
-					if(popped !== "(")
-						console.log("unbalanced parens! uh oh. Check requisite-course string for issues.");
 					break;
 				default:
 					if(isOperator(tokens[i])){
 						var o2 = operators[operators.length-1]; // could be undefined if operators is empty
-						while( isOperator(o2) && (precedence[tokens[i]] <= precedence[o2]) ){
+						while( (operators.length > 0 && isOperator(o2)) && (precedence[tokens[i]] <= precedence[o2]) ){
 							o2 = operators.pop();
 							addNode( result_stack, o2 );
 						}
@@ -127,42 +125,76 @@ var detail = {};
 		this.right = rgt;
 	};
 
-	lib.reqs.isSatisfied = function( requirement, taken ){
+	lib.reqs.isUnsatisfied = function( requirement, taken ){
 		if(!requirement){
-			return true;
+			return false;
 		}
 		for(var i = 0; i < taken.length; i++){ // assumes no requirement needs multiple classes to satisfy
 			if( lib.reqs.countsAs(requirement, taken[i]) ){
-				return true;
+				return false;
 			}
 		}
-		return false;
+		return {missing:requirement};
 	};
 
 	lib.reqs.countsAs = function( requirement, course ){
+		if(requirement === course){
+			console.log("requirement is satisfied:", requirement, "with:", course);
+		}
 		return requirement === course; // placeholder for more complex resolution logic
 	};
 
-	lib.reqs.audit = function( taken, node ){
+	// returns false if there are no problems
+	// returns object with missing atribute if there is a problem
+	// might want to change so always returns an object
+	// with 'missing' and 'met' attributes to track both
+	lib.reqs.audit = function( node, taken ){
 		if(node){
 			switch(node.value){
 				case "AND":
-					return lib.reqs.audit( taken, node.left ) && lib.reqs.audit( taken, node.right );
+					var lstate = lib.reqs.audit( node.left, taken );
+					var rstate = lib.reqs.audit( node.right, taken );
+					if(lstate || rstate){ // if either has not been satisfied (because both are needed)
+						var ret = {missing:[].concat(lstate.missing || [], rstate.missing || [])};
+						return ret;
+					}
+					return false;
 					break;
 				case "OR":
-					return lib.reqs.audit( taken, node.left ) || lib.reqs.audit( taken, node.right );
+					var lstate = lib.reqs.audit( node.left, taken );
+					var rstate = lib.reqs.audit( node.right, taken );
+					if(lstate && rstate){
+						var ret = {missing:[ {value:"OR", contents:[lstate.missing, rstate.missing]} ]};
+						return ret;
+					}
+					return false;
 					break;
 				default:
-					return lib.reqs.isSatisfied( node.value, taken );
+					return lib.reqs.isUnsatisfied( node.value, taken );
 					break;
 			}
 		}
 		else{
-			return true;
+			return false;
 		}
 	};
 
-	lib.audit = lib.reqs.audit;
+	lib.audit = function( reqs, taken ){
+		var node = reqs;
+		if(!(reqs instanceof lib.reqs.ASTNode)){
+			console.log("detail.audit: attempting to parse reqs into AST");
+			if(reqs instanceof Array){ // already tokenized
+				node = lib.reqs.buildAST(reqs);
+			}
+			else{
+				node = lib.parseReqs(reqs);
+			}
+		}
+		if(!taken.length){
+			console.log("detail.audit: apparently no courses were taken?");
+		}
+		return lib.reqs.audit( node, taken );
+	};
 
 })(detail);
 

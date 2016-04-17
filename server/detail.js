@@ -4,8 +4,8 @@ var detail = {};
 	lib.parse = function(raw_object){
 		var parsed = {
 			crn:raw_object.crn,
-			prerequisites:lib.reqs.parseReqs(raw_object["Prerequisites"]),
-			corequisites:lib.reqs.parseReqs(raw_object["Corequisites"])
+			prerequisites:lib.parseReqs(raw_object["Prerequisites"]),
+			corequisites:lib.parseReqs(raw_object["Corequisites"])
 		};
 
 		lib.parseDates( raw_object["Course Dates"], parsed );
@@ -32,11 +32,11 @@ var detail = {};
 		return obj;
 	};
 
-	lib.reqs = {};
-
-	lib.reqs.parseReqs = function( raw_reqs ){
+	lib.parseReqs = function( raw_reqs ){
 		return lib.reqs.buildAST( lib.reqs.tokenize(raw_reqs) );
 	};
+
+	lib.reqs = {};
 
 	lib.reqs.tokenize = function( raw_reqs ){
 		return raw_reqs.split(/(AND)|(OR)|(\()|(\))/g)
@@ -46,7 +46,11 @@ var detail = {};
 
 	// Shunting-yard algorithm
 	lib.reqs.buildAST = function( tokens ){
-		var out          = [];
+
+		if(tokens.length < 1){
+			return; // no tokens? no tree
+		}
+
 		var operators    = [];
 		var result_stack = [];
 
@@ -61,7 +65,7 @@ var detail = {};
 		}
 
 		var precedence = {
-			AND:2,
+			AND:1, // AND should have precedence over OR, but apparently not on OCL pages
 			OR:1
 		}
 
@@ -91,8 +95,8 @@ var detail = {};
 					break;
 				default:
 					if(isOperator(tokens[i])){
-						var o2;
-						while( (operators.length > 0) && (precedence[tokens[i]] <= precedence[o2]) ){
+						var o2 = operators[operators.length-1]; // could be undefined if operators is empty
+						while( isOperator(o2) && (precedence[tokens[i]] <= precedence[o2]) ){
 							o2 = operators.pop();
 							addNode( result_stack, o2 );
 						}
@@ -100,6 +104,7 @@ var detail = {};
 					}
 					else{
 						result_stack.push( new lib.reqs.ASTNode(tokens[i], null, null) );
+						//result_stack.push(tokens[i]); // for cleaner testing prints, switch back please for cleaner code
 					}
 					break;
 			}
@@ -107,6 +112,10 @@ var detail = {};
 
 		while(operators.length > 0){
 			addNode(result_stack, operators.pop());
+		}
+
+		if(result_stack.length != 1){
+			console.log("Uh oh, possible error in building requisite AST. Stack is", JSON.stringify(result_stack, null, 4));
 		}
 
 		return result_stack.pop();
@@ -117,6 +126,43 @@ var detail = {};
 		this.left  = lft;
 		this.right = rgt;
 	};
+
+	lib.reqs.isSatisfied = function( requirement, taken ){
+		if(!requirement){
+			return true;
+		}
+		for(var i = 0; i < taken.length; i++){ // assumes no requirement needs multiple classes to satisfy
+			if( lib.reqs.countsAs(requirement, taken[i]) ){
+				return true;
+			}
+		}
+		return false;
+	};
+
+	lib.reqs.countsAs = function( requirement, course ){
+		return requirement === course; // placeholder for more complex resolution logic
+	};
+
+	lib.reqs.audit = function( taken, node ){
+		if(node){
+			switch(node.value){
+				case "AND":
+					return lib.reqs.audit( taken, node.left ) && lib.reqs.audit( taken, node.right );
+					break;
+				case "OR":
+					return lib.reqs.audit( taken, node.left ) || lib.reqs.audit( taken, node.right );
+					break;
+				default:
+					return lib.reqs.isSatisfied( node.value, taken );
+					break;
+			}
+		}
+		else{
+			return true;
+		}
+	};
+
+	lib.audit = lib.reqs.audit;
 
 })(detail);
 

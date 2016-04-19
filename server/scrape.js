@@ -114,7 +114,7 @@ var detail  = require('./detail.js');
 	            //console.log("found html", html);
 
 	            if(!ids[type]){
-	                res.send("Parameter type did not exist: " + type);
+	                callback({error:"Parameter type did not exist: " + type});
 	                return;
 	            }
 

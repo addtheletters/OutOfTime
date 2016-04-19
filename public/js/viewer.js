@@ -41,8 +41,8 @@ function formatTime(time){
 	var f2 = formatHourMinute(time.end);
 	var h1 = halfOfDay(f1);
 	var h2 = halfOfDay(f2);
-	if( (h1 && h2) && (h1 === h2) ){
-		f1 = f1.slice(0, -3);
+	if( (h1 && h2) && (h1 === h2) ){ // starts and ends on same half of day
+		f1 = f1.slice(0, -3); // only show which half after the second time
 	}
 	return f1 + " - " + f2;
 }
@@ -83,9 +83,16 @@ function showResult( str ){
 	result_box.innerHTML = str;
 }
 
-function runSearch( str ){
-	console.log("searching for", str);
+function getTerm(){
+	var ts = document.getElementById("term-select");
+	return ts.value;
+}
 
+function runSearch( str, term ){
+	console.log("searching for", str, "in term", term);
+	if(!term){
+		showResult("[No term selected.]");
+	}
 	showResult("[Searching...]");
 
 	var xhr = new XMLHttpRequest();
@@ -100,15 +107,16 @@ function runSearch( str ){
 			displayResults(res);
 			lastresult = res;
 		} else {
-			console.log("Search failed: " + res.reason, 4000);
+			console.log("Search failed: " + res.reason);
+			showResult("[Search failed: "+JSON.stringify(res.reason)+"]");
 		}
 	};
-	xhr.open("POST", "/search/all", true);
+	xhr.open("POST", "/search/" + term, true);
 	xhr.setRequestHeader("Content-Type", "application/json");
 	xhr.send(JSON.stringify({searchtext:str}));
 }
 
 document.addEventListener("DOMContentLoaded", function(){
-	document.getElementById("search-button").onclick = function(){ runSearch( document.getElementById("search").value ) };
+	document.getElementById("search-button").onclick = function(){ runSearch( document.getElementById("search").value, getTerm() ) };
 	document.getElementById("search").onkeypress = searchKeyPress;
 });

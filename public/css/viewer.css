@@ -37,7 +37,7 @@ body {
     color: white;
 }
 .tight{
-    max-width: 80%;
+    max-width: 70%;
     margin: 0 auto;
 }
 label{
@@ -47,6 +47,11 @@ input{
     font-family: monospace;
     font-size: 16px;
     max-width: 1200px;
+}
+select{
+    font-family: monospace;
+    font-size: 16px;
+    padding: 5px;
 }
 #search-bar-box{
     display: inline-block;

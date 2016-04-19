@@ -35,9 +35,10 @@ var detail  = require('./detail.js');
 	            var parsed = [];
 
 	            for(var i = 0; i < data.length; i++){
-	                console.log("Confirmed course: " + data[i]["COURSE ID"]);
+	                //console.log("Confirmed course: " + data[i]["COURSE ID"]);
 	                parsed.push(course.parse(data[i]));
 	            }
+	            console.log("Confirmed", data.length ,"courses.");
 
 	            callback(parsed);
 	        }

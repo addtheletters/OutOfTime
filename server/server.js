@@ -8,7 +8,8 @@ var app     = express();
 app.use(bodyparser.json());
 
 var db      = require('mongoskin').db('mongodb://localhost:27017/courses');
-var coursecolle = "test1";
+var coursecolle_old = "test1";
+var coursecolle_ext = "course";
 var paramscolle = "params";
 var detailcolle = "details";
 var outfile = "scrape_results.json";
@@ -31,6 +32,10 @@ var seasonIDs = {
 
 function getTermID(year, season){ // fall of 2016 is represented by a term id starting with 2017
     return ((season === "fall" || season === "autumn") ? (year+1).toString() : year.toString()) + seasonIDs[season].toString();
+}
+
+function getTermCollection( termID ){
+    return termID + coursecolle_ext;
 }
 
 var should_outfile = true;
@@ -62,10 +67,10 @@ app.get('/view', function(req, res){
 });
 
 // respond to search queries from viewer
-app.post('/search/all', function(req, res){
-    search.courses( req.body.searchtext, function( result ){
+app.post('/search/:term', function(req, res){
+    search.courses( req.body.searchtext, getTermCollection(req.params.term), function( result ){
         if(result.error){
-            res.status(200).send({ok:false, reason:error});
+            res.status(200).send({ok:false, reason:result.error});
         }
         else{
             res.status(200).send({ok:true, courses:result});
@@ -75,7 +80,7 @@ app.post('/search/all', function(req, res){
 
 // to save / update database entries
 function saveToDB( doc, colle, identifier ){
-    //console.log("trying to save " + JSON.stringify(parsed));
+    //console.log("trying to save " + JSON.stringify(doc));
     // hey look it's es6
     db.collection(colle).findOne({[identifier]:doc[identifier]}, function(err, result){
         if(err){console.log("Error finding existing identifier ("+identifier+"). " + err)};
@@ -85,7 +90,7 @@ function saveToDB( doc, colle, identifier ){
         }
         db.collection(colle).save(doc, function(err, result){
             if(err){
-                console.log("Failed to save to db. " + err);
+                //console.log("Failed to save to db. " + err);
             }
             if(result){
                 //console.log("Saved to db.");
@@ -114,10 +119,11 @@ app.get('/scrape/help', function(req, res){
 // or similar for untakeable edu or business classes with 4 digit course nums
 // or otherwise restricted by attributes? add attributes automagically when parsing?
 
-app.get('/scrape/courses/:subj', function(req, res){
-    var term = getTermID(2016, "fall");
+app.get('/scrape/courses/:year/:season/:subj', function(req, res){
+    var term = getTermID(parseInt(req.params.year), req.params.season);
+    var colle = getTermCollection(term);
     console.log("supposed term id for course search " + term);
-    var subject = req.params.subj || "CSCI";
+    var subject = req.params.subj || "0"; // defaults to ALL
 
     var form = {
         term_code:term,
@@ -130,19 +136,21 @@ app.get('/scrape/courses/:subj', function(req, res){
         search:"Search"
     };
 
-    console.log("searching for classes with form", form);
+    console.log("scraping for classes with form", form);
     scrape.courses( form, function( result ){
         if(result.error){
             res.send("Something went wrong." + JSON.stringify(result));
         }
         else{
+
             for(var i = 0; i < result.length; i++){
-                saveToDB(result[i], coursecolle, "crn");
+                saveToDB(result[i], colle, "crn");
             }
 
+            console.log("done saving to DB");
             console.log("Attempting to build search index.");
             // building a search index on all text fields so searches are easy
-            db.collection(coursecolle).createIndex({
+            db.collection(colle).createIndex({
                     "$**":"text"
                 }, {name:"CourseTextIndex"}, function(err){
                     if(err){
@@ -158,7 +166,7 @@ app.get('/scrape/courses/:subj', function(req, res){
                 writeJSONFile(result, outfile);
             }
 
-            res.send("Let's go. We're getting somewhere, eventually. Search was for ["+req.params.subj+"] <hr><textarea rows='40' cols='100'>"+JSON.stringify(result, null, 4)+"</textarea>");
+            res.send("Let's go. We're getting somewhere, eventually. Scrape was for ["+req.params.subj+"] in ["+term+"] <hr><textarea rows='40' cols='100'>"+JSON.stringify(result, null, 4)+"</textarea>");
         }
     });
 });

@@ -36,6 +36,10 @@ body {
     background-color: black;
     color: white;
 }
+.tight{
+    max-width: 80%;
+    margin: 0 auto;
+}
 label{
     transition: 1s ease;
 }
@@ -75,6 +79,9 @@ input{
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }*/
+#results{
+    text-align: left;
+}
 #loaded{
     position: fixed;
     z-index: 100;

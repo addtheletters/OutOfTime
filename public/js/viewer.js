@@ -47,8 +47,13 @@ function formatTime(time){
 	return f1 + " - " + f2;
 }
 
+function formatCompleteTime(time){
+	return ((time.raw_days && time.raw_days.length > 0) ? (time.raw_days + " | ") : ("")) + formatTime(time);
+}
+
 Handlebars.registerHelper('hourminute', formatHourMinute);
 Handlebars.registerHelper('timerange', formatTime);
+Handlebars.registerHelper('completetime', formatCompleteTime);
 
 var lastresult;
 

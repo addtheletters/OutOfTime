@@ -1,6 +1,6 @@
 body {
     font-family: monospace;
-    font-size: 20px;
+    font-size: 18px;
 }
 .centered {
     position: relative;
@@ -37,7 +37,7 @@ body {
     color: white;
 }
 .tight{
-    max-width: 70%;
+    max-width: 73%;
     margin: 0 auto;
 }
 label{

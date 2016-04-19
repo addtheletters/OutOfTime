@@ -1,7 +1,7 @@
 var hbsrc = document.getElementById("result-template").innerHTML;
 var hbtemplate = Handlebars.compile(hbsrc);
 
-var HOUR24TIME = true;
+var HOUR24TIME = false;
 
 //var util = require('./util.js');
 

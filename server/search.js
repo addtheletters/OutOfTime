@@ -1,8 +1,6 @@
 var search = {};
 
 var db = require('mongoskin').db('mongodb://localhost:27017/courses');
-var coursecolle_old = "test1";
-var coursecolle_ext = "course";
 
 (function(lib){
 	lib.courses = function( searchtext, term, callback ){

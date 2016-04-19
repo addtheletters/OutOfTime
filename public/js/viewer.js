@@ -1,59 +1,15 @@
 var hbsrc = document.getElementById("result-template").innerHTML;
 var hbtemplate = Handlebars.compile(hbsrc);
 
-var HOUR12TIME = true;
+var HOUR24TIME = true;
 
-function formatHourMinute(rawtime){
-	if(!rawtime){
-		return "[No time]";
-	}
-	var t = {};
-	t.bhrs = parseInt(rawtime.slice(0, -2));
-	t.bmin = parseInt(rawtime.slice(-2));
-	t.half;
-	if(HOUR12TIME){
-		if(t.bhrs > 12){
-			t.bhrs = t.bhrs - 12;
-			t.half = "PM";
-		}
-		else{
-			t.half = "AM";
-		}
-	}
-	return t.bhrs.toString() + ":" + t.bmin.toString() + ( (t.bmin == 0) ? "0" : "" )  + ( t.half ? " " + t.half : "");
+//var util = require('./util.js');
+
+function timeFormat( time ){
+	return util.time.formatCompleteTime( time, HOUR24TIME );
 }
 
-function halfOfDay(formattedTime){
-	var half = formattedTime.slice(-2);
-	if(half === "AM" || half === "PM"){
-		return half;
-	}
-	else{
-		return null;
-	}
-}
-
-function formatTime(time){
-	if(!time.start && !time.end){
-		return "[No time]";
-	}
-	var f1 = formatHourMinute(time.start);
-	var f2 = formatHourMinute(time.end);
-	var h1 = halfOfDay(f1);
-	var h2 = halfOfDay(f2);
-	if( (h1 && h2) && (h1 === h2) ){ // starts and ends on same half of day
-		f1 = f1.slice(0, -3); // only show which half after the second time
-	}
-	return f1 + " - " + f2;
-}
-
-function formatCompleteTime(time){
-	return ((time.raw_days && time.raw_days.length > 0) ? (time.raw_days + " | ") : ("")) + formatTime(time);
-}
-
-Handlebars.registerHelper('hourminute', formatHourMinute);
-Handlebars.registerHelper('timerange', formatTime);
-Handlebars.registerHelper('completetime', formatCompleteTime);
+Handlebars.registerHelper('completetime', timeFormat);
 
 var lastresult;
 

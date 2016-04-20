@@ -77,9 +77,9 @@ var util = {};
 	};
 
 	lib.term.getReadableTerm = function(termID){
-		var yr = termID.slice(0, 4);
+		var yr = parseInt(termID.slice(0, 4));
 		var sm = termID.slice(4);
-		return lib.term.idSeasons[sm] + " " + yr;
+		return lib.term.idSeasons[sm] + " " + ((sm === "10") ? yr - 1 : yr) ;
 	};
 	
 })(util);

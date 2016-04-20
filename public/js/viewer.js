@@ -12,13 +12,14 @@ function timeFormat( time ){
 Handlebars.registerHelper('completetime', timeFormat);
 
 var lastresult;
+var selected = [];
 
-function displayResults( entries ){
+function displayResults( entries, term ){
 	// for(var i = 0; i < entries.courses.length; i++){
 	// 	prepareForDisplay(entries.courses[i]);
 	// }
 	if(entries.ok && entries.courses.length > 0){
-		showResult( hbtemplate(entries) );
+		showResult( hbtemplate(entries), "Showing results from term: " + util.term.getReadableTerm(term) );
 	}
 	else{
 		showResult("<span>[No results found.]</span>");
@@ -34,9 +35,47 @@ function searchKeyPress(e){
     return true;
 }
 
-function showResult( str ){
+function showResult( str, caption ){
+	var result_caption = document.getElementById("results-caption");
+	result_caption.innerHTML = caption || ""; 
 	var result_box = document.getElementById("results");
 	result_box.innerHTML = str;
+}
+
+function getCourseDOM( index ){
+	return document.getElementById("result-" + index);
+}
+
+// TODO possibly differentiate between 'showing detail' and 'selected' states
+function toggleCourseDetail( index ){
+	if( selected.indexOf(index) < 0 ){
+		showCourseDetail(index);
+	}
+	else{
+		hideCourseDetail(index);
+	}
+}
+
+function showCourseDetail( index ){
+	var crse = getCourse(index);
+	selected.push(index);
+	getCourseDOM(index).classList.add("selected");
+	return crse;
+}
+
+function hideCourseDetail( index ){
+	var crse = getCourse(index);
+	var si = selected.indexOf( index );
+	if(si > -1){
+		selected.splice(si, 1);
+	}
+	getCourseDOM(index).classList.remove("selected");
+	return si;
+}
+
+function getCourse( result_index ){
+	//var cdex = parseInt(resultID.split("-")[1]);
+	return lastresult.courses[result_index];
 }
 
 function getTerm(){
@@ -60,8 +99,9 @@ function runSearch( str, term ){
 		if(res.ok){
 			console.log("Search completed.");
 			console.log(res);
-			displayResults(res);
+			displayResults(res, term);
 			lastresult = res;
+			selected = [];
 		} else {
 			console.log("Search failed: " + res.reason);
 			showResult("[Search failed: "+JSON.stringify(res.reason)+"]");

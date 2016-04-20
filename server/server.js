@@ -4,6 +4,7 @@ var path    = require('path');
 var bodyparser = require("body-parser");
 var search  = require('./search.js');
 var scrape  = require('./scrape.js');
+var util    = require('../public/js/util.js');
 var app     = express();
 app.use(bodyparser.json());
 
@@ -15,30 +16,11 @@ var detailcolle = "details";
 var outfile = "scrape_results.json";
 var port    = "8081";
 
-var terms = {
-    spring16:201620,
-    summer16:201630,
-    autumn16:201710,
-    spring17:201720,
-}
-// eventually these things (and other options) will be dynamically loaded from files in /public/json
-
-var seasonIDs = {
-    fall:"10",
-    autumn:"10",
-    spring:"20",
-    summer:"30",
-}
-
-function getTermID(year, season){ // fall of 2016 is represented by a term id starting with 2017
-    return ((season === "fall" || season === "autumn") ? (year+1).toString() : year.toString()) + seasonIDs[season].toString();
-}
+var should_outfile = true;
 
 function getTermCollection( termID ){
     return termID + coursecolle_ext;
 }
-
-var should_outfile = true;
 
 var static = function(pth){ 
     return function(req, res){
@@ -120,7 +102,7 @@ app.get('/scrape/help', function(req, res){
 // or otherwise restricted by attributes? add attributes automagically when parsing?
 
 app.get('/scrape/courses/:year/:season/:subj', function(req, res){
-    var term = getTermID(parseInt(req.params.year), req.params.season);
+    var term = util.term.getTermID(parseInt(req.params.year), req.params.season);
     var colle = getTermCollection(term);
     console.log("supposed term id for course search " + term);
     var subject = req.params.subj || "0"; // defaults to ALL
@@ -174,7 +156,7 @@ app.get('/scrape/courses/:year/:season/:subj', function(req, res){
 app.get('/scrape/detail/:year/:season/:crn/:day/:time', function(req, res){
     var url = "https://courselist.wm.edu/courselist/courseinfo/addInfo";
     var queryParams = {
-        fterm:getTermID(req.params.year, req.params.season),
+        fterm:util.term.getTermID(parseInt(req.params.year), req.params.season),
         fcrn:req.params.crn,
         fday:req.params.day,
         ftime:req.params.time

@@ -20,7 +20,7 @@ var util = {};
 			}
 		}
 		return t.bhrs.toString() + ":" + t.bmin.toString() + ( (t.bmin == 0) ? "0" : "" )  + ( t.half ? " " + t.half : "");
-	}
+	};
 
 	lib.time.halfOfDay = function(formattedTime){
 		var half = formattedTime.slice(-2);
@@ -30,7 +30,7 @@ var util = {};
 		else{
 			return null;
 		}
-	}
+	};
 
 	lib.time.formatTime = function(time, HOUR24){
 		if(!time.start && !time.end){
@@ -44,12 +44,44 @@ var util = {};
 			f1 = f1.slice(0, -3); // only show which half after the second time
 		}
 		return f1 + " - " + f2;
-	}
+	};
 
 	lib.time.formatCompleteTime = function(time, HOUR24){
 		return ((time.raw_days && time.raw_days.length > 0) ? (time.raw_days + " | ") : ("")) + lib.time.formatTime(time, HOUR24);
-	}
+	};
 
+	lib.term = {};
+
+	lib.term.getTermID = function(year, season){ // fall of 2016 is represented by a term id starting with 2017
+	    return ((season === "fall" || season === "autumn") ? (year+1).toString() : year.toString()) + lib.term.seasonIDs[season].toString();
+	};
+
+	lib.term.KNOWN = {
+	    spring16:201620,
+	    summer16:201630,
+	    autumn16:201710,
+	    spring17:201720,
+	};
+
+	lib.term.seasonIDs = {
+	    fall:"10",
+	    autumn:"10",
+	    spring:"20",
+	    summer:"30",
+	};
+
+	lib.term.idSeasons = {
+		"10":"Fall",
+		"20":"Spring",
+		"30":"Summer",
+	};
+
+	lib.term.getReadableTerm = function(termID){
+		var yr = termID.slice(0, 4);
+		var sm = termID.slice(4);
+		return lib.term.idSeasons[sm] + " " + yr;
+	};
+	
 })(util);
 
-exports = module.exports = util;
+exports = ((typeof exports === 'undefined')? this['mymodule'] = {}: module.exports = util);

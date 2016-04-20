@@ -40,6 +40,24 @@ body {
     max-width: 73%;
     margin: 0 auto;
 }
+.course-li{
+    padding: 1px;
+    background-color: rgba(255, 255, 255, 1);
+    color:black;
+    transition: .3s ease;
+}
+.course-li:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+.selected{
+    background-color: rgba(17, 87, 64, 1) !important;
+    color:white;
+}
+.selected:hover{
+    background-color: rgba(17, 87, 64, 0.7) !important;
+    color:white;
+}
 label{
     transition: 1s ease;
 }

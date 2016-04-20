@@ -6,7 +6,7 @@
 	<script type="text/javascript" src="js/lib/handlebars-v4.0.5.js"></script>
 	<script id="result-template" type="text/x-handlebars-template">
 		{{#each courses}}
-		<div id="result-{{@index}}" class="course-li" onclick="toggleCourseDetail({{@index}})">
+		<div id="result-{{@index}}" class="course-li" onclick="toggleSelected({{@index}})">
 		<span>{{id}}</span> | <span>{{title}}</span> | <span>{{instructor.fullname}}</span> | <span>{{completetime time}}</span>
 		</div>
 		{{/each}}
@@ -28,9 +28,11 @@
 		<div id="search-button" class='searchbar'><label class='pbutton'> ~ ? ~ </label></div>
 	</div>
 	<hr>
-	<div id='results-caption'></div>
-	<div id='results-box' class='tight'>
-		<div id='results' class="centered"></div>
-	</div>
+	<section>
+		<div id='results-box' class='tight'>
+			<div id='results-caption'></div>
+			<div id='results' class="centered"></div>
+		</div>
+	</section>
 </body>
 </html>

@@ -13,6 +13,7 @@ Handlebars.registerHelper('completetime', timeFormat);
 
 var lastresult;
 var selected = [];
+var result_id_prefix = "result-";
 
 function displayResults( entries, term ){
 	// for(var i = 0; i < entries.courses.length; i++){
@@ -38,32 +39,33 @@ function searchKeyPress(e){
 function showResult( str, caption ){
 	var result_caption = document.getElementById("results-caption");
 	result_caption.innerHTML = caption || ""; 
-	var result_box = document.getElementById("results");
-	result_box.innerHTML = str;
+	var results_div = document.getElementById("results");
+	results_div.innerHTML = str;
 }
 
 function getCourseDOM( index ){
-	return document.getElementById("result-" + index);
+	return document.getElementById(result_id_prefix + index);
 }
 
 // TODO possibly differentiate between 'showing detail' and 'selected' states
-function toggleCourseDetail( index ){
+function toggleSelected( index ){
 	if( selected.indexOf(index) < 0 ){
-		showCourseDetail(index);
+		selectOn(index);
 	}
 	else{
-		hideCourseDetail(index);
+		selectOff(index);
 	}
 }
 
-function showCourseDetail( index ){
+function selectOn( index ){
 	var crse = getCourse(index);
 	selected.push(index);
 	getCourseDOM(index).classList.add("selected");
+	console.log(crse);
 	return crse;
 }
 
-function hideCourseDetail( index ){
+function selectOff( index ){
 	var crse = getCourse(index);
 	var si = selected.indexOf( index );
 	if(si > -1){
@@ -94,6 +96,7 @@ function runSearch( str, term ){
 	xhr.onload = function(){
 		if(this.status != 200){
 			console.log("There was a problem contacting the server.", this.status);
+			showResult("[Connection status issue: "+JSON.stringify(this.status)+"]");
 		}
 		var res = JSON.parse(xhr.responseText);
 		if(res.ok){

@@ -1,5 +1,7 @@
-var hbsrc = document.getElementById("result-template").innerHTML;
-var hbtemplate = Handlebars.compile(hbsrc);
+var result_hbsrc = document.getElementById("result-template").innerHTML;
+var detail_hbsrc = document.getElementById("detail-template").innerHTML;
+var result_hbt = Handlebars.compile(result_hbsrc);
+var detail_hbt = Handlebars.compile(detail_hbsrc);
 
 var HOUR24TIME = false;
 
@@ -9,10 +11,29 @@ function timeFormat( time ){
 	return util.time.formatCompleteTime( time, HOUR24TIME );
 }
 
+function listAttributes( attributes ){
+	if(!attributes || attributes.length < 1){
+		return "[None]";
+	}
+	var out = "<ul>";
+	for(var i = 0; i < attributes.length; i++){
+		out += "<li class='attribute-li'>" + attributes[i] + "</li>";
+	}
+	out += "</ul>";
+	return attributes;
+}
+
+function spaceFormat( space ){
+	return (space.status_ok ? "Open" : "Closed") + " ("+space.available+" seat(s) available out of "+space.capacity+".)";
+}
+
 Handlebars.registerHelper('completetime', timeFormat);
+Handlebars.registerHelper('attributelist', listAttributes);
+Handlebars.registerHelper('examinespace', spaceFormat);
 
 var lastresult;
 var selected = [];
+var detailed = [];
 var result_id_prefix = "result-";
 
 function displayResults( entries, term ){
@@ -20,7 +41,7 @@ function displayResults( entries, term ){
 	// 	prepareForDisplay(entries.courses[i]);
 	// }
 	if(entries.ok && entries.courses.length > 0){
-		showResult( hbtemplate(entries), "Showing results from term: " + util.term.getReadableTerm(term) );
+		showResult( result_hbt(entries), "Showing results from term: " + util.term.getReadableTerm(term) );
 	}
 	else{
 		showResult("<span>[No results found.]</span>");
@@ -47,7 +68,46 @@ function getCourseDOM( index ){
 	return document.getElementById(result_id_prefix + index);
 }
 
-// TODO possibly differentiate between 'showing detail' and 'selected' states
+function toggleDetail(index){
+	if(detailed.indexOf(index) < 0){
+		showDetail(index);
+	}
+	else{
+		hideDetail(index);
+	}
+}
+
+function showDetail( index ){
+	var detbox = document.getElementById("details-box");
+	var cinfo = getCourse(index);
+	if(detailed.indexOf(index) < 0){
+		detailed.push(index);
+		cinfo.index = index;
+		detbox.innerHTML =  detail_hbt(cinfo) + detbox.innerHTML;
+	}
+	detbox.classList.remove("hidden");
+	var dom = getCourseDOM(index);
+	if(dom)
+		dom.classList.add("detail-showing");
+	return cinfo;
+}
+
+function hideDetail( index ){
+	var si = detailed.indexOf(index);
+	if(si > -1){
+		detailed.splice(si, 1);
+	}
+	document.getElementById("details-box").removeChild( document.getElementById("detail-" + index ) );
+	var dom = getCourseDOM(index);
+	if(dom)
+		dom.classList.remove("detail-showing");
+	return si;
+}
+
+function closeDetail(){
+	document.getElementById("details-box").classList.add("hidden");
+}
+
 function toggleSelected( index ){
 	if( selected.indexOf(index) < 0 ){
 		selectOn(index);
@@ -59,8 +119,12 @@ function toggleSelected( index ){
 
 function selectOn( index ){
 	var crse = getCourse(index);
-	selected.push(index);
-	getCourseDOM(index).classList.add("selected");
+	if(selected.indexOf(index) < 0){
+		selected.push(index);
+	}
+	var dom = getCourseDOM(index);
+	if(dom)
+		dom.classList.add("selected");
 	console.log(crse);
 	return crse;
 }
@@ -71,7 +135,9 @@ function selectOff( index ){
 	if(si > -1){
 		selected.splice(si, 1);
 	}
-	getCourseDOM(index).classList.remove("selected");
+	var dom = getCourseDOM(index);
+	if(dom)
+		dom.classList.remove("selected");
 	return si;
 }
 
@@ -83,6 +149,24 @@ function getCourse( result_index ){
 function getTerm(){
 	var ts = document.getElementById("term-select");
 	return ts.value;
+}
+
+function clearSelection(){
+	var st = selected.slice(0);
+	for(var i = 0; i < st.length; i++){
+		selectOff(st[i]);
+	}
+	selected = [];
+}
+
+function clearDetail(){
+	var dt = detailed.slice(0);
+	for(var i = 0; i < dt.length; i++){
+		hideDetail(dt[i]);
+	}
+	closeDetail();
+	document.getElementById("details-box").innerHTML = "";
+	detailed = [];
 }
 
 function runSearch( str, term ){
@@ -102,9 +186,10 @@ function runSearch( str, term ){
 		if(res.ok){
 			console.log("Search completed.");
 			console.log(res);
+			clearSelection();
+			clearDetail();
 			displayResults(res, term);
 			lastresult = res;
-			selected = [];
 		} else {
 			console.log("Search failed: " + res.reason);
 			showResult("[Search failed: "+JSON.stringify(res.reason)+"]");

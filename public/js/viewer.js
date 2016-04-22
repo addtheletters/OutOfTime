@@ -23,12 +23,17 @@ function listAttributes( attributes ){
 	return attributes;
 }
 
+function quickspace( space ){
+	return (space.status_ok ? "Open" : "Closed");
+}
+
 function spaceFormat( space ){
-	return (space.status_ok ? "Open" : "Closed") + " ("+space.available+" seat(s) available out of "+space.capacity+".)";
+	return quickspace(space) + " ("+space.available+" seat(s) available out of "+space.capacity+".)";
 }
 
 Handlebars.registerHelper('completetime', timeFormat);
 Handlebars.registerHelper('attributelist', listAttributes);
+Handlebars.registerHelper('quickspace', quickspace);
 Handlebars.registerHelper('examinespace', spaceFormat);
 
 var lastresult;

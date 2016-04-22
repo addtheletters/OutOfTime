@@ -6,9 +6,9 @@
 	<script type="text/javascript" src="js/lib/handlebars-v4.0.5.js"></script>
 	<script id="result-template" type="text/x-handlebars-template">
 		{{#each courses}}
-		<div id="result-{{@index}}" class="course-li">
-		<span id="detail-toggle" onclick="toggleDetail({{@index}})">[?]</span>
-		<div id="result-bar" onclick="toggleSelected({{@index}})"> <span>{{id}}</span> | <span>{{title}}</span> | <span>{{instructor.fullname}}</span> | <span>{{completetime time}}</span> </div>
+		<div id="result-{{@index}}" class="course-li" onclick="toggleSelected({{@index}})">
+		<span id="detail-toggle" onclick="toggleDetail({{@index}}); toggleSelected({{@index}})">[?]</span>
+		<div id="result-bar"> <span>{{id}}</span> | <span>{{title}}</span> | <span>{{instructor.fullname}}</span> | <span>{{completetime time}}</span></div>
 		</div>
 		{{/each}}
 	</script>

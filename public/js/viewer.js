@@ -68,13 +68,45 @@ function getCourseDOM( index ){
 	return document.getElementById(result_id_prefix + index);
 }
 
-function toggleDetail(index){
-	if(detailed.indexOf(index) < 0){
-		showDetail(index);
+function toggle( index, trackArray, onFunc, offFunc ){
+	if(trackArray.indexOf(index) < 0){
+		onFunc(index);
 	}
 	else{
-		hideDetail(index);
+		offFunc(index);
 	}
+}
+
+function toggleDetail(index){
+	toggle(index, detailed, showDetail, hideDetail);
+}
+
+function toggleSelected( index ){
+	toggle(index, selected, selectOn, selectOff);
+}
+
+function selectOn( index ){
+	var crse = getCourse(index);
+	if(selected.indexOf(index) < 0){
+		selected.push(index);
+	}
+	var dom = getCourseDOM(index);
+	if(dom)
+		dom.classList.add("selected");
+	console.log(crse);
+	return crse;
+}
+
+function selectOff( index ){
+	var crse = getCourse(index);
+	var si = selected.indexOf( index );
+	if(si > -1){
+		selected.splice(si, 1);
+	}
+	var dom = getCourseDOM(index);
+	if(dom)
+		dom.classList.remove("selected");
+	return si;
 }
 
 function showDetail( index ){
@@ -108,39 +140,6 @@ function closeDetail(){
 	document.getElementById("details-box").classList.add("hidden");
 }
 
-function toggleSelected( index ){
-	if( selected.indexOf(index) < 0 ){
-		selectOn(index);
-	}
-	else{
-		selectOff(index);
-	}
-}
-
-function selectOn( index ){
-	var crse = getCourse(index);
-	if(selected.indexOf(index) < 0){
-		selected.push(index);
-	}
-	var dom = getCourseDOM(index);
-	if(dom)
-		dom.classList.add("selected");
-	console.log(crse);
-	return crse;
-}
-
-function selectOff( index ){
-	var crse = getCourse(index);
-	var si = selected.indexOf( index );
-	if(si > -1){
-		selected.splice(si, 1);
-	}
-	var dom = getCourseDOM(index);
-	if(dom)
-		dom.classList.remove("selected");
-	return si;
-}
-
 function getCourse( result_index ){
 	//var cdex = parseInt(resultID.split("-")[1]);
 	return lastresult.courses[result_index];
@@ -151,22 +150,22 @@ function getTerm(){
 	return ts.value;
 }
 
-function clearSelection(){
-	var st = selected.slice(0);
-	for(var i = 0; i < st.length; i++){
-		selectOff(st[i]);
+function clearAll( trackArray, clearFunc ){
+	var cpy = trackArray.slice(0);
+	for(var i = 0; i < cpy.length; i++){
+		clearFunc(cpy[i]);
 	}
-	selected = [];
+	trackArray = [];
+}
+
+function clearSelection(){
+	clearAll(selected, selectOff);
 }
 
 function clearDetail(){
-	var dt = detailed.slice(0);
-	for(var i = 0; i < dt.length; i++){
-		hideDetail(dt[i]);
-	}
+	clearAll(detailed, hideDetail);
 	closeDetail();
 	document.getElementById("details-box").innerHTML = "";
-	detailed = [];
 }
 
 function runSearch( str, term ){

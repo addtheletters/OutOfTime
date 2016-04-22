@@ -40,10 +40,10 @@ var detail  = require('./detail.js');
 	            }
 	            console.log("Confirmed", data.length ,"courses.");
 
-	            callback(parsed);
+	            return callback(parsed);
 	        }
 	        else{
-	        	callback({error:true, reason:error});
+	        	return callback({error:true, reason:error});
 	        }
 	    });
 	   // console.log("Made a request to " + lib.COURSE_URL );
@@ -90,11 +90,11 @@ var detail  = require('./detail.js');
 	            });
 
 	            var parsed = detail.parse(raw);
-	            callback( parsed );
+	            return callback( parsed );
 	        }
 	        else{
 	            console.log("Something went wrong with get request:", error);
-	            callback({error:error});
+	            return callback({error:error});
 	        }
 	    });
 	};
@@ -115,8 +115,7 @@ var detail  = require('./detail.js');
 	            //console.log("found html", html);
 
 	            if(!ids[type]){
-	                callback({error:"Parameter type did not exist: " + type});
-	                return;
+	                return callback({error:"Parameter type did not exist: " + type});
 	            }
 
 	            var select = $("#"+ids[type]);
@@ -139,11 +138,11 @@ var detail  = require('./detail.js');
 	                options.meta.keyvalue_list.push( {key:ckey, value:cval} );
 	            });
 
-	            callback( options );
+	            return callback( options );
 	        }
 	        else{
 	            console.log("Something went wrong. " + error);
-	            callback({error:error});
+	            return callback({error:error});
 	        }
 	    });
 	};

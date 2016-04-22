@@ -21,8 +21,7 @@ var db = require('mongoskin').db('mongodb://localhost:27017/courses');
 	    // pre-processed (8:00 converted to the database-friendly 0800 for example).
 
 	    if(tokens.length <= 0){
-	    	callback([]);
-	    	return;
+	    	return callback([]);
 	    }
 
 		if(lib.temp_split_tokens){
@@ -35,14 +34,14 @@ var db = require('mongoskin').db('mongodb://localhost:27017/courses');
 		        db.collection(colle).find({$text:{$search:tokens[i]}}, function(err, result){
 		            if(err){
 		                console.log("error in search ", err);
-		                callback( {error:err} );
+		                return callback( {error:err} );
 		            }
 		            if(result){
 		                result.toArray(function(errr, result){
 		                    howmany = howmany - 1;
 		                    if(errr){
 		                    	console.log("error in toArray", errr);
-		                    	callback( {error:errr} );
+		                    	return callback( {error:errr} );
 		                    }
 		                    if(result){
 		                    	console.log("found: " +  result.length);
@@ -64,7 +63,7 @@ var db = require('mongoskin').db('mongodb://localhost:27017/courses');
 			                    }
 			                    if(howmany == 0){
 			                        console.log("returning search results", possible.length);
-			                        callback(possible);                   
+			                        return callback(possible);                   
 			                    }
 			                }
 		                });
@@ -78,17 +77,17 @@ var db = require('mongoskin').db('mongodb://localhost:27017/courses');
 	    	db.collection(colle).find({$text:{$search:"\""+searchtext+"\""}}, function(err, result){
 	            if(err){
 	                console.log("error in search ", err);
-	                callback( {error:err} );
+	                return callback( {error:err} );
 	            }
 	            if(result){
 	            	result.toArray(function(errr, result){
 						if(errr){
 	                    	console.log("error in toArray", errr);
-	                    	callback( {error:errr} );
+	                    	return callback( {error:errr} );
 	                    }
 	                    if(result){
 	                    	console.log("returning search results", result.length);
-	                    	callback(result);
+	                    	return callback(result);
 	                    }
 	            	})
             	}

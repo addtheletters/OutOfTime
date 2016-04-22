@@ -22,6 +22,7 @@ var db = require('mongoskin').db('mongodb://localhost:27017/courses');
 
 	    if(tokens.length <= 0){
 	    	callback([]);
+	    	return;
 	    }
 
 		if(lib.temp_split_tokens){

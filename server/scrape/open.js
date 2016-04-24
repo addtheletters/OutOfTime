@@ -1,18 +1,20 @@
-var scrape = {};
+var open = {};
 
 var request = require('request');
 var cheerio = require('cheerio');
-var course  = require('./course.js');
-var detail  = require('./detail.js');
+var course  = require('../parse/course.js');
+var detail  = require('../parse/detail.js');
 
 (function(lib){
 
-	lib.COURSE_URL = "https://courselist.wm.edu/courselist/courseinfo/searchresults"; 
-	lib.DETAIL_URL = "https://courselist.wm.edu/courselist/courseinfo/addInfo";
-	lib.PARAMS_URL = "https://courselist.wm.edu/courselist/";
+	lib.URLS = {
+		COURSE:"https://courselist.wm.edu/courselist/courseinfo/searchresults",
+		DETAIL:"https://courselist.wm.edu/courselist/courseinfo/addInfo",
+		PARAMS:"https://courselist.wm.edu/courselist/",
+	};
 
 	lib.courses = function( form, callback ){
-	    request.post({url:lib.COURSE_URL, form:form}, function(error, response, html){
+	    request.post({url:lib.URLS.COURSE, form:form}, function(error, response, html){
 	        if(!error){
 	            var $ = cheerio.load(html);
 	            var table = $("#results table"); // gets all the rows!
@@ -46,11 +48,11 @@ var detail  = require('./detail.js');
 	        	return callback({error:true, reason:error});
 	        }
 	    });
-	   // console.log("Made a request to " + lib.COURSE_URL );
+	   // console.log("Made a request to " + lib.COURSE );
 	};
 
 	lib.details = function( queryParams, callback ){
-		request.get({uri:lib.DETAIL_URL, qs:queryParams}, function(error, response, html){
+		request.get({uri:lib.URLS.DETAIL, qs:queryParams}, function(error, response, html){
 	        if(!error){
 				var $    = cheerio.load(html);
 				var info = $("#addinfo");
@@ -109,7 +111,7 @@ var detail  = require('./detail.js');
 	        part_of_term:"ptrm", // not displayed in OCL results
 	    }; // could load this from /public/json/params.json
 
-	    request.get({uri:lib.PARAMS_URL}, function(error, response, html){
+	    request.get({uri:lib.URLS.PARAMS}, function(error, response, html){
 	        if(!error){
 	            var $ = cheerio.load(html);
 	            //console.log("found html", html);
@@ -147,6 +149,6 @@ var detail  = require('./detail.js');
 	    });
 	};
 
-})(scrape);
+})(open);
 
-exports = module.exports = scrape;
+exports = module.exports = open;

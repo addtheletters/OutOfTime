@@ -3,7 +3,7 @@ var fs      = require('fs');
 var path    = require('path');
 var bodyparser = require("body-parser");
 var search  = require('./search.js');
-var scrape  = require('./scrape.js');
+var s_open  = require('./scrape/open.js');
 var util    = require('../public/js/util.js');
 var app     = express();
 app.use(bodyparser.json());
@@ -119,7 +119,7 @@ app.get('/scrape/courses/:year/:season/:subj', function(req, res){
     };
 
     console.log("scraping for classes with form", form);
-    scrape.courses( form, function( result ){
+    s_open.courses( form, function( result ){
         if(result.error){
             res.send("Something went wrong." + JSON.stringify(result));
         }
@@ -162,7 +162,7 @@ app.get('/scrape/detail/:year/:season/:crn/:day/:time', function(req, res){
         ftime:req.params.time
     };
     //console.log("making request with params", queryParams);
-    scrape.details( queryParams, function(result){
+    s_open.details( queryParams, function(result){
         if(!result.error){
             res.send("Science! Scrape for crn ["+req.params.crn+"] <hr><textarea rows='40' cols='100'>"+JSON.stringify(result, null, 4)+"</textarea>");
         }
@@ -176,7 +176,7 @@ app.get('/scrape/detail/:year/:season/:crn/:day/:time', function(req, res){
 // options on the courselist search page 
 app.get('/scrape/params/:type', function(req, res){
     console.log("attempting scrape for param", req.params.type);
-    scrape.params( req.params.type, function(result){
+    s_open.params( req.params.type, function(result){
         if(result.error){
             res.send("Something went wrong. " + result.error);
         }

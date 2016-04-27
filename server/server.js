@@ -4,6 +4,7 @@ var path    = require('path');
 var bodyparser = require("body-parser");
 var search  = require('./search.js');
 var s_open  = require('./scrape/open.js');
+var s_banner= require('./scrape/banner.js');
 var util    = require('../public/js/util.js');
 var app     = express();
 app.use(bodyparser.json());
@@ -92,8 +93,41 @@ function writeJSONFile( str, filename ){
     });
 }
 
+function sendFailure( res, err, message ){
+    res.send((message || ("Something went wrong.")) + " " + JSON.stringify(err, null, 4));
+}
+
+function sendViewable( res, toview, message ){
+    res.send((message || ("Something worked.")) + " <hr><textarea rows='40' cols='100'>"+JSON.stringify(toview, null, 4)+"</textarea>");
+}
+
 app.get('/scrape/help', function(req, res){
     res.sendFile("/scrape_help.html", {root: path.join(__dirname, "../public")});
+});
+
+
+// TODO figure out how banner works
+app.get('/scrape/banner/:year/:season/:subject', function(req, res){
+    var term = util.term.getTermID(parseInt(req.params.year), req.params.season);
+    s_banner.subject( term, req.params.subject, function(result){
+        if(result.error){
+            sendFailure(res, result, "Something went wrong." );
+        }
+        else{
+            sendViewable(res, result, "nice");
+        }
+    } );
+});
+
+app.get('/scrape/banner/test', function(req, res){
+    s_banner.semesters( "201710", {}, function(result){
+        if(result.error){
+            sendFailure(res, result, "Something went wrong." );
+        }
+        else{
+            sendViewable(res, result, "nice");
+        }
+    });
 });
 
 // web scraper for course information
@@ -101,7 +135,7 @@ app.get('/scrape/help', function(req, res){
 // or similar for untakeable edu or business classes with 4 digit course nums
 // or otherwise restricted by attributes? add attributes automagically when parsing?
 
-app.get('/scrape/courses/:year/:season/:subj', function(req, res){
+app.get('/scrape/open/courses/:year/:season/:subj', function(req, res){
     var term = util.term.getTermID(parseInt(req.params.year), req.params.season);
     var colle = getTermCollection(term);
     console.log("supposed term id for course search " + term);
@@ -121,7 +155,7 @@ app.get('/scrape/courses/:year/:season/:subj', function(req, res){
     console.log("scraping for classes with form", form);
     s_open.courses( form, function( result ){
         if(result.error){
-            res.send("Something went wrong." + JSON.stringify(result));
+            sendFailure(res, result);
         }
         else{
 
@@ -148,12 +182,12 @@ app.get('/scrape/courses/:year/:season/:subj', function(req, res){
                 writeJSONFile(result, outfile);
             }
 
-            res.send("Let's go. We're getting somewhere, eventually. Scrape was for ["+req.params.subj+"] in ["+term+"] <hr><textarea rows='40' cols='100'>"+JSON.stringify(result, null, 4)+"</textarea>");
+            sendViewable(res, result, "Let's go. We're getting somewhere, eventually. Scrape was for ["+req.params.subj+"] in ["+term+"]");
         }
     });
 });
 
-app.get('/scrape/detail/:year/:season/:crn/:day/:time', function(req, res){
+app.get('/scrape/open/detail/:year/:season/:crn/:day/:time', function(req, res){
     var url = "https://courselist.wm.edu/courselist/courseinfo/addInfo";
     var queryParams = {
         fterm:util.term.getTermID(parseInt(req.params.year), req.params.season),
@@ -164,28 +198,28 @@ app.get('/scrape/detail/:year/:season/:crn/:day/:time', function(req, res){
     //console.log("making request with params", queryParams);
     s_open.details( queryParams, function(result){
         if(!result.error){
-            res.send("Science! Scrape for crn ["+req.params.crn+"] <hr><textarea rows='40' cols='100'>"+JSON.stringify(result, null, 4)+"</textarea>");
+            sendViewable(res, result, "Science! Scrape for crn ["+req.params.crn+"]");
         }
         else{
-            res.send("Something went wrong. " + result.error);
+            sendFailure(res, result);
         }
     });
 });
 
 // scrape the possible values for attributes and subjects from the
 // options on the courselist search page 
-app.get('/scrape/params/:type', function(req, res){
+app.get('/scrape/open/params/:type', function(req, res){
     console.log("attempting scrape for param", req.params.type);
     s_open.params( req.params.type, function(result){
         if(result.error){
-            res.send("Something went wrong. " + result.error);
+            sendFailure(res, result);
         }
         else{
             saveToDB( result, paramscolle, "param_id" );
             if(should_outfile){
                 writeJSONFile(result, outfile);
             }
-            res.send("We're making progress. Scrape for: ["+req.params.type+"] <hr><textarea rows='40' cols='100'>"+JSON.stringify(result, null, 4)+"</textarea>");
+            sendViewable(res, result, "We're making progress. Scrape for: ["+req.params.type+"]");
         }
     });
 });

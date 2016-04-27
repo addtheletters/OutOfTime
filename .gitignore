@@ -1,4 +1,5 @@
 test-script.ps1
+test.ps1
 scraped_course_stats.json
 scrape_results.json
 

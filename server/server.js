@@ -102,7 +102,7 @@ function sendViewable( res, toview, message ){
 }
 
 function sendRenderable( res, toview, message ){
-    res.send((message || ("Something worked.")) + " <hr>"+toview);
+    res.send((message || ("Something worked.")) + " <hr>"+( toview.body ? toview.body : JSON.stringify(toview, null, 4) ));
 }
 
 function genericHandler( res ){
@@ -111,7 +111,7 @@ function genericHandler( res ){
             sendFailure(res, result, "Something went wrong." );
         }
         else{
-            sendRenderable(res, result.body, "nice");
+            sendRenderable(res, result, "nice");
         }
     });
 }
@@ -127,7 +127,7 @@ app.get('/scrape/banner/:year/:season/:subject', function(req, res){
 });
 
 app.get('/scrape/banner/test', function(req, res){
-    s_banner.semesters( "201710", {}, genericHandler(res));
+    s_banner.semesters(genericHandler(res));
 });
 
 app.get('/scrape/banner/detail/:year/:season/:crn', function(req, res){

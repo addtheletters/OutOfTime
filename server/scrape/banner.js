@@ -5,17 +5,15 @@ var cheerio   = require('cheerio');
 
 (function(lib){
 	lib.URLS = {
-		COURSESTART:"https://banweb.wm.edu/pls/PROD/bwckschd.p_disp_dyn_sched",
-		COURSETERM:"https://banweb.wm.edu/pls/PROD/bwckschd.p_get_crse_unsec",
-		DATE_REFER:"https://banweb.wm.edu/pls/PROD/bwckschd.p_disp_dyn_sched",
-		OPTION_REFER:"https://banweb.wm.edu/pls/PROD/bwckgens.p_proc_term_date",
-		COOKIE:"https://banweb.wm.edu/pls/PROD/",
-		DETAIL:"https://banweb.wm.edu/pls/PROD/bwckschd.p_disp_detail_sched",
 		BASE:"https://banweb.wm.edu/pls/PROD/",
-	}
+		SEMESTERS:"bwckschd.p_disp_dyn_sched",
+		OPTION:"bwckgens.p_proc_term_date",
+		COURSE:"bwckschd.p_get_crse_unsec",
+		DETAIL:"bwckschd.p_disp_detail_sched",
+	};
 
-	lib.semesters = function( semester, form, callback ){
-		request.get({uri:lib.URLS.COURSESTART}, function(error, response, html){
+	lib.semesters = function( callback ){
+		request.get({uri:lib.URLS.BASE + lib.URLS.SEMESTERS}, function(error, response, html){
 			if(!error){
 				var $ = cheerio.load(html);
 				var select = $("#term_input_id");
@@ -27,51 +25,22 @@ var cheerio   = require('cheerio');
 					allsemesters.push( {key:ckey, value:cval} );
 				});
 
-				console.log("Our semester is", semester); // not sure where I was going with this
-				return callback(response);//lib.course.term( semester, form, callback );
+				return callback(allsemesters);//lib.course.term( semester, form, callback );
 			}
 			else{
-				return callback({error:true, reason:error});
-			}
-		});
-	};
-
-	lib.courses = function( form, callback ){
-		// var f1 = {
-		// 	p_calling_proc:"bwckschd.p_disp_dyn_sched",
-		// 	p_term:form.term_in,
-		// };
-		//console.log("following redirects");
-		// var j = request.jar();
-		// var cook = request.cookie('TESTID=set;accessibility=false;');
-		// j.setCookie(cook, lib.URLS.COOKIE);
-		// console.log("cookie jar is", j);
-
-		// console.log("Using referer " + h.Referer + " with url " + lib.URLS.COURSETERM);
-		console.log("form", form);
-		request.post({url:"https://banweb.wm.edu/pls/PROD/bwckschd.p_get_crse_unsec", form:form, headers:{Referer:"https://banweb.wm.edu/pls/PROD/bwckgens.p_proc_term_date"}}, function(error, response, html){
-			if(!error){
-				var $ = cheerio.load(html);
-				// for some reason this gets the page where one can select search options
-				// instead of the correct search results page
-				//console.log(html);
-				return callback(response);
-			}
-			else{
-				console.log(error);
 				return callback({error:true, reason:error.toString()});
 			}
 		});
 	};
 
 	lib.stcourses = function(form, callback){
-		var referer = "bwckgens.p_proc_term_date";
-  		var url = "bwckschd.p_get_crse_unsec";
+		// var referer = "bwckgens.p_proc_term_date";
+  // 		var url = "bwckschd.p_get_crse_unsec";
 		var options = {
 			method:"POST",
-			url: lib.URLS.BASE + url + "?" + lib.getSillyFormString(form),
+			url: lib.URLS.BASE + lib.URLS.COURSE + "?" + lib.getSillyFormString(form),
 			headers:{
-				"Referer": lib.URLS.BASE + referer,
+				"Referer": lib.URLS.BASE + lib.URLS.OPTION,
 			}
 		};
 		request(options, function(error, response, html){
@@ -88,8 +57,8 @@ var cheerio   = require('cheerio');
 
 	lib.subject = function( term, subj, callback ){
 		var form = lib.getCourseForm({term_in:term, sel_subj:subj});
-		console.log("string version",lib.getFormString(form));
-		console.log("silly string", lib.getSillyFormString(form));
+		// console.log("string version",lib.getFormString(form));
+		// console.log("silly string", lib.getSillyFormString(form));
 		lib.stcourses( form, callback );
 	};
 
@@ -99,7 +68,7 @@ var cheerio   = require('cheerio');
 			term_in:term,
 			crn_in:crn
 		};
-		request.get({uri:lib.URLS.DETAIL, qs:qs, headers:{Referer:"https://banweb.wm.edu/pls/PROD/bwckschd.p_get_crse_unsec"}}, function(error, response, html){
+		request.get({uri:lib.URLS.BASE + lib.URLS.DETAIL, qs:qs, headers:{Referer:lib.URLS.BASE + lib.URLS.COURSE}}, function(error, response, html){
 			if(!error){
 				var $ = cheerio.load(html);
 				return callback(response);
@@ -172,6 +141,7 @@ var cheerio   = require('cheerio');
 		return datastr;
 	}
 
+	// apparently you need to do it like this. I am disturbed.
 	lib.getSillyFormString = function(form){
 		var datastr = "term_in="+form.term_in+"&"+
                   //"sel_subj="+form.sel_subj+"&"+

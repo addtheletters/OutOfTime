@@ -101,33 +101,38 @@ function sendViewable( res, toview, message ){
     res.send((message || ("Something worked.")) + " <hr><textarea rows='40' cols='100'>"+JSON.stringify(toview, null, 4)+"</textarea>");
 }
 
+function sendRenderable( res, toview, message ){
+    res.send((message || ("Something worked.")) + " <hr>"+toview);
+}
+
+function genericHandler( res ){
+    return (function( result ){
+        if(result.error){
+            sendFailure(res, result, "Something went wrong." );
+        }
+        else{
+            sendRenderable(res, result.body, "nice");
+        }
+    });
+}
+
 app.get('/scrape/help', function(req, res){
     res.sendFile("/scrape_help.html", {root: path.join(__dirname, "../public")});
 });
 
-
 // TODO figure out how banner works
 app.get('/scrape/banner/:year/:season/:subject', function(req, res){
     var term = util.term.getTermID(parseInt(req.params.year), req.params.season);
-    s_banner.subject( term, req.params.subject, function(result){
-        if(result.error){
-            sendFailure(res, result, "Something went wrong." );
-        }
-        else{
-            sendViewable(res, result, "nice");
-        }
-    } );
+    s_banner.subject( term, req.params.subject, genericHandler(res));
 });
 
 app.get('/scrape/banner/test', function(req, res){
-    s_banner.semesters( "201710", {}, function(result){
-        if(result.error){
-            sendFailure(res, result, "Something went wrong." );
-        }
-        else{
-            sendViewable(res, result, "nice");
-        }
-    });
+    s_banner.semesters( "201710", {}, genericHandler(res));
+});
+
+app.get('/scrape/banner/detail/:year/:season/:crn', function(req, res){
+    var term = util.term.getTermID(parseInt(req.params.year), req.params.season);
+    s_banner.detail(term, req.params.crn, genericHandler(res));
 });
 
 // web scraper for course information

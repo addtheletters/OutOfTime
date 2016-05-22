@@ -10,6 +10,7 @@ var cheerio   = require('cheerio');
 		OPTION:"bwckgens.p_proc_term_date",
 		COURSE:"bwckschd.p_get_crse_unsec",
 		DETAIL:"bwckschd.p_disp_detail_sched",
+		CATALOG:"bwckctlg.p_display_courses",
 	};
 
 	lib.semesters = function( callback ){
@@ -34,8 +35,6 @@ var cheerio   = require('cheerio');
 	};
 
 	lib.stcourses = function(form, callback){
-		// var referer = "bwckgens.p_proc_term_date";
-  // 		var url = "bwckschd.p_get_crse_unsec";
 		var options = {
 			method:"POST",
 			url: lib.URLS.BASE + lib.URLS.COURSE + "?" + lib.getSillyFormString(form),
@@ -46,7 +45,23 @@ var cheerio   = require('cheerio');
 		request(options, function(error, response, html){
 			if(!error){
 				var $ = cheerio.load(html);
-				return callback(response);
+				var table = $("table[SUMMARY='This layout table is used to present the sections found']");
+				
+				var data = [];
+				table.children().each(function(index){
+					//console.log(index);
+					//console.log( $(this).html() );
+					if(index % 2 != 0){
+						data.push({header:$(this).text().trim()});
+					}
+					else{
+						if(index > 0){
+							data[Math.floor(index / 2) - 1].main = $(this).html(); // TODO finish parsing this better
+						}
+					}
+				});
+				var parsed = data; // TODO somehowparse(data)
+				return callback(parsed);
 			}
 			else{
 				console.log(error);
@@ -78,7 +93,13 @@ var cheerio   = require('cheerio');
 				return callback({error:true, reason:error.toString()});
 			}
 		});
-	}
+	};
+
+	lib.catalog = function( term, crn, callback ){
+		// TODO this, scrape course's catalog entry.
+		// sample request url
+		// /pls/PROD/bwckctlg.p_display_courses?term_in=201710&one_subj=PHIL&sel_crse_strt=100&sel_crse_end=100&sel_subj=&sel_levl=&sel_schd=&sel_coll=&sel_divs=&sel_dept=&sel_attr=
+	};
 
 	lib.FORM_DEFAULTS = {
 		// default "dummy"
@@ -139,7 +160,7 @@ var cheerio   = require('cheerio');
 			}
 		}
 		return datastr;
-	}
+	};
 
 	// apparently you need to do it like this. I am disturbed.
 	lib.getSillyFormString = function(form){

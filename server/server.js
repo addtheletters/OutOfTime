@@ -111,7 +111,7 @@ function genericHandler( res ){
             sendFailure(res, result, "Something went wrong." );
         }
         else{
-            sendRenderable(res, result, "nice");
+            sendViewable(res, result, "nice");
         }
     });
 }

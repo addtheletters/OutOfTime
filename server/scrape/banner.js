@@ -14,6 +14,8 @@ var bancourse = require('../parse/bancourse.js');
 		CATALOG:"bwckctlg.p_display_courses",
 	};
 
+	lib.PARSE_SLICE_AMOUNT = 15;
+
 	lib.semesters = function( callback ){
 		request.get({uri:lib.URLS.BASE + lib.URLS.SEMESTERS}, function(error, response, html){
 			if(!error){
@@ -60,13 +62,12 @@ var bancourse = require('../parse/bancourse.js');
 						if(index > 0){
 							var dindex = Math.floor(index / 2) - 1;
 							var dcourse = {};
-							//$(this).html(); // TODO finish parsing this better
-							// $(this).children().each(function(index){
-							// 	console.log("[" + index + "]:" + $(this).html());
-							// });
+							var qcontents = $(this).children().first().contents();
+
+							// first slice processes description to attributes; then display format changes
 							var lastkey = "Description";
-							$(this).children().first().contents().each(function(inde){
-								console.log("Content: [" + inde + "]:" + $(this).text());
+							qcontents.slice(0,lib.PARSE_SLICE_AMOUNT).each(function(inde){
+								console.log("Content first slice: [" + inde + "]:" + $(this).text());
 								if(inde % 2 == 1){
 				                    lastkey = $(this).text().replace(/:/, "").trim();
 				                }
@@ -74,13 +75,20 @@ var bancourse = require('../parse/bancourse.js');
 				                    dcourse[lastkey] = $(this).text().trim();
 				                }
 							});
+
+							// second slice processes campus, schedule type, credits, catalog link, meet times
+							qcontents.slice(lib.PARSE_SLICE_AMOUNT).each(function(index){
+								console.log("Content second slice: [" + index + "]:" + $(this).text());
+								// TODO parse second half
+							});
+
 							data[dindex].main = dcourse;
 							console.log("Completed: " + JSON.stringify(dcourse, null, 4));
 						}
 					}
 				});
-				var parsed = data; // TODO somehowparse(data)
-				return callback(parsed.toString() + "<br>" + html);
+				var parsed = data; // bancourse.parse(data);
+				return callback(parsed.toString() + "<br>" + html); // TODO remove the debuginess
 			}
 			else{
 				console.log(error);

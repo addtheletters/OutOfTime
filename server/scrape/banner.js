@@ -2,6 +2,7 @@ var banner = {};
 
 var request   = require('request');
 var cheerio   = require('cheerio');
+var bancourse = require('../parse/bancourse.js');
 
 (function(lib){
 	lib.URLS = {
@@ -53,15 +54,33 @@ var cheerio   = require('cheerio');
 					//console.log( $(this).html() );
 					if(index % 2 != 0){
 						data.push({header:$(this).text().trim()});
+						console.log("[Header]" + $(this).text().trim() );
 					}
 					else{
 						if(index > 0){
-							data[Math.floor(index / 2) - 1].main = $(this).html(); // TODO finish parsing this better
+							var dindex = Math.floor(index / 2) - 1;
+							var dcourse = {};
+							//$(this).html(); // TODO finish parsing this better
+							// $(this).children().each(function(index){
+							// 	console.log("[" + index + "]:" + $(this).html());
+							// });
+							var lastkey = "Description";
+							$(this).children().first().contents().each(function(inde){
+								console.log("Content: [" + inde + "]:" + $(this).text());
+								if(inde % 2 == 1){
+				                    lastkey = $(this).text().replace(/:/, "").trim();
+				                }
+				                else{
+				                    dcourse[lastkey] = $(this).text().trim();
+				                }
+							});
+							data[dindex].main = dcourse;
+							console.log("Completed: " + JSON.stringify(dcourse, null, 4));
 						}
 					}
 				});
 				var parsed = data; // TODO somehowparse(data)
-				return callback(parsed);
+				return callback(parsed.toString() + "<br>" + html);
 			}
 			else{
 				console.log(error);
@@ -77,7 +96,6 @@ var cheerio   = require('cheerio');
 		lib.stcourses( form, callback );
 	};
 
-	// holy s*** this function works
 	lib.detail = function( term, crn, callback ){
 		var qs = {
 			term_in:term,

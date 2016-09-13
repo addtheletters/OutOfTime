@@ -1,4 +1,5 @@
-var course = {};
+// Used primarily for open course list pages
+var course = {}; 
 
 (function(lib){
 

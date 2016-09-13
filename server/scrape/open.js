@@ -75,7 +75,7 @@ var detail  = require('../parse/detail.js');
 	                    lastkey = $(this).text().replace(/:/, "").trim();
 	                }
 	                else{
-	                    if(index > 1){
+	                    if(index > 1){ // TODO check if removing this conditional does anything? Already checking this
 	                        raw[lastkey] = $(this).text().trim();
 	                    }
 	                }

@@ -111,7 +111,7 @@ function genericHandler( res ){
             sendFailure(res, result, "Something went wrong." );
         }
         else{
-            sendViewable(res, result, "nice");
+            sendRenderable(res, result, "nice");
         }
     });
 }
@@ -127,7 +127,9 @@ app.get('/scrape/banner/:year/:season/:subject', function(req, res){
 });
 
 app.get('/scrape/banner/test', function(req, res){
-    s_banner.semesters(genericHandler(res));
+    //s_banner.semesters(genericHandler(res));
+    var term = util.term.getTermID(2016, "fall");
+    s_banner.subject( term, "AFST", genericHandler(res));
 });
 
 app.get('/scrape/banner/detail/:year/:season/:crn', function(req, res){

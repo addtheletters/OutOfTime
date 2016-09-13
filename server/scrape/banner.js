@@ -14,7 +14,8 @@ var bancourse = require('../parse/bancourse.js');
 		CATALOG:"bwckctlg.p_display_courses",
 	};
 
-	lib.PARSE_SLICE_AMOUNT = 15;
+	lib.PARSE_SLICE_AMOUNT = 15; // TODO: this isn't always the proper adjustment. Need it to be dynamic.
+	lib.INDICES.CAMPUS = 
 
 	lib.semesters = function( callback ){
 		request.get({uri:lib.URLS.BASE + lib.URLS.SEMESTERS}, function(error, response, html){
@@ -66,6 +67,7 @@ var bancourse = require('../parse/bancourse.js');
 
 							// first slice processes description to attributes; then display format changes
 							var lastkey = "Description";
+							var foundAttr = false;
 							qcontents.slice(0,lib.PARSE_SLICE_AMOUNT).each(function(inde){
 								console.log("Content first slice: [" + inde + "]:" + $(this).text());
 								if(inde % 2 == 1){
@@ -73,14 +75,23 @@ var bancourse = require('../parse/bancourse.js');
 				                }
 				                else{
 				                    dcourse[lastkey] = $(this).text().trim();
+				                    if(lastkey === "Attributes"){
+				                    	foundAttr = true;
+				                    }
 				                }
 							});
 
+							if(!foundAttr){
+								console.log("Failed to find Attributes parameter.")
+							}
+
 							// second slice processes campus, schedule type, credits, catalog link, meet times
-							qcontents.slice(lib.PARSE_SLICE_AMOUNT).each(function(index){
+							var qhalf2 = qcontents.slice(lib.PARSE_SLICE_AMOUNT);
+							qhalf2.each(function(index){
 								console.log("Content second slice: [" + index + "]:" + $(this).text());
-								// TODO parse second half
 							});
+
+							dcourse[] = qhalf2.eq(-1).text()
 
 							data[dindex].main = dcourse;
 							console.log("Completed: " + JSON.stringify(dcourse, null, 4));

@@ -14,8 +14,8 @@ var bancourse = require('../parse/bancourse.js');
 		CATALOG:"bwckctlg.p_display_courses",
 	};
 
-	lib.PARSE_SLICE_AMOUNT = 15; // TODO: this isn't always the proper adjustment. Need it to be dynamic.
-	lib.INDICES.CAMPUS = 
+	//lib.PARSE_SLICE_AMOUNT = 15; // TODO: this isn't always the proper adjustment. Need it to be dynamic.
+	//lib.INDICES.CAMPUS = 3;
 
 	lib.semesters = function( callback ){
 		request.get({uri:lib.URLS.BASE + lib.URLS.SEMESTERS}, function(error, response, html){
@@ -65,11 +65,17 @@ var bancourse = require('../parse/bancourse.js');
 							var dcourse = {};
 							var qcontents = $(this).children().first().contents();
 
+							qcontents.nextUntil(qcontents.find(":contains('Attributes:')")).each(function(dex){
+								console.log("Selected: [" + dex + "]:" + $(this).text());
+							});
+
+							//.add(qcontents.find('Attributes')).add(qcontents.find('Attributes').next()).
+
 							// first slice processes description to attributes; then display format changes
 							var lastkey = "Description";
 							var foundAttr = false;
-							qcontents.slice(0,lib.PARSE_SLICE_AMOUNT).each(function(inde){
-								console.log("Content first slice: [" + inde + "]:" + $(this).text());
+							qcontents.each(function(inde){
+								console.log("Content: [" + inde + "]:" + $(this).text());
 								if(inde % 2 == 1){
 				                    lastkey = $(this).text().replace(/:/, "").trim();
 				                }
@@ -84,14 +90,17 @@ var bancourse = require('../parse/bancourse.js');
 							if(!foundAttr){
 								console.log("Failed to find Attributes parameter.")
 							}
+							else{
+								console.log("Found Attributes parameter.")
+							}
 
 							// second slice processes campus, schedule type, credits, catalog link, meet times
-							var qhalf2 = qcontents.slice(lib.PARSE_SLICE_AMOUNT);
-							qhalf2.each(function(index){
-								console.log("Content second slice: [" + index + "]:" + $(this).text());
-							});
+							// var qhalf2 = qcontents.slice(lib.PARSE_SLICE_AMOUNT);
+							// qhalf2.each(function(index){
+							// 	console.log("Content second slice: [" + index + "]:" + $(this).text());
+							// });
 
-							dcourse[] = qhalf2.eq(-1).text()
+							//dcourse["Campus"] = qhalf2.eq(lib.INDICES.CAMPUS).text() // TODO these tests when dynamic recog is done
 
 							data[dindex].main = dcourse;
 							console.log("Completed: " + JSON.stringify(dcourse, null, 4));

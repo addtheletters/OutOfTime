@@ -57,7 +57,7 @@ var bancourse = require('../parse/bancourse.js');
 					//console.log( $(this).html() );
 					if(index % 2 != 0){
 						data.push({header:$(this).text().trim()});
-						console.log("[Header]" + $(this).text().trim() );
+						console.log("[Header]" + $(this).text().trim());
 					}
 					else{
 						if(index > 0){
@@ -65,34 +65,46 @@ var bancourse = require('../parse/bancourse.js');
 							var dcourse = {};
 							var qcontents = $(this).children().first().contents();
 
-							qcontents.nextUntil(qcontents.find(":contains('Attributes:')")).each(function(dex){
-								console.log("Selected: [" + dex + "]:" + $(this).text());
+							// qcontents.each(function(inde){
+							// 	console.log("Content: [" + inde + "]:" + $(this).text());
+							// 	}
+
+							// On some of these, a description is listed. On others, it isn't,
+							// meaning the 0th element is not correct to assign as the description
+							if(qcontents.eq(1).is("br")){
+								// this course listing has a description, add it
+								dcourse["Description"] = qcontents.eq(0).text().trim();
+							}
+
+							qcontents.filter("span").each(function(dex){
+								console.log("Selected: [" + dex + "]:" + $(this).text() + ", next is " +  $(this).get(0).nextSibling.nodeValue);
+								dcourse[$(this).text().replace(/:/, "").trim()] = $(this).get(0).nextSibling.nodeValue.trim();
 							});
 
 							//.add(qcontents.find('Attributes')).add(qcontents.find('Attributes').next()).
 
 							// first slice processes description to attributes; then display format changes
-							var lastkey = "Description";
-							var foundAttr = false;
-							qcontents.each(function(inde){
-								console.log("Content: [" + inde + "]:" + $(this).text());
-								if(inde % 2 == 1){
-				                    lastkey = $(this).text().replace(/:/, "").trim();
-				                }
-				                else{
-				                    dcourse[lastkey] = $(this).text().trim();
-				                    if(lastkey === "Attributes"){
-				                    	foundAttr = true;
-				                    }
-				                }
-							});
+							// var lastkey = "Description";
+							// var foundAttr = false;
+							// qcontents.each(function(inde){
+							// 	console.log("Content: [" + inde + "]:" + $(this).text());
+							// 	if(inde % 2 == 1){
+				   //                  lastkey = $(this).text().replace(/:/, "").trim();
+				   //              }
+				   //              else{
+				   //                  dcourse[lastkey] = $(this).text().trim();
+				   //                  if(lastkey === "Attributes"){
+				   //                  	foundAttr = true;
+				   //                  }
+				   //              }
+							// });
 
-							if(!foundAttr){
-								console.log("Failed to find Attributes parameter.")
-							}
-							else{
-								console.log("Found Attributes parameter.")
-							}
+							// if(!foundAttr){
+							// 	console.log("Failed to find Attributes parameter.")
+							// }
+							// else{
+							// 	console.log("Found Attributes parameter.")
+							// }
 
 							// second slice processes campus, schedule type, credits, catalog link, meet times
 							// var qhalf2 = qcontents.slice(lib.PARSE_SLICE_AMOUNT);

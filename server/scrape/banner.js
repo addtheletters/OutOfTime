@@ -14,6 +14,8 @@ var bancourse = require('../parse/bancourse.js');
 		CATALOG:"bwckctlg.p_display_courses",
 	};
 
+	lib.POSTFIX_ATTRIBUTES = ["Campus", "Schedule Type", "Credits"];
+
 	//lib.PARSE_SLICE_AMOUNT = 15; // TODO: this isn't always the proper adjustment. Need it to be dynamic.
 	//lib.INDICES.CAMPUS = 3;
 
@@ -76,43 +78,31 @@ var bancourse = require('../parse/bancourse.js');
 								dcourse["Description"] = qcontents.eq(0).text().trim();
 							}
 
-							qcontents.filter("span").each(function(dex){
+							var lastsaw = null;
+							var qcSpans = qcontents.filter("span");
+							qcSpans.each(function(dex){
+								lastsaw = dex;
 								console.log("Selected: [" + dex + "]:" + $(this).text() + ", next is " +  $(this).get(0).nextSibling.nodeValue);
 								dcourse[$(this).text().replace(/:/, "").trim()] = $(this).get(0).nextSibling.nodeValue.trim();
 							});
-
-							//.add(qcontents.find('Attributes')).add(qcontents.find('Attributes').next()).
-
-							// first slice processes description to attributes; then display format changes
-							// var lastkey = "Description";
-							// var foundAttr = false;
-							// qcontents.each(function(inde){
-							// 	console.log("Content: [" + inde + "]:" + $(this).text());
-							// 	if(inde % 2 == 1){
-				   //                  lastkey = $(this).text().replace(/:/, "").trim();
-				   //              }
-				   //              else{
-				   //                  dcourse[lastkey] = $(this).text().trim();
-				   //                  if(lastkey === "Attributes"){
-				   //                  	foundAttr = true;
-				   //                  }
-				   //              }
-							// });
-
-							// if(!foundAttr){
-							// 	console.log("Failed to find Attributes parameter.")
-							// }
-							// else{
-							// 	console.log("Found Attributes parameter.")
-							// }
-
-							// second slice processes campus, schedule type, credits, catalog link, meet times
-							// var qhalf2 = qcontents.slice(lib.PARSE_SLICE_AMOUNT);
-							// qhalf2.each(function(index){
-							// 	console.log("Content second slice: [" + index + "]:" + $(this).text());
-							// });
-
-							//dcourse["Campus"] = qhalf2.eq(lib.INDICES.CAMPUS).text() // TODO these tests when dynamic recog is done
+							
+							if(lastsaw){
+								var sib = qcSpans.eq(lastsaw).get(0).nextSibling;
+								while(sib.nextSibling){
+									sib = sib.nextSibling;
+									if(sib.nodeValue == null){
+										continue;
+									}
+									var sibval = sib.nodeValue.trim();
+									for(var i = 0; i < lib.POSTFIX_ATTRIBUTES.length; i++){
+										//console.log("Searching for " + lib.POSTFIX_ATTRIBUTES[i]);
+										if(lib.checkMatchesPostfixAttribute(sibval, lib.POSTFIX_ATTRIBUTES[i])){
+											dcourse[lib.POSTFIX_ATTRIBUTES[i]] = sibval.slice(0, -lib.POSTFIX_ATTRIBUTES[i].length).trim();
+											console.log("Found " + lib.POSTFIX_ATTRIBUTES[i]);
+										}
+									}
+								}
+							}
 
 							data[dindex].main = dcourse;
 							console.log("Completed: " + JSON.stringify(dcourse, null, 4));
@@ -127,6 +117,18 @@ var bancourse = require('../parse/bancourse.js');
 				return callback({error:true, reason:error.toString()});
 			}
 		});
+	}
+
+	lib.checkMatchesPostfixAttribute = function( text, keycheck ){
+		if(text == null || text.length < 1){
+			return false;
+		}
+		else{
+			if(text.slice(-keycheck.length) === keycheck){
+				console.log("Verified " + text + " against " + keycheck);
+				return true;
+			}
+		}
 	}
 
 	lib.subject = function( term, subj, callback ){

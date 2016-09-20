@@ -59,13 +59,14 @@ var bancourse = require('../parse/bancourse.js');
 					//console.log( $(this).html() );
 					if(index % 2 != 0){
 						data.push({header:$(this).text().trim()});
-						console.log("[Header]" + $(this).text().trim());
+						//console.log("[Header]" + $(this).text().trim());
 					}
 					else{
 						if(index > 0){
 							var dindex = Math.floor(index / 2) - 1;
 							var dcourse = {};
-							var qcontents = $(this).children().first().contents();
+							var qgeneral = $(this).children().first()
+							var qcontents = qgeneral.contents();
 
 							// qcontents.each(function(inde){
 							// 	console.log("Content: [" + inde + "]:" + $(this).text());
@@ -78,14 +79,16 @@ var bancourse = require('../parse/bancourse.js');
 								dcourse["Description"] = qcontents.eq(0).text().trim();
 							}
 
+							// save attributes described in spans
 							var lastsaw = null;
 							var qcSpans = qcontents.filter("span");
 							qcSpans.each(function(dex){
 								lastsaw = dex;
-								console.log("Selected: [" + dex + "]:" + $(this).text() + ", next is " +  $(this).get(0).nextSibling.nodeValue);
+								//console.log("Selected: [" + dex + "]:" + $(this).text() + ", next is " +  $(this).get(0).nextSibling.nodeValue);
 								dcourse[$(this).text().replace(/:/, "").trim()] = $(this).get(0).nextSibling.nodeValue.trim();
 							});
 							
+							// save attributes described by the strange postfixed names
 							if(lastsaw){
 								var sib = qcSpans.eq(lastsaw).get(0).nextSibling;
 								while(sib.nextSibling){
@@ -97,13 +100,38 @@ var bancourse = require('../parse/bancourse.js');
 									for(var i = 0; i < lib.POSTFIX_ATTRIBUTES.length; i++){
 										//console.log("Searching for " + lib.POSTFIX_ATTRIBUTES[i]);
 										if(lib.checkMatchesPostfixAttribute(sibval, lib.POSTFIX_ATTRIBUTES[i])){
+											//console.log("Found " + lib.POSTFIX_ATTRIBUTES[i]);
 											dcourse[lib.POSTFIX_ATTRIBUTES[i]] = sibval.slice(0, -lib.POSTFIX_ATTRIBUTES[i].length).trim();
-											console.log("Found " + lib.POSTFIX_ATTRIBUTES[i]);
 										}
 									}
 								}
 							}
+							
+							// save the catalog link
+							dcourse["cataloglink"] = qgeneral.find("a").first().attr("href");
 
+							// TODO pre-parse the table
+							dcourse["meetingtimes"] = [];
+							
+							var attrtable = qgeneral.find("table").first().find("tr");
+							var numrows = attrtable.length;
+							// console.log("Table text: " + attrtable.text());
+							var numattrs = attrtable.eq(0).children().length;
+
+							var attrkeys = [];
+							// console.log("Children. ");
+							attrtable.eq(0).children().each(function(dex){
+								// console.log(dex + ": " + $(this).text());
+								attrkeys.push($(this).text().replace(/:/, "").trim());
+							});
+							for(var meet = 1; meet < numrows; meet++){
+								var tmpMeet = {};
+								for(var i = 0 ; i < numattrs; i++){
+									tmpMeet[attrkeys[i]] = attrtable.eq(meet).children().eq(i).text().trim();
+								}
+								dcourse.meetingtimes.push(tmpMeet);
+							}
+							
 							data[dindex].main = dcourse;
 							console.log("Completed: " + JSON.stringify(dcourse, null, 4));
 						}
@@ -125,7 +153,7 @@ var bancourse = require('../parse/bancourse.js');
 		}
 		else{
 			if(text.slice(-keycheck.length) === keycheck){
-				console.log("Verified " + text + " against " + keycheck);
+				// console.log("Verified " + text + " against " + keycheck);
 				return true;
 			}
 		}
